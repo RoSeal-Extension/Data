@@ -1,4 +1,20 @@
 {
-    "lastPPUpdateTime": 1980005287020,
-    "alerts": []
+    "lastPPUpdateTime": 0,
+    "alerts": [
+        {
+            "id": 1,
+            "content": "Test without link"
+        },
+        {
+            "id": 2,
+            "content": "Test with link",
+            "contentLink": "www.roblox.com"
+        },
+        {
+            "id": 3,
+            "content": "Test with link and dismissable",
+            "contentLink": "www.roblox.com/seals",
+            "dismissable": true
+        }
+    ]
 }
