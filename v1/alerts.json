@@ -15,6 +15,12 @@
             "content": "Test with link and dismissable",
             "contentLink": "www.roblox.com/seals",
             "dismissable": true
+        },
+        {
+            "id": 3,
+            "content": "Test with link and show after",
+            "contentLink": "www.roblox.com/seals",
+            "showAfter": 1680005642747
         }
     ]
 }
