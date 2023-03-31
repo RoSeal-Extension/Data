@@ -1,15 +1,4 @@
 {
     "lastPPUpdateTime": 0,
-    "alerts": [
-        {
-            "id": 99999,
-            "content": "Hi, 1.2.4-beta.1 testers!",
-            "contentLink": "www.roseal.live"
-        },
-        {
-            "id": 9999999,
-            "content": "This should be dismissable.",
-            "dismissable": true
-        }
-    ]
+    "alerts": []
 }
