@@ -1,5 +1,5 @@
 {
-    "coolFeature": {
-        "enableVR": false
+    "accountsManager": {
+        "showDeprecationNotice": false
     }
 }
