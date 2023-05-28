@@ -1,6 +1,6 @@
 {
     "accountsManager": {
-        "showDeprecationNotice": false,
-        "disableAddAccount": false
+        "showDeprecationNotice": true,
+        "disableAddAccount": true
     }
 }
