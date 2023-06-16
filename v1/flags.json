@@ -4,6 +4,6 @@
         "disableAddAccount": false
     },
     "privateServerLinks": {
-        "tryGetOwnerId": true
+        "tryResolveOwnerId": true
     }
 }
