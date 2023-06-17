@@ -2,8 +2,5 @@
     "accountsManager": {
         "showDeprecationNotice": false,
         "disableAddAccount": false
-    },
-    "privateServerLinks": {
-        "tryResolveOwnerId": true
     }
 }
