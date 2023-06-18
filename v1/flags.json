@@ -4,6 +4,6 @@
         "disableAddAccount": false
     },
     "fastFreePurchase": {
-        "ownBuyButton": false
+        "ownPurchaseLogic": false
     }
 }
