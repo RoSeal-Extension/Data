@@ -4,5 +4,8 @@
         "content": "You are on an outdated version of RoSeal. Please update for the latest features and bug fixes.",
         "contentLink": "chrome.google.com/webstore/detail/hfjngafpndganmdggnapblamgbfjhnof",
         "versions": ["1.2.5", "1.2.7", "1.2.8"]
+    }, {
+        "content": "You are fine.",
+        "versions": ["1.2.10"]
     }]
 }
