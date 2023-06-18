@@ -1,7 +1,7 @@
 {
     "lastPPUpdateTime": 0,
     "alerts": [{
-        "content": "You are on an outdated version of RoSeal. Please update for the latest features and bug fixes.",
+        "content": "You are on an outdated version of RoSeal. Please update for the latest features and bug fixes. Click this to view on the Chrome webstore.",
         "contentLink": "chrome.google.com/webstore/detail/hfjngafpndganmdggnapblamgbfjhnof",
         "versions": ["1.2.5", "1.2.6", "1.2.7", "1.2.8"]
     }]
