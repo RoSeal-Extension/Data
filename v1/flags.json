@@ -7,7 +7,6 @@
         "ownPurchaseLogic": false
     },
     "discoverFilters": {
-        "enableVRDeviceType": false,
-        "enable18PlusAge": false
+        "enableVRDeviceType": false
     }
 }
