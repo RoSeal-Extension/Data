@@ -9,5 +9,8 @@
     },
     "discoverFilters": {
         "enableVRDeviceType": true
+    },
+    "creatorMarketplaceOffSaleView": {
+        "overrideTypeLabel": true
     }
 }
