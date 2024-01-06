@@ -4,8 +4,7 @@
         "disableAddAccount": false
     },
     "fastFreePurchase": {
-        "ownPurchaseLogic": false,
-        "ownPurchaseLogic2": false
+        "ownPurchaseLogic3": true
     },
     "discoverFilters": {
         "enableVRDeviceType": true
