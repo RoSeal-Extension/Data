@@ -1,5 +1,6 @@
 [{
     "universeId": 5706354642,
     "type": "Unknown",
-    "time": "2024-03-15T15:00:00.000Z"
+    "time": "2024-03-15T15:00:00.000Z",
+    "byPlayable": true
 }]
