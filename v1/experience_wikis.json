@@ -1,247 +1,308 @@
 [
     {
         "universeIds": [383310974],
-        "wikiDomain": "adoptme.fandom.com"
+        "wikiDomain": "adoptme.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [578392296],
-        "wikiDomain": "animebattlearenaaba.fandom.com"
+        "wikiDomain": "animebattlearenaaba.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [1348402608],
-        "wikiDomain": "anime-fighting-simulator.fandom.com"
+        "wikiDomain": "anime-fighting-simulator.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [1426962, 358276974],
-        "wikiDomain": "roblox-apocalypse-rising.fandom.com"
+        "wikiDomain": "roblox-apocalypse-rising.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [111958650],
-        "wikiDomain": "robloxarsenal.fandom.com"
+        "wikiDomain": "robloxarsenal.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [601130232],
-        "wikiDomain": "bee-swarm-simulator.fandom.com"
+        "wikiDomain": "bee-swarm-simulator.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [1054526971],
-        "wikiDomain": "roblox-blackhawk-rescue-mission-5.fandom.com"
+        "wikiDomain": "roblox-blackhawk-rescue-mission-5.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [403659479],
-        "wikiDomain": "black-magic-ii.fandom.com"
+        "wikiDomain": "black-magic-ii.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [1059940666],
-        "wikiDomain": "black-hole-simulator.fandom.com"
+        "wikiDomain": "black-hole-simulator.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [108687118],
-        "wikiDomain": "blox-cards.fandom.com"
+        "wikiDomain": "blox-cards.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [590359607],
-        "wikiDomain": "boku-no-robloxremastered.fandom.com"
+        "wikiDomain": "boku-no-robloxremastered.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [511839821, 1612000933, 2113273082],
-        "wikiDomain": "booga-booga-roblox.fandom.com"
+        "wikiDomain": "booga-booga-roblox.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [63528751],
-        "wikiDomain": "boss-fighting-stages-rebirth.fandom.com"
+        "wikiDomain": "boss-fighting-stages-rebirth.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [892043755],
-        "wikiDomain": "bubble-gum-simulator.fandom.com"
+        "wikiDomain": "bubble-gum-simulator.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [210851291],
-        "wikiDomain": "build-a-boat-for-treasure.fandom.com"
+        "wikiDomain": "build-a-boat-for-treasure.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [887448259],
-        "wikiDomain": "crown-academy.fandom.com"
+        "wikiDomain": "crown-academy.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [98839997],
-        "wikiDomain": "dinosimulator.fandom.com"
+        "wikiDomain": "dinosimulator.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [35307380, 96574090, 1374118848],
-        "wikiDomain": "dbog.fandom.com"
+        "wikiDomain": "dbog.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [210213771],
-        "wikiDomain": "dragon-ball-z-final-stand.fandom.com"
+        "wikiDomain": "dragon-ball-z-final-stand.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [848145103],
-        "wikiDomain": "dungeonquestroblox.fandom.com"
+        "wikiDomain": "dungeonquestroblox.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [252475658],
-        "wikiDomain": "eclipsis.fandom.com"
+        "wikiDomain": "eclipsis.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [994623813],
-        "wikiDomain": "egg-simulator.fandom.com"
+        "wikiDomain": "egg-simulator.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [785394798],
-        "wikiDomain": "electric-state-darkrp.fandom.com"
+        "wikiDomain": "electric-state-darkrp.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [224422602],
-        "wikiDomain": "roblox-elemental-battlegrounds.fandom.com"
+        "wikiDomain": "roblox-elemental-battlegrounds.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [324740177],
-        "wikiDomain": "entry-point.fandom.com"
+        "wikiDomain": "entry-point.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [1555722786],
-        "wikiDomain": "evolution-evade.fandom.com"
+        "wikiDomain": "evolution-evade.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [197962583],
-        "wikiDomain": "fantastic-frontier-roblox.fandom.com"
+        "wikiDomain": "fantastic-frontier-roblox.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [533435040],
-        "wikiDomain": "robloxflicker.fandom.com"
+        "wikiDomain": "robloxflicker.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [371263894],
-        "wikiDomain": "greenville-wisconsin.fandom.com"
+        "wikiDomain": "greenville-wisconsin.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [107172930],
-        "wikiDomain": "horrific-housing.fandom.com"
+        "wikiDomain": "horrific-housing.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [852410945],
-        "wikiDomain": "ice-cream-simulator.fandom.com"
+        "wikiDomain": "ice-cream-simulator.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [1659645941],
-        "wikiDomain": "robloxislands.fandom.com"
+        "wikiDomain": "robloxislands.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [245662005],
-        "wikiDomain": "jailbreak.fandom.com"
+        "wikiDomain": "jailbreak.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [3264581003],
-        "wikiDomain": "jtoh.fandom.com"
+        "wikiDomain": "jtoh.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [3494556606],
-        "wikiDomain": "roblox-hello-kitty-cafe.fandom.com"
+        "wikiDomain": "roblox-hello-kitty-cafe.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [117307972],
-        "wikiDomain": "loomian-legacy.fandom.com"
+        "wikiDomain": "loomian-legacy.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [2471084],
-        "wikiDomain": "lumber-tycoon-2.fandom.com"
+        "wikiDomain": "lumber-tycoon-2.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [498490399],
-        "wikiDomain": "mad-city.fandom.com"
+        "wikiDomain": "mad-city.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [105689481],
-        "wikiDomain": "minershaven.fandom.com"
+        "wikiDomain": "minershaven.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [564406126],
-        "wikiDomain": "mining-simulator.fandom.com"
+        "wikiDomain": "mining-simulator.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [13696254],
-        "wikiDomain": "monsterislands.fandom.com"
+        "wikiDomain": "monsterislands.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [96281294],
-        "wikiDomain": "roblox-etheria.fandom.com"
+        "wikiDomain": "roblox-etheria.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [1209178614, 1595420120],
-        "wikiDomain": "murder-island.fandom.com"
+        "wikiDomain": "murder-island.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [66654135],
-        "wikiDomain": "murder-mystery-2.fandom.com"
+        "wikiDomain": "murder-mystery-2.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [1434220026],
-        "wikiDomain": "my-restaurant.fandom.com"
+        "wikiDomain": "my-restaurant.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [1335695570],
-        "wikiDomain": "roblox-ninja-legends.fandom.com"
+        "wikiDomain": "roblox-ninja-legends.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [16680835],
-        "wikiDomain": "notoriety.fandom.com"
+        "wikiDomain": "notoriety.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [1751969566, 4258974390],
-        "wikiDomain": "overlook-rp.fandom.com"
+        "wikiDomain": "overlook-rp.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [170247232],
-        "wikiDomain": "parkour-roblox.fandom.com"
+        "wikiDomain": "parkour-roblox.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [113491250],
-        "wikiDomain": "roblox-phantom-forces.fandom.com"
+        "wikiDomain": "roblox-phantom-forces.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [21164849],
-        "wikiDomain": "roblox-ptfs.fandom.com"
+        "wikiDomain": "roblox-ptfs.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [1096507818],
-        "wikiDomain": "quantum-science.fandom.com"
+        "wikiDomain": "quantum-science.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [236942121, 1220839623, 1566011973],
-        "wikiDomain": "bthg.fandom.com"
+        "wikiDomain": "bthg.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [3132369778],
-        "wikiDomain": "race-around-the-world.fandom.com"
+        "wikiDomain": "race-around-the-world.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [1772081673],
-        "wikiDomain": "r2da.fandom.com"
+        "wikiDomain": "r2da.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [301252049],
-        "wikiDomain": "robeats.fandom.com"
+        "wikiDomain": "robeats.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [63951305],
-        "wikiDomain": "rocitizens.fandom.com"
+        "wikiDomain": "rocitizens.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [380704901],
-        "wikiDomain": "roghoul-rblx.fandom.com"
+        "wikiDomain": "roghoul-rblx.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [321778215],
-        "wikiDomain": "royale-high.fandom.com"
+        "wikiDomain": "royale-high.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [1406616510],
-        "wikiDomain": "rumble-quest.fandom.com"
+        "wikiDomain": "rumble-quest.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [1895958909],
-        "wikiDomain": "science-simulator.fandom.com"
+        "wikiDomain": "science-simulator.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [
@@ -252,118 +313,147 @@
             530374209,
             1512475061
         ],
-        "wikiDomain": "shiguto.fandom.com"
+        "wikiDomain": "shiguto.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [1511883870],
-        "wikiDomain": "shindo-life-rell.fandom.com"
+        "wikiDomain": "shindo-life-rell.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [1102580291],
-        "wikiDomain": "roblox-site-76.fandom.com"
+        "wikiDomain": "roblox-site-76.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [510348090, 508458950],
-        "wikiDomain": "rblx-snow-shoveling-simulator.fandom.com"
+        "wikiDomain": "rblx-snow-shoveling-simulator.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [300039023],
-        "wikiDomain": "scr.fandom.com"
+        "wikiDomain": "scr.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [616165168],
-        "wikiDomain": "sunshine-islands-roblox.fandom.com"
+        "wikiDomain": "sunshine-islands-roblox.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [78351145],
-        "wikiDomain": "roblox-super-bomb-survival.fandom.com"
+        "wikiDomain": "roblox-super-bomb-survival.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [1291219836],
-        "wikiDomain": "superdoomspireroblox.fandom.com"
+        "wikiDomain": "superdoomspireroblox.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [31970568],
-        "wikiDomain": "tpt2.fandom.com"
+        "wikiDomain": "tpt2.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [39559307],
-        "wikiDomain": "roblox-tower-battles.fandom.com"
+        "wikiDomain": "roblox-tower-battles.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [1176784616],
-        "wikiDomain": "tds.fandom.com"
+        "wikiDomain": "tds.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [703124385],
-        "wikiDomain": "tower-of-hell.fandom.com"
+        "wikiDomain": "tower-of-hell.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [1069201198],
-        "wikiDomain": "treasurequestroblox.fandom.com"
+        "wikiDomain": "treasurequestroblox.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [152631806],
-        "wikiDomain": "treelands.fandom.com"
+        "wikiDomain": "treelands.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [147332621],
-        "wikiDomain": "typicalcolors2.fandom.com"
+        "wikiDomain": "typicalcolors2.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [8813012, 258190043, 401348716, 1127866862, 62143720],
-        "wikiDomain": "ultimate-driving.fandom.com"
+        "wikiDomain": "ultimate-driving.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [81762198],
-        "wikiDomain": "vehicle-simulator-roblox.fandom.com"
+        "wikiDomain": "vehicle-simulator-roblox.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [833209132],
-        "wikiDomain": "vesteria.fandom.com"
+        "wikiDomain": "vesteria.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [88070565],
-        "wikiDomain": "welcome-to-bloxburg.fandom.com"
+        "wikiDomain": "welcome-to-bloxburg.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [74218984],
-        "wikiDomain": "wfyb.fandom.com"
+        "wikiDomain": "wfyb.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [985731078],
-        "wikiDomain": "world-zero.fandom.com"
+        "wikiDomain": "world-zero.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [504035427],
-        "wikiDomain": "zombie-attack-roblox.fandom.com"
+        "wikiDomain": "zombie-attack-roblox.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [2680235473],
-        "wikiDomain": "ropets.fandom.com"
+        "wikiDomain": "ropets.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [1037979853],
-        "wikiDomain": "fishingsimulator.fandom.com"
+        "wikiDomain": "fishingsimulator.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [1202096104],
-        "wikiDomain": "drivingempire.fandom.com"
+        "wikiDomain": "drivingempire.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [2440500124],
-        "wikiDomain": "doors-game.fandom.com"
+        "wikiDomain": "doors-game.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [3913007563],
-        "wikiDomain": "the-battle-bricks.fandom.com"
+        "wikiDomain": "the-battle-bricks.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [2882996448],
-        "wikiDomain": "arenatd.fandom.com"
+        "wikiDomain": "arenatd.fandom.com",
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [3761186887],
-        "wikiDomain": "apeirophobia.fandom.com"
+        "wikiDomain": "apeirophobia.fandom.com",
+        "fromFandomInterwiki": true
     }
 ]
