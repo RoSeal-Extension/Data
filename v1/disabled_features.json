@@ -12,4 +12,6 @@
     "name": "ListFollowedExperiences"
 }, {
     "name": "BetterExperienceNotificationsList"
+}, {
+    "name": "GridSameWidth"
 }]
