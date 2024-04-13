@@ -455,5 +455,35 @@
         "universeIds": [3761186887],
         "wikiDomain": "apeirophobia.fandom.com",
         "fromFandomInterwiki": true
+    },
+    {
+        "universeIds": [1599679393, 2316994223, 3317771874],
+        "wikiDomain": "pet-simulator.fandom.com",
+        "fromFandomInterwiki": false
+    },
+    {
+        "universeIds": [92605824, 4371550953],
+        "wikiDomain": "robloxgalaxy.wiki",
+        "fromFandomInterwiki": false
+    },
+    {
+        "universeIds": [4777817887],
+        "wikiDomain": "bladeball.fandom.com",
+        "fromFandomInterwiki": false
+    },
+    {
+        "universeIds": [5686465822],
+        "wikiDomain": "petcatchers.fandom.com",
+        "fromFandomInterwiki": false
+    },
+    {
+        "universeIds": [1000233041],
+        "wikiDomain": "scp3008-roblox.fandom.com",
+        "fromFandomInterwiki": false
+    },
+    {
+        "universeIds": [994732206],
+        "wikiDomain": "blox-fruits.fandom.com",
+        "fromFandomInterwiki": false
     }
 ]
