@@ -14,4 +14,8 @@
     "name": "BetterExperienceNotificationsList"
 }, {
     "name": "GridSameWidth"
+}, {
+    "name": "MoveExperienceEvents"
+}, {
+    "name": "ItemPagesMoveReportAbuse"
 }]
