@@ -485,5 +485,30 @@
         "universeIds": [994732206],
         "wikiDomain": "blox-fruits.fandom.com",
         "fromFandomInterwiki": false
+    },
+    {
+        "universeIds": [2380077519],
+        "wikiDomain": "roblox-slap-battles.fandom.com",
+        "fromFandomInterwiki": true
+    },
+    {
+        "universeIds": [4034681630],
+        "wikiDomain": "astro-renaissance.fandom.com",
+        "fromFandomInterwiki": true
+    },
+    {
+        "universeIds": [4034681630],
+        "wikiDomain": "big-paintball.fandom.com",
+        "fromFandomInterwiki": true
+    },
+    {
+        "universeIds": [1668992109],
+        "wikiDomain": "totalrobloxdrama.fandom.com",
+        "fromFandomInterwiki": true
+    },
+    {
+        "universeIds": [903807016],
+        "wikiDomain": "emergency-response-liberty-county.fandom.com",
+        "fromFandomInterwiki": true
     }
 ]
