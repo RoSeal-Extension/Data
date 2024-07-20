@@ -21,4 +21,6 @@
 }, {
     "name": "AccurateHomePageContinueSort",
     "variant": 2
+}, {
+    "name": "ForceHomeSortsCarousel"
 }]
