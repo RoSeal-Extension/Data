@@ -515,5 +515,10 @@
         "universeIds": [1709917610],
         "wikiDomain": "regretevator.fandom.com",
         "fromFandomInterwiki": true
+    },
+    {
+        "universeIds": [1998835206],
+        "wikiDomain": "item-asylum-wiki.fandom.com",
+        "fromFandomInterwiki": true
     }
 ]
