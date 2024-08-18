@@ -484,7 +484,7 @@
     {
         "universeIds": [994732206],
         "wikiDomain": "blox-fruits.fandom.com",
-        "fromFandomInterwiki": false
+        "fromFandomInterwiki": true
     },
     {
         "universeIds": [2380077519],
