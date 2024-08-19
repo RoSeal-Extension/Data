@@ -25,4 +25,6 @@
     "name": "ForceHomeSortsCarousel"
 }, {
     "name": "JailbrokenHomeFavoritesSort"
+}, {
+    "name": "FixDeeplinks"
 }]
