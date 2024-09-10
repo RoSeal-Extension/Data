@@ -1360,5 +1360,14 @@
                 "fromFandomInterwiki": true
             }
         ]
+    },
+    {
+        "universeIds": [4367208330],
+        "links": [{
+            "type": "communityWiki",
+            "url": "urbanshade.org",
+            "locale": "en",
+            "fromFandomInterwiki": false
+        }]
     }
 ]

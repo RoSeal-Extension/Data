@@ -520,5 +520,10 @@
         "universeIds": [1998835206],
         "wikiDomain": "item-asylum-wiki.fandom.com",
         "fromFandomInterwiki": true
+    },
+    {
+        "universeIds": [4367208330],
+        "wikiDomain": "urbanshade.org",
+        "fromFandomInterwiki": false
     }
 ]
