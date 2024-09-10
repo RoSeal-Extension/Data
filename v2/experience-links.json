@@ -1369,5 +1369,14 @@
             "locale": "en",
             "fromFandomInterwiki": false
         }]
+    },
+    {
+        "universeIds": [3211189518],
+        "links": [{
+            "type": "communityWiki",
+            "url": "findeverything.miraheze.org",
+            "locale": "en",
+            "fromFandomInterwiki": false
+        }]
     }
 ]

@@ -525,5 +525,10 @@
         "universeIds": [4367208330],
         "wikiDomain": "urbanshade.org",
         "fromFandomInterwiki": false
+    },
+    {
+        "universeIds": [3211189518],
+        "wikiDomain": "findeverything.miraheze.org",
+        "fromFandomInterwiki": false
     }
 ]
