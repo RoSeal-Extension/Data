@@ -27,4 +27,7 @@
     "name": "JailbrokenHomeFavoritesSort"
 }, {
     "name": "FixDeeplinks"
+}, {
+    "name": "BodyColors3s",
+    "versions": ["1.3.45"]
 }]
