@@ -8,7 +8,7 @@
         "name": "Home page horizontal scroll",
         "buckets": [
           {
-            "id": "enabled",
+            "id": "enable",
             "label": "Enabled",
             "operations": [
               {
@@ -23,6 +23,23 @@
                 }
               }
             ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Website.Homepage": {
+                      "IsCarouselHorizontalScrollEnabled": false
+                    }
+                  }
+                }
+              }
+            ]
           }
         ]
       },
@@ -31,7 +48,7 @@
         "name": "Updated home page carousel scroll arrows",
         "buckets": [
           {
-            "id": "enabled",
+            "id": "enable",
             "label": "Enabled",
             "operations": [
               {
@@ -46,7 +63,7 @@
             ]
           },
           {
-            "id": "disabled",
+            "id": "disable",
             "label": "Disabled",
             "operations": [
               {
@@ -67,7 +84,7 @@
         "name": "Updated play button",
         "buckets": [
           {
-            "id": "enabled",
+            "id": "enable",
             "label": "Enabled",
             "operations": [
               {
@@ -82,7 +99,7 @@
             ]
           },
           {
-            "id": "disabled",
+            "id": "disable",
             "label": "Disabled",
             "operations": [
               {
