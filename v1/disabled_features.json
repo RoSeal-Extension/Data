@@ -1,33 +1,33 @@
 [{
-    "name": "UpdateAccountCountry"
+  "name": "UpdateAccountCountry"
 }, {
-    "name": "AccurateHomePageContinueSort"
+  "name": "AccurateHomePageContinueSort"
 }, {
-    "name": "PutHomeFavoritesSortAtTop"
+  "name": "PutHomeFavoritesSortAtTop"
 }, {
-    "name": "UserFriendsPageNewTitle"
+  "name": "UserFriendsPageNewTitle"
 }, {
-    "name": "WebsiteOfflineMode"
+  "name": "WebsiteOfflineMode"
 }, {
-    "name": "ListFollowedExperiences"
+  "name": "ListFollowedExperiences"
 }, {
-    "name": "BetterExperienceNotificationsList"
+  "name": "BetterExperienceNotificationsList"
 }, {
-    "name": "GridSameWidth"
+  "name": "GridSameWidth"
 }, {
-    "name": "MoveExperienceEvents"
+  "name": "MoveExperienceEvents"
 }, {
-    "name": "ItemPagesMoveReportAbuse"
+  "name": "ItemPagesMoveReportAbuse"
 }, {
-    "name": "AccurateHomePageContinueSort",
-    "variant": 2
+  "name": "AccurateHomePageContinueSort",
+  "variant": 2
 }, {
-    "name": "ForceHomeSortsCarousel"
+  "name": "ForceHomeSortsCarousel"
 }, {
-    "name": "JailbrokenHomeFavoritesSort"
+  "name": "JailbrokenHomeFavoritesSort"
 }, {
-    "name": "FixDeeplinks"
+  "name": "FixDeeplinks"
 }, {
-    "name": "BodyColors3s",
-    "versions": ["1.3.45"]
+  "name": "BodyColors3s",
+  "versions": ["1.3.45"]
 }]

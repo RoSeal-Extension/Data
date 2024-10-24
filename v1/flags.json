@@ -1,18 +1,18 @@
 {
-    "accountsManager": {
-        "showDeprecationNotice": false,
-        "disableAddAccount": false
-    },
-    "fastFreePurchase": {
-        "ownPurchaseLogic3": true
-    },
-    "discoverFilters": {
-        "enableVRDeviceType": true
-    },
-    "creatorMarketplaceOffSaleView": {
-        "overrideTypeLabel": true
-    },
-    "developerProducts": {
-        "overrideTransactionsLink": true
-    }
+  "accountsManager": {
+    "showDeprecationNotice": false,
+    "disableAddAccount": false
+  },
+  "fastFreePurchase": {
+    "ownPurchaseLogic3": true
+  },
+  "discoverFilters": {
+    "enableVRDeviceType": true
+  },
+  "creatorMarketplaceOffSaleView": {
+    "overrideTypeLabel": true
+  },
+  "developerProducts": {
+    "overrideTransactionsLink": true
+  }
 }
