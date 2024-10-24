@@ -1,0 +1,5263 @@
+[
+    {
+      "id": "www",
+      "name": "Main Website",
+      "experiments": [
+        {
+          "id": "groupSearchV2",
+          "name": "Group search V2",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enable group search V2",
+              "operations": [
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "UserCommunities.Groups.Discovery": {
+                        "groupsLandingConfig": {
+                          "useSearchLanding": true,
+                          "isSearchV2": true
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disable group search V2",
+              "operations": [
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "UserCommunities.Groups.Discovery": {
+                        "groupsLandingConfig": {
+                          "useSearchLanding": false,
+                          "isSearchV2": false
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "experienceEventsUprank",
+          "name": "Move experience events section to top of page",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Moves experience events section to top of page",
+              "operations": [
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "Website.GameDetails": {
+                        "IsEventsSectionUprankEnabled": true
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Keep experience events section to bottom of page",
+              "operations": [
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "Website.GameDetails": {
+                        "IsEventsSectionUprankEnabled": false
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "experienceEventsRedesign",
+          "name": "Experience Events redesign",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enables the new experience events redesign",
+              "operations": [
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "Website.GameDetails": {
+                        "IsEventsSectionRedesignEnabled": true
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disables the new experience events redesign",
+              "operations": [
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "Website.GameDetails": {
+                        "IsEventsSectionRedesignEnabled": false
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "settingsFriendsAndContacts",
+          "name": "Friends and Contacts in settings",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enables Friends and Contacts",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "account-settings-ui": {
+                      "displayFriendsAndContactsSettings": true
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disables Friends and Contacts",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "account-settings-ui": {
+                      "displayFriendsAndContactsSettings": false
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "reactFriendsCarousel",
+          "name": "React Friends Carousel on home page",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enables React Friends Carousel on home page",
+              "operations": [
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "Website.Homepage": {
+                        "IsReactFriendsCarouselEnabled": true
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disables React Friends Carousel on home page",
+              "operations": [
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "Website.Homepage": {
+                        "IsReactFriendsCarouselEnabled": false
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "groupForums",
+          "name": "Group Forums",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enables Group Forums",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "configure-group-ui": {
+                      "displayGroupForumsConfiguration": true
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disables Group Forums",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "configure-group-ui": {
+                      "displayGroupForumsConfiguration": false
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "groupMembershipBans",
+          "name": "Group membership bans",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enables group membership bans",
+              "operations": [
+                {
+                  "type": "json",
+                  "jsonType": "set",
+                  "match": {
+                    "field": [
+                      "areGroupBansEnabled"
+                    ],
+                    "robloxSubdomain": "groups",
+                    "regex": "^/v1/groups/metadata$"
+                  },
+                  "value": true
+                },
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "configure-group-ui": {
+                      "displayGroupBans": true
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disables group membership bans",
+              "operations": [
+                {
+                  "type": "json",
+                  "jsonType": "set",
+                  "match": {
+                    "field": [
+                      "areGroupBansEnabled"
+                    ],
+                    "robloxSubdomain": "groups",
+                    "regex": "^/v1/groups/metadata$"
+                  },
+                  "value": false
+                },
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "configure-group-ui": {
+                      "displayGroupBans": false
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "accessNotificationsStream",
+          "name": "Access Notifications",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enables access notifications stream",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "navigation-header-ui": {
+                      "notificationsCanAccessStream": true
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disables access notifications stream",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "navigation-header-ui": {
+                      "notificationsCanAccessStream": false
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ignorePinForUnblocking",
+          "name": "Ignore pin for unblocking users",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Ignore pin for unblocking users",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "account-settings-ui": {
+                      "ignoreParentPinForUnblockingUsers": true
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Prompt pin for unblocking users",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "account-settings-ui": {
+                      "ignoreParentPinForUnblockingUsers": false
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "higherResolutionTiles",
+          "name": "Higher resolution experience tiles",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Use 256x256 experience tiles",
+              "operations": [
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "Website.TileLayer": {
+                        "IsHigherResolutionImageEnabled": true
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Use 150x150 experience tiles",
+              "operations": [
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "Website.TileLayer": {
+                        "IsHigherResolutionImageEnabled": false
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "deprecateUsernameRecovery",
+          "name": "Deprecate username recovery",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enable deprecate username recovery",
+              "operations": [
+                {
+                  "type": "json",
+                  "jsonType": "set",
+                  "match": {
+                    "field": [
+                      "isUsernameRecoveryDeprecated"
+                    ],
+                    "robloxSubdomain": "auth",
+                    "regex": "^/v2/recovery/metadata$"
+                  },
+                  "value": true
+                },
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "Website.Login": {
+                        "usernameRecoveryDeprecated": true
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disable deprecate username recovery",
+              "operations": [
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "Website.Login": {
+                        "usernameRecoveryDeprecated": false
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "json",
+                  "jsonType": "set",
+                  "match": {
+                    "field": [
+                      "isUsernameRecoveryDeprecated"
+                    ],
+                    "robloxSubdomain": "auth",
+                    "regex": "^/v2/recovery/metadata$"
+                  },
+                  "value": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "transactionsCommissionsRecordsDownload",
+          "name": "Transactions commissions records download",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enable transactions commissions records download",
+              "operations": [
+                {
+                  "type": "json",
+                  "jsonType": "set",
+                  "match": {
+                    "field": [
+                      "isCommissionRecordsDownloadEnabled"
+                    ],
+                    "robloxSubdomain": "economy",
+                    "regex": "^/v2/metadata$"
+                  },
+                  "value": true
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disable transactions commissions records download",
+              "operations": [
+                {
+                  "type": "json",
+                  "jsonType": "set",
+                  "match": {
+                    "field": [
+                      "isCommissionRecordsDownloadEnabled"
+                    ],
+                    "robloxSubdomain": "economy",
+                    "regex": "^/v2/metadata$"
+                  },
+                  "value": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "groupCommissionsPage",
+          "name": "Group commissions page",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enable group commissions page",
+              "operations": [
+                {
+                  "type": "json",
+                  "jsonType": "set",
+                  "match": {
+                    "field": [
+                      "isGroupCommissionsPageEnabled"
+                    ],
+                    "robloxSubdomain": "economy",
+                    "regex": "^/v2/metadata$"
+                  },
+                  "value": true
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disable group commissions page",
+              "operations": [
+                {
+                  "type": "json",
+                  "jsonType": "set",
+                  "match": {
+                    "field": [
+                      "isGroupCommissionsPageEnabled"
+                    ],
+                    "robloxSubdomain": "economy",
+                    "regex": "^/v2/metadata$"
+                  },
+                  "value": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "publishingAdvanceRebatePage",
+          "name": "Publishing advance rebate page",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enable publishing advance rebate page",
+              "operations": [
+                {
+                  "type": "json",
+                  "jsonType": "set",
+                  "match": {
+                    "field": [
+                      "isPublishingAdvanceRebatePageEnabled"
+                    ],
+                    "robloxSubdomain": "economy",
+                    "regex": "^/v2/metadata$"
+                  },
+                  "value": true
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disable publishing advance rebate page",
+              "operations": [
+                {
+                  "type": "json",
+                  "jsonType": "set",
+                  "match": {
+                    "field": [
+                      "isPublishingAdvanceRebatePageEnabled"
+                    ],
+                    "robloxSubdomain": "economy",
+                    "regex": "^/v2/metadata$"
+                  },
+                  "value": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "transactionsRecordsDownload",
+          "name": "Transactions records download",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enable transactions records download",
+              "operations": [
+                {
+                  "type": "json",
+                  "jsonType": "set",
+                  "match": {
+                    "field": [
+                      "isTransactionsRecordsDownloadEnabled"
+                    ],
+                    "robloxSubdomain": "economy",
+                    "regex": "^/v2/metadata$"
+                  },
+                  "value": true
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disable transactions records download",
+              "operations": [
+                {
+                  "type": "json",
+                  "jsonType": "set",
+                  "match": {
+                    "field": [
+                      "isTransactionsRecordsDownloadEnabled"
+                    ],
+                    "robloxSubdomain": "economy",
+                    "regex": "^/v2/metadata$"
+                  },
+                  "value": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "marketplacePurchasing",
+          "name": "Marketplace purchasing",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enable marketplace purchasing",
+              "operations": [
+                {
+                  "type": "json",
+                  "jsonType": "set",
+                  "match": {
+                    "field": [
+                      "isMarketPlaceEnabled"
+                    ],
+                    "robloxSubdomain": "economy",
+                    "regex": "^/v2/metadata$"
+                  },
+                  "value": true
+                },
+                {
+                  "type": "json",
+                  "jsonType": "set",
+                  "match": {
+                    "field": [
+                      "isItemsXchangeEnabled"
+                    ],
+                    "robloxSubdomain": "economy",
+                    "regex": "^/v2/metadata$"
+                  },
+                  "value": true
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disable marketplace purchasing",
+              "operations": [
+                {
+                  "type": "json",
+                  "jsonType": "set",
+                  "match": {
+                    "field": [
+                      "isMarketPlaceEnabled"
+                    ],
+                    "robloxSubdomain": "economy",
+                    "regex": "^/v2/metadata$"
+                  },
+                  "value": false
+                },
+                {
+                  "type": "json",
+                  "jsonType": "set",
+                  "match": {
+                    "field": [
+                      "isItemsXchangeEnabled"
+                    ],
+                    "robloxSubdomain": "economy",
+                    "regex": "^/v2/metadata$"
+                  },
+                  "value": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "privateServerPrivacyV2",
+          "name": "Private server privacy V2",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enable private server privacy v2",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "account-settings-ui": {
+                      "isPrivateServerPrivacyV2Enabled": {
+                        "enabled": true
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disable private server privacy v2",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "account-settings-ui": {
+                      "isPrivateServerPrivacyV2Enabled": {
+                        "enabled": false
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "groupEvents",
+          "name": "Group experience events section",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enable Group experience events section",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "group-details-ui": {
+                      "displayGroupEvents": true
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disable Group experience events section",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "group-details-ui": {
+                      "displayGroupEvents": false
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "chartsRename",
+          "name": "Rename Discover to Charts",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Rename Discover to Charts",
+              "operations": [
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "Website.GamesPage": {
+                        "IsChartsPageRenameEnabled": true
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "dom",
+                  "domType": "modify",
+                  "selector": ".rbx-navbar [href=\"/discover\"]",
+                  "classList": {
+                    "add": [
+                      "charts-rename-exp-treatment"
+                    ],
+                    "remove": [
+                      "charts-rename-exp-control"
+                    ]
+                  }
+                },
+                {
+                  "type": "dom",
+                  "domType": "modify",
+                  "selector": ".rbx-navbar [href=\"/charts\"]",
+                  "classList": {
+                    "add": [
+                      "charts-rename-exp-control"
+                    ],
+                    "remove": [
+                      "charts-rename-exp-treatment"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Restore Discover",
+              "operations": [
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "Website.GamesPage": {
+                        "IsChartsPageRenameEnabled": false
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "dom",
+                  "domType": "modify",
+                  "selector": ".rbx-navbar [href=\"/discover\"]",
+                  "classList": {
+                    "add": [
+                      "charts-rename-exp-control"
+                    ],
+                    "remove": [
+                      "charts-rename-exp-treatment"
+                    ]
+                  }
+                },
+                {
+                  "type": "dom",
+                  "domType": "modify",
+                  "selector": ".rbx-navbar [href=\"/charts\"]",
+                  "classList": {
+                    "add": [
+                      "charts-rename-exp-treatment"
+                    ],
+                    "remove": [
+                      "charts-rename-exp-control"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "homeUpsell",
+          "name": "Home upsell card",
+          "buckets": [
+            {
+              "id": "contactEmail",
+              "label": "Email contact method",
+              "description": "Show email contact method upsell",
+              "operations": [
+                {
+                  "type": "json",
+                  "jsonType": "set",
+                  "match": {
+                    "robloxSubdomain": "apis",
+                    "field": [
+                      "upsellCardType"
+                    ],
+                    "regex": "^/upsellCard/type$"
+                  },
+                  "value": "ContactMethodEmail"
+                }
+              ]
+            },
+            {
+              "id": "contactPhone",
+              "label": "Phone number contact method",
+              "description": "Show phone number contact method upsell",
+              "operations": [
+                {
+                  "type": "json",
+                  "jsonType": "set",
+                  "match": {
+                    "robloxSubdomain": "apis",
+                    "field": [
+                      "upsellCardType"
+                    ],
+                    "regex": "^/upsellCard/type$"
+                  },
+                  "value": "ContactMethodPhoneNumber"
+                }
+              ]
+            },
+            {
+              "id": "contactPhoneVoice",
+              "label": "Phone number contact method with voice opt-in",
+              "description": "Show phone number contact method with voice opt-in upsell",
+              "operations": [
+                {
+                  "type": "json",
+                  "jsonType": "set",
+                  "match": {
+                    "robloxSubdomain": "apis",
+                    "field": [
+                      "upsellCardType"
+                    ],
+                    "regex": "^/upsellCard/type$"
+                  },
+                  "value": "ContactMethodPhoneNumberVoiceOptIn"
+                }
+              ]
+            },
+            {
+              "id": "anyContactMethodHorizontal",
+              "label": "Any contact method (horizontal)",
+              "description": "Show any contact method upsell with horizontal style",
+              "operations": [
+                {
+                  "type": "json",
+                  "jsonType": "set",
+                  "match": {
+                    "robloxSubdomain": "apis",
+                    "field": [
+                      "upsellCardType"
+                    ],
+                    "regex": "^/upsellCard/type$"
+                  },
+                  "value": "ContactMethodPhoneNumberEmailHorizontalLayout"
+                }
+              ]
+            },
+            {
+              "id": "anyContactMethodVertical",
+              "label": "Any contact method (vertical)",
+              "description": "Show any contact method upsell with vertical style",
+              "operations": [
+                {
+                  "type": "json",
+                  "jsonType": "set",
+                  "match": {
+                    "robloxSubdomain": "apis",
+                    "field": [
+                      "upsellCardType"
+                    ],
+                    "regex": "^/upsellCard/type$"
+                  },
+                  "value": "ContactMethodPhoneNumberEmailVerticalLayout"
+                }
+              ]
+            },
+            {
+              "id": "anyContactMethodHorizontalAlt1",
+              "label": "Any contact method (horizontal alternative 1)",
+              "description": "Show any contact method upsell with horizontal style alternative 1",
+              "operations": [
+                {
+                  "type": "json",
+                  "jsonType": "set",
+                  "match": {
+                    "robloxSubdomain": "apis",
+                    "field": [
+                      "upsellCardType"
+                    ],
+                    "regex": "^/upsellCard/type$"
+                  },
+                  "value": "ContactMethodPhoneNumberEmailHorizontalLayoutAltContent1"
+                }
+              ]
+            },
+            {
+              "id": "anyContactMethodMandatory",
+              "label": "Any contact method (mandatory)",
+              "description": "Show any contact method upsell with mandatory style",
+              "operations": [
+                {
+                  "type": "json",
+                  "jsonType": "set",
+                  "match": {
+                    "robloxSubdomain": "apis",
+                    "field": [
+                      "upsellCardType"
+                    ],
+                    "regex": "^/upsellCard/type$"
+                  },
+                  "value": "ContactMethodMandatoryEmailPhone"
+                }
+              ]
+            },
+            {
+              "id": "disabled",
+              "label": "Disabled",
+              "description": "Disable upsell card",
+              "operations": [
+                {
+                  "type": "json",
+                  "jsonType": "set",
+                  "match": {
+                    "robloxSubdomain": "apis",
+                    "field": [
+                      "upsellCardType"
+                    ],
+                    "regex": "^/upsellCard/type$"
+                  },
+                  "value": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "robuxViews",
+          "name": "Allowed Robux views",
+          "buckets": [
+            {
+              "id": "china",
+              "label": "China",
+              "description": "Allow China Robux views",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "robux-product-policy": {
+                      "allowedViews": [
+                        "RobuxPackageCNB"
+                      ]
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "global",
+              "label": "Global",
+              "description": "Allow global Robux views",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "robux-product-policy": {
+                      "allowedViews": [
+                        "RobuxPackage"
+                      ]
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disabled",
+              "label": "Disabled",
+              "description": "Disable Robux views",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "robux-product-policy": {
+                      "allowedViews": []
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "annualPremiumTheme",
+          "name": "Annual Premium theme",
+          "buckets": [
+            {
+              "id": "christmas",
+              "label": "Christmas",
+              "description": "Use christmas theme",
+              "operations": [
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "Payments.AnnualPremium": {
+                        "AnnualPremiumVariant": "christmas"
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "evergreen",
+              "label": "Evergreen",
+              "description": "Use evergreen theme",
+              "operations": [
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "Payments.AnnualPremium": {
+                        "AnnualPremiumVariant": "evergreen"
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disabled",
+              "label": "Disabled",
+              "description": "Do not use any theme",
+              "operations": [
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "Payments.AnnualPremium": {
+                        "AnnualPremiumVariant": "control"
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "emailUpdateEmailConsent",
+          "name": "Email notifications consent in update email modal",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enable email consent checkbox",
+              "operations": [
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "AccountSettings.AccountInfo.UX": {
+                        "emailConsentCheckboxEnabled": true
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disable email consent checkbox",
+              "operations": [
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "AccountSettings.AccountInfo.UX": {
+                        "emailConsentCheckboxEnabled": false
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "friendSuggestions",
+          "name": "Friend suggestions setting",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enable friend suggestions setting",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "account-settings-ui": {
+                      "displayFriendSuggestionsSetting": true
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disable friend suggestions setting",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "account-settings-ui": {
+                      "displayFriendSuggestionsSetting": false
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pageHeartbeatV1",
+          "name": "Page heartbeat V1 analytics",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enable page heartbeat V1 analytics",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "user-heartbeats": {
+                      "isEnabled": true
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disable page heartbeat v1 analytics",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "user-heartbeats": {
+                      "isEnabled": false
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "avatarMarketplaceTopUp",
+          "name": "Avatar Marketplace top-up",
+          "buckets": [
+            {
+              "id": "enableZeroBalance",
+              "label": "Enable with zero balance",
+              "description": "Enable top-up with zero balance",
+              "operations": [
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "AvatarMarketplace.GuidedFeatures": {
+                        "topUpEnabled": true,
+                        "topUpVariant": "zeroBalance"
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "enableLowBalance",
+              "label": "Enable with low balance",
+              "description": "Enable top-up with low balance",
+              "operations": [
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "AvatarMarketplace.GuidedFeatures": {
+                        "topUpEnabled": true,
+                        "topUpVariant": "lowBalance"
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "enableGiftCard",
+              "label": "Enable with Gift Card",
+              "description": "Enable top-up with gift card",
+              "operations": [
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "AvatarMarketplace.GuidedFeatures": {
+                        "topUpEnabled": true,
+                        "topUpVariant": "giftCard"
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disable avatar marketplace top up",
+              "operations": [
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "AvatarMarketplace.GuidedFeatures": {
+                        "topUpEnabled": false,
+                        "topUpVariant": null
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "avatarLCSorting",
+          "name": "Layered clothing sorting",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enable layered clothing sorting",
+              "operations": [
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "Avatar.AvatarExperience": {
+                        "lcSortEnabled": true
+                      },
+                      "AvatarExperience": {
+                        "lcSortEnabled": true
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disable layered clothing sorting",
+              "operations": [
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "Avatar.AvatarExperience": {
+                        "lcSortEnabled": false
+                      },
+                      "AvatarExperience": {
+                        "lcSortEnabled": false
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "avatarChatCameraAvailability",
+          "name": "Avatar Chat availability",
+          "buckets": [
+            {
+              "id": "enableLowSpecAndroid",
+              "label": "Low-Spec Android",
+              "description": "Disabled avatar chat camera on low-spec android devices",
+              "operations": [
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "AvatarChat.DisableOnLowSpecAndroid": {
+                        "DisableOnAndroid": true
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disabled",
+              "label": "Disabled",
+              "description": "No disabled text",
+              "operations": [
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "AvatarChat.DisableOnLowSpecAndroid": {
+                        "DisableOnAndroid": false
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "changeAcceptRequestColor",
+          "name": "Change the color of the accept friend request button",
+          "buckets": [
+            {
+              "id": "primaryColor",
+              "label": "Primary Color",
+              "description": "Sets the color to the primary button color",
+              "operations": [
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "Social.Profile": {
+                        "useProminentFRAcceptCTA": true
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "noColor",
+              "label": "No Color",
+              "description": "Sets the color to transparent",
+              "operations": [
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "Social.Profile": {
+                        "useProminentFRAcceptCTA": false
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "marketplaceDirectPurchase",
+          "name": "Show purchase button for items in Marketplace search",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Show purchase button on item hover",
+              "operations": [
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "AvatarMarketplace.RecommendationsAndSearch.Web": {
+                        "directPurchaseEnabled": true
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Hide purchase button on item hover",
+              "operations": [
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "AvatarMarketplace.RecommendationsAndSearch.Web": {
+                        "directPurchaseEnabled": false
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "hideFullServersJoinButton",
+          "name": "Join button on full experience servers",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Hide join button",
+              "operations": [
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "GameDetails.ServersTab": {
+                        "ShouldDisableJoinButtonForFullServers": true
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Show join button",
+              "operations": [
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "GameDetails.ServersTab": {
+                        "ShouldDisableJoinButtonForFullServers": false
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "showStrongLanguageWarning",
+          "name": "Strong language warning on experiences",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Show strong language warning",
+              "operations": [
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "PlayerApp.GameDetailsPage.Exposure": {
+                        "IsShowContainsStrongLanguageWarningEnabled": true
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Hide strong language warning",
+              "operations": [
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "PlayerApp.GameDetailsPage.Exposure": {
+                        "IsShowContainsStrongLanguageWarningEnabled": false
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "safetySupport",
+          "name": "Safety support in cog dropdown",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Show safety support",
+              "operations": [
+                {
+                  "type": "dom",
+                  "domType": "modify",
+                  "selector": "#navigation-container",
+                  "attributes": {
+                    "data-safety-support-item-rollout": "100"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Hide safety support",
+              "operations": [
+                {
+                  "type": "dom",
+                  "domType": "modify",
+                  "selector": "#navigation-container",
+                  "attributes": {
+                    "data-safety-support-item-rollout": "0"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "giftcardsFooter",
+          "name": "Giftcards in footer",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Show giftcards",
+              "operations": [
+                {
+                  "type": "dom",
+                  "domType": "modify",
+                  "selector": "#footer-container",
+                  "attributes": {
+                    "data-is-giftcards-footer-enabled": "True"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Hide giftcards",
+              "operations": [
+                {
+                  "type": "dom",
+                  "domType": "modify",
+                  "selector": "#footer-container",
+                  "attributes": {
+                    "data-is-giftcards-footer-enabled": "False"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "accountsSwitcher",
+          "name": "Accounts switcher",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enable the accounts switcher",
+              "operations": [
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "Accounts.AccountSwitcher": {
+                        "isAccountSwitcherEnabled": true
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "dom",
+                  "domType": "modify",
+                  "selector": "meta[name=\"account-switching-data\"]",
+                  "attributes": {
+                    "data-is-account-switching-enabled": "true"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disable the accounts switcher",
+              "operations": [
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "Accounts.AccountSwitcher": {
+                        "isAccountSwitcherEnabled": false
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "dom",
+                  "domType": "modify",
+                  "selector": "meta[name=\"account-switching-data\"]",
+                  "attributes": {
+                    "data-is-account-switching-enabled": "false"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "realNames",
+          "name": "Real names for 17+ users",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Allow 17+ users to set display name as real name",
+              "operations": [
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "Social.DisplayNameSetting": {
+                        "AllowRealNames": true
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "display-names": {
+                      "RealNamesInDisplayNamesEnabled": true
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disallow 17+ users to set display name as real name",
+              "operations": [
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "Social.DisplayNameSetting": {
+                        "AllowRealNames": false
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "display-names": {
+                      "RealNamesInDisplayNamesEnabled": false
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "experienceEvents",
+          "name": "Virtual experience events",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enable viewing virtual experience events",
+              "operations": [
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "CreatorSuccess.VirtualEvents": {
+                        "virtualEventsMVPEnabled": true
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disable viewing virtual experience events",
+              "operations": [
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "CreatorSuccess.VirtualEvents": {
+                        "virtualEventsMVPEnabled": false
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "userFriendsJoinButton",
+          "name": "Show Join Button on friend cards for desktop only",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Show join button only on Desktop",
+              "operations": [
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "Social.Friends": {
+                        "show_join_game_button_in_friend_card_desktop_only": true
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Show join button on Desktop and Mobile",
+              "operations": [
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "Social.Friends": {
+                        "show_join_game_button_in_friend_card_desktop_only": false
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "avatarMarketplaceInfiniteScroll",
+          "name": "Avatar Marketplace landing infinite scroll",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enable infinite scrolling on Avatar Marketplace landing",
+              "operations": [
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "AvatarMarketplace.RecommendationsAndSearch": {
+                        "infiniteScroll": true
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disable infinite scrolling on Avatar Marketplace landing",
+              "operations": [
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "AvatarMarketplace.RecommendationsAndSearch": {
+                        "infiniteScroll": false
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pageHeartbeatV2",
+          "name": "Page heartbeat V2 analytics",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enable page heartbeat V2 analytics",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "page-heartbeat-v2": {
+                      "isEnabled": true
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disable page heartbeat V2 analytics",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "page-heartbeat-v2": {
+                      "isEnabled": false
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "voiceToggleInfographic",
+          "name": "Show voice toggle infographic when joining a server",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Show voice toggle infographic",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "free-communication-infographics": {
+                      "showVoiceToggleInfographic": true
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Hide voice toggle infographic",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "free-communication-infographics": {
+                      "showVoiceToggleInfographic": false
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "signupContentRatingLogo",
+          "name": "Show content rating logos on signup page",
+          "buckets": [
+            {
+              "id": "italy",
+              "label": "Italy",
+              "description": "Show Italy content rating logo",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "content-rating-logo": {
+                      "displayItalyRatingLogo": true,
+                      "displayBrazilRatingLogo": false
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "brazil",
+              "label": "Brazil",
+              "description": "Show Brazil content rating logo",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "content-rating-logo": {
+                      "displayBrazilRatingLogo": true,
+                      "displayItalyRatingLogo": false
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "all",
+              "label": "All",
+              "description": "Show all content rating logos",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "content-rating-logo": {
+                      "displayItalyRatingLogo": true,
+                      "displayBrazilRatingLogo": true
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Hide content rating logos",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "content-rating-logo": {
+                      "displayItalyRatingLogo": false,
+                      "displayBrazilRatingLogo": false
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "phoneNumber",
+          "name": "Phone number setting",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Display phone number setting",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "account-settings-ui": {
+                      "displayPhoneNumber": true
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Hide phone number setting",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "account-settings-ui": {
+                      "displayPhoneNumber": false
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "passwordRow",
+          "name": "Password row setting",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Display password row setting",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "account-settings-ui": {
+                      "displayPasswordRow": true
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Hide password row setting",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "account-settings-ui": {
+                      "displayPasswordRow": false
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "parentalSpendControl",
+          "name": "Parental spend control settings",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enable parental spend control",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "account-settings-ui": {
+                      "renamePaymentsToSpendingTab": true,
+                      "displayParentalSpendControl": true,
+                      "displaySpendLimitSettings": true
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disable parental spend control",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "account-settings-ui": {
+                      "renamePaymentsToSpendingTab": false,
+                      "displayParentalSpendControl": false,
+                      "displaySpendLimitSettings": false
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "appPermissionsTab",
+          "name": "Settings App Permissions tab",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enable App Permissions tab",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "account-settings-ui": {
+                      "displayAppPermissionsTab": true
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disable parental controls tab",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "account-settings-ui": {
+                      "displayAppPermissionsTab": false
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cookieBannerV3",
+          "name": "Cookie Banner V3 settings",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enable Cookie Banner V3 settings in the footer",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "cookie-policy": {
+                      "ShouldDisplayCookieBannerV3": true,
+                      "EssentialCookieList": [
+                        {
+                          "cookieName": ".RBXIDCHECK",
+                          "description": "Description.RBXIDCHECK"
+                        },
+                        {
+                          "cookieName": ".ROBLOSECURITY",
+                          "description": "Description.ROBLOSECURITY"
+                        },
+                        {
+                          "cookieName": "GuestData",
+                          "description": "Description.GuestData"
+                        },
+                        {
+                          "cookieName": "RBXEventTrackerV2",
+                          "description": "Description.RBXEventTrackerV2"
+                        },
+                        {
+                          "cookieName": "RBXImageCache",
+                          "description": "Description.RBXImageCache"
+                        },
+                        {
+                          "cookieName": "_cfduid",
+                          "description": "Description._cfduid"
+                        },
+                        {
+                          "cookieName": "_help_center_session",
+                          "description": "Description.HelpCenterSession"
+                        },
+                        {
+                          "cookieName": "_icl_visitor_lang_js",
+                          "description": "Description.IclVisitorLangJs"
+                        },
+                        {
+                          "cookieName": "hasGmid",
+                          "description": "Description.HasGmid"
+                        },
+                        {
+                          "cookieName": "rbx-ip2",
+                          "description": "Description.RbxIp2"
+                        },
+                        {
+                          "cookieName": "wpml_browser_redirect_test",
+                          "description": "Description.WpmlBrowserRedirectTest"
+                        },
+                        {
+                          "cookieName": "_t",
+                          "description": "Description.CookieT"
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disable Cookie Banner V3 settings in the footer",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "cookie-policy": {
+                      "ShouldDisplayCookieBannerV3": false
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "parentalControlsTab",
+          "name": "Settings Parental Controls tab",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enable Parental Controls tab",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "account-settings-ui": {
+                      "displayParentalControlTab": true
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disable parental controls tab",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "account-settings-ui": {
+                      "displayParentalControlTab": false
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "subscriptionsTab",
+          "name": "Settings Subscriptions Tab",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enable subscriptions tab",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "account-settings-ui": {
+                      "displaySubscriptionsTab": true
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disable subscriptions tab",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "account-settings-ui": {
+                      "displaySubscriptionsTab": false
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "billingTab",
+          "name": "Display Billing Tab",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enable billing tab",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "account-settings-ui": {
+                      "displayBillingTab": true
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disable billing tab",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "account-settings-ui": {
+                      "displayBillingTab": false
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "notificationsTab",
+          "name": "Settings Notifications tab",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enable notifications tab",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "account-settings-ui": {
+                      "displayReactNotificationsTab": true
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disable notifications tab",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "account-settings-ui": {
+                      "displayReactNotificationsTab": false
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "voiceChatSettings",
+          "name": "Voice Chat settings",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enable voice chat settings",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "account-settings-ui": {
+                      "displayVoiceChatSettings": true
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disable voice chat settings",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "account-settings-ui": {
+                      "displayVoiceChatSettings": false
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "accountRestrictions",
+          "name": "Account restrictions",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enable account restrictions",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "account-settings-ui": {
+                      "displayAccountRestrictions": true
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disable account restrictions",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "account-settings-ui": {
+                      "displayAccountRestrictions": false
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "displayAdSettings",
+          "name": "Display Ad Privacy Settings",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enable display ad settings",
+              "operations": [
+                {
+                  "type": "json",
+                  "jsonType": "set",
+                  "match": {
+                    "robloxSubdomain": "apis",
+                    "regex": "^/user-settings-api/v1/user-settings/metadata$",
+                    "field": [
+                      "displayAdsSettings"
+                    ]
+                  },
+                  "value": true
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disable display ad settings",
+              "operations": [
+                {
+                  "type": "json",
+                  "jsonType": "set",
+                  "match": {
+                    "robloxSubdomain": "apis",
+                    "regex": "^/user-settings-api/v1/user-settings/metadata$",
+                    "field": [
+                      "displayAdsSettings"
+                    ]
+                  },
+                  "value": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "contactImporting",
+          "name": "Contact importing",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enable contact importing",
+              "operations": [
+                {
+                  "type": "json",
+                  "jsonType": "set",
+                  "match": {
+                    "robloxSubdomain": "apis",
+                    "regex": "^/user-settings-api/v1/user-settings/metadata$",
+                    "field": [
+                      "isDiscoverabilitySettingsEnabled"
+                    ]
+                  },
+                  "value": true
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disable contact importing",
+              "operations": [
+                {
+                  "type": "json",
+                  "jsonType": "set",
+                  "match": {
+                    "robloxSubdomain": "apis",
+                    "regex": "^/user-settings-api/v1/user-settings/metadata$",
+                    "field": [
+                      "isDiscoverabilitySettingsEnabled"
+                    ]
+                  },
+                  "value": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "privateServerJoinRestriction",
+          "name": "Private Server Join restriction",
+          "buckets": [
+            {
+              "id": "Enabled",
+              "label": "Enabled",
+              "description": "Enable private server join restriction",
+              "operations": [
+                {
+                  "type": "json",
+                  "jsonType": "set",
+                  "match": {
+                    "robloxSubdomain": "apis",
+                    "regex": "^/user-settings-api/v1/user-settings/metadata$",
+                    "field": [
+                      "isPrivateServerJoinRestrictionSettingsEnabled"
+                    ]
+                  },
+                  "value": true
+                }
+              ]
+            },
+            {
+              "id": "Disabled",
+              "label": "Disabled",
+              "description": "Disable private server join restriction",
+              "operations": [
+                {
+                  "type": "json",
+                  "jsonType": "set",
+                  "match": {
+                    "robloxSubdomain": "apis",
+                    "regex": "^/user-settings-api/v1/user-settings/metadata$",
+                    "field": [
+                      "isPrivateServerJoinRestrictionSettingsEnabled"
+                    ]
+                  },
+                  "value": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "contactsImport",
+          "name": "Contact importing setting",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enable contacts import",
+              "operations": [
+                {
+                  "type": "json",
+                  "jsonType": "set",
+                  "match": {
+                    "robloxSubdomain": "apis",
+                    "regex": "^/user-settings-api/v1/user-settings/metadata$",
+                    "field": [
+                      "isContactImportFeatureEnabled"
+                    ]
+                  },
+                  "value": true
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disable contacts import",
+              "operations": [
+                {
+                  "type": "json",
+                  "jsonType": "set",
+                  "match": {
+                    "robloxSubdomain": "apis",
+                    "regex": "^/user-settings-api/v1/user-settings/metadata$",
+                    "field": [
+                      "isContactImportFeatureEnabled"
+                    ]
+                  },
+                  "value": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "17PlusDescription",
+          "name": "17+ Age Restriction setting description",
+          "buckets": [
+            {
+              "id": "iosUnavailable",
+              "label": "Enabled with iOS Unavailable text",
+              "description": "Enables the 17+ description with the iOS unavailable message",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "account-settings-ui": {
+                      "display17PlusUnavailableIOSDescription": true,
+                      "display17PlusDescription": true
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enables the 17+ description",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "account-settings-ui": {
+                      "display17PlusDescription": true
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disable the 17+ description",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "account-settings-ui": {
+                      "display17PlusDescription": false
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "updateFriendsAboutMyActivitySetting",
+          "name": "Update Friends About My Activity setting",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enables the update friends about my activity setting",
+              "operations": [
+                {
+                  "type": "json",
+                  "jsonType": "set",
+                  "match": {
+                    "robloxSubdomain": "apis",
+                    "regex": "^/user-settings-api/v1/user-settings/metadata$",
+                    "field": [
+                      "displayUpdateFriendsAboutMyActivitySetting"
+                    ]
+                  },
+                  "value": true
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disables the update friends about my activity setting",
+              "operations": [
+                {
+                  "type": "json",
+                  "jsonType": "set",
+                  "match": {
+                    "robloxSubdomain": "apis",
+                    "regex": "^/user-settings-api/v1/user-settings/metadata$",
+                    "field": [
+                      "displayUpdateFriendsAboutMyActivitySetting"
+                    ]
+                  },
+                  "value": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "invisibleMode",
+          "name": "Invisible mode",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Allows the user to toggle invisible mode",
+              "operations": [
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "Social.Friends": {
+                        "invisibleModeAllowed": true
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Removes the ability for the user to toggle invisible mode",
+              "operations": [
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "Social.Friends": {
+                        "invisibleModeAllowed": false
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "languageListSetting",
+          "name": "Language setting",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enables the language list setting",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "account-settings-ui": {
+                      "displayLanguageList": true
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disables the language list setting",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "account-settings-ui": {
+                      "displayLanguageList": false
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "countryPicker",
+          "name": "Country setting",
+          "buckets": [
+            {
+              "id": "enableSubdivision",
+              "label": "Enabled with subdivisions",
+              "description": "Enables the country setting with subdivisions",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "account-settings-ui": {
+                      "accountCountryPickerEnabled": true,
+                      "enableAccountCountrySubdivisionSetting": true
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enables the country setting",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "account-settings-ui": {
+                      "accountCountryPickerEnabled": true,
+                      "enableAccountCountrySubdivisionSetting": false
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disables the country setting",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "account-settings-ui": {
+                      "accountCountryPickerEnabled": false,
+                      "enableAccountCountrySubdivisionSetting": false
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "birthdateSelectorModal",
+          "name": "Use modal for birthdate selector",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enables the birthdate selector in a modal",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "account-settings-ui": {
+                      "displayBirthdateSelectorInModal": true
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disables the birthdate selector in a modal",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "account-settings-ui": {
+                      "displayBirthdateSelectorInModal": false
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "countryCompliance",
+          "name": "Country compliance",
+          "buckets": [
+            {
+              "id": "vietnamEnabled",
+              "label": "Enabled for Vietnam",
+              "description": "Enables Vietnam compliance with VNG",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "vng-buy-robux": {
+                      "shouldShowVng": true
+                    },
+                    "navigation-header-ui": {
+                      "shouldShowVng": true
+                    },
+                    "intl-auth-compliance": {
+                      "isVNGComplianceEnabled": true,
+                      "verifiedSignupCountry": "Vietnam"
+                    }
+                  }
+                },
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "Website.LandingPage": {
+                        "IsVngLandingPageRedirectEnabled": true,
+                        "IsKoreaEnhancedComplianceEnabled": false,
+                        "isStrictComplianceEnabledForKorea": false,
+                        "IsBrazilEnhancedComplianceEnabled": false
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "koreaEnabled",
+              "label": "Enabled for Korea",
+              "description": "Enables Korea compliance",
+              "operations": [
+                {
+                  "type": "json",
+                  "jsonType": "set",
+                  "match": {
+                    "field": [
+                      "IsKoreaIdVerificationEnabled"
+                    ],
+                    "robloxSubdomain": "auth",
+                    "regex": "^/v1/metadata$"
+                  },
+                  "value": true
+                },
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "Website.LandingPage": {
+                        "IsVngLandingPageRedirectEnabled": false,
+                        "IsKoreaEnhancedComplianceEnabled": true,
+                        "isStrictComplianceEnabledForKorea": true,
+                        "IsBrazilEnhancedComplianceEnabled": false
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "vng-buy-robux": {
+                      "shouldShowVng": false
+                    },
+                    "navigation-header-ui": {
+                      "shouldShowVng": false
+                    },
+                    "intl-auth-compliance": {
+                      "isStrictComplianceEnabled": true,
+                      "idVerificationType": "Korea",
+                      "verifiedSignupCountry": "Korea",
+                      "isVNGComplianceEnabled": false
+                    }
+                  }
+                },
+                {
+                  "type": "dom",
+                  "domType": "modify",
+                  "selector": "#react-landing-container",
+                  "attributes": {
+                    "data-is-korea-id-verification-enabled": "true"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "brazilEnabled",
+              "label": "Enabled for Brazil",
+              "description": "Enables Brazil compliance",
+              "operations": [
+                {
+                  "type": "json",
+                  "jsonType": "set",
+                  "match": {
+                    "field": [
+                      "IsKoreaIdVerificationEnabled"
+                    ],
+                    "robloxSubdomain": "auth",
+                    "regex": "^/v1/metadata$"
+                  },
+                  "value": false
+                },
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "Website.LandingPage": {
+                        "IsVngLandingPageRedirectEnabled": false,
+                        "IsKoreaEnhancedComplianceEnabled": false,
+                        "IsBrazilEnhancedComplianceEnabled": true,
+                        "isStrictComplianceEnabledForKorea": false
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "vng-buy-robux": {
+                      "shouldShowVng": false
+                    },
+                    "navigation-header-ui": {
+                      "shouldShowVng": false
+                    },
+                    "intl-auth-compliance": {
+                      "isStrictComplianceEnabled": true,
+                      "idVerificationType": "Brazil",
+                      "verifiedSignupCountry": "Brazil"
+                    }
+                  }
+                },
+                {
+                  "type": "dom",
+                  "domType": "modify",
+                  "selector": "#react-landing-container",
+                  "attributes": {
+                    "data-is-korea-id-verification-enabled": "false"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disables compliance",
+              "operations": [
+                {
+                  "type": "json",
+                  "jsonType": "set",
+                  "match": {
+                    "field": [
+                      "IsKoreaIdVerificationEnabled"
+                    ],
+                    "robloxSubdomain": "auth",
+                    "regex": "^/v1/metadata$"
+                  },
+                  "value": false
+                },
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "Website.LandingPage": {
+                        "IsVngLandingPageRedirectEnabled": false,
+                        "IsKoreaEnhancedComplianceEnabled": false,
+                        "IsBrazilEnhancedComplianceEnabled": false,
+                        "isStrictComplianceEnabledForBrazil": false
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "vng-buy-robux": {
+                      "shouldShowVng": false
+                    },
+                    "navigation-header-ui": {
+                      "shouldShowVng": false
+                    },
+                    "intl-auth-compliance": {
+                      "isStrictComplianceEnabled": false,
+                      "idVerificationType": null,
+                      "verifiedSignupCountry": null,
+                      "isVNGComplianceEnabled": false
+                    }
+                  }
+                },
+                {
+                  "type": "dom",
+                  "domType": "modify",
+                  "selector": "#react-landing-container",
+                  "attributes": {
+                    "data-is-korea-id-verification-enabled": "false"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "passKeys",
+          "name": "Pass keys",
+          "buckets": [
+            {
+              "id": "enableWithAndroid",
+              "label": "Enabled also on Android",
+              "description": "Enables pass keys on Android as well",
+              "operations": [
+                {
+                  "type": "json",
+                  "jsonType": "set",
+                  "match": {
+                    "field": [
+                      "IsPasskeyFeatureEnabled"
+                    ],
+                    "robloxSubdomain": "auth",
+                    "regex": "^/v1/metadata$"
+                  },
+                  "value": true
+                },
+                {
+                  "type": "dom",
+                  "domType": "modify",
+                  "selector": "[name='passkey-data']",
+                  "attributes": {
+                    "data-is-passkey-login-enabled": "true"
+                  }
+                },
+                {
+                  "type": "dom",
+                  "domType": "modify",
+                  "selector": "[name='passkey-data-android']",
+                  "attributes": {
+                    "data-is-passkey-login-enabled-android": "true"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enables pass keys",
+              "operations": [
+                {
+                  "type": "json",
+                  "jsonType": "set",
+                  "match": {
+                    "field": [
+                      "IsPasskeyFeatureEnabled"
+                    ],
+                    "robloxSubdomain": "auth",
+                    "regex": "^/v1/metadata$"
+                  },
+                  "value": true
+                },
+                {
+                  "type": "dom",
+                  "domType": "modify",
+                  "selector": "[name='passkey-data']",
+                  "attributes": {
+                    "data-is-passkey-login-enabled": "true"
+                  }
+                },
+                {
+                  "type": "dom",
+                  "domType": "modify",
+                  "selector": "[name='passkey-data-android']",
+                  "attributes": {
+                    "data-is-passkey-login-enabled-android": "false"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disables pass keys",
+              "operations": [
+                {
+                  "type": "json",
+                  "jsonType": "set",
+                  "match": {
+                    "field": [
+                      "IsPasskeyFeatureEnabled"
+                    ],
+                    "robloxSubdomain": "auth",
+                    "regex": "^/v1/metadata$"
+                  },
+                  "value": false
+                },
+                {
+                  "type": "dom",
+                  "domType": "modify",
+                  "selector": "[name='passkey-data']",
+                  "attributes": {
+                    "data-is-passkey-login-enabled": "false"
+                  }
+                },
+                {
+                  "type": "dom",
+                  "domType": "modify",
+                  "selector": "[name='passkey-data-android']",
+                  "attributes": {
+                    "data-is-passkey-login-enabled-android": "false"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "displayGroupShout",
+          "name": "Display group shout",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enables group shout",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "group-details-ui": {
+                      "displayShout": true
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disables displaying group shout",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "group-details-ui": {
+                      "displayShout": false
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "displayGroupDescription",
+          "name": "Display group description",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enables displaying group description",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "group-details-ui": {
+                      "displayDescription": true
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disables displaying group description",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "group-details-ui": {
+                      "displayDescription": false
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "displayGroupMembers",
+          "name": "Display group members",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enables displaying group members",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "group-details-ui": {
+                      "displayMembers": true
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disables displaying group members",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "group-details-ui": {
+                      "displayMembers": false
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "usernameSuggestions",
+          "name": "Signup username suggestions",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enables signup username suggestions",
+              "operations": [
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "Website.LandingPage": {
+                        "IsUsernameSuggestionEnabled": true
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disables signup username suggestions",
+              "operations": [
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "Website.LandingPage": {
+                        "IsUsernameSuggestionEnabled": false
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "updatedOTPCodeDesign",
+          "name": "Updated login OTP code design",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enables updated login OTP code design",
+              "operations": [
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "Website.Login": {
+                        "IsLoginUiUpdatesEnabled": true
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disables updated login OTP code design",
+              "operations": [
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "Website.Login": {
+                        "IsLoginUiUpdatesEnabled": false
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "searchExperienceAutocomplete",
+          "name": "Experience search autocomplete",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enables top navigation search experience autocomplete",
+              "operations": [
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "Website.TopNavSearchBox": {
+                        "ixpDisableGamesAutocomplete": false
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disables top navigation search experience autocomplete",
+              "operations": [
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "Website.TopNavSearchBox": {
+                        "ixpDisableGamesAutocomplete": true
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "percent20MoreRobuxPackages",
+          "name": "Show 20% more Robux banner in redeem",
+          "buckets": [
+            {
+              "id": "enableUK",
+              "label": "Enabled for UK",
+              "description": "Enables 20% more robux packages for UK",
+              "operations": [
+                {
+                  "type": "json",
+                  "jsonType": "set",
+                  "match": {
+                    "field": [
+                      "twentyPercentMoreRobuxCanadaExpVariant"
+                    ],
+                    "robloxSubdomain": "premiumfeatures",
+                    "regex": "^/v1/products$"
+                  },
+                  "value": 1
+                },
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "Payments.BuyRobux.TwentyPercentMoreRobux": {
+                        "packagesVariant": 1
+                      },
+                      "Payments.BuyRobux.TwentyPercentMoreRobux.Brazil": {
+                        "packagesVariant": null
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "enableBrazil",
+              "label": "Enabled for Brazil",
+              "description": "Enables 20% more robux packages for Brazil",
+              "operations": [
+                {
+                  "type": "json",
+                  "jsonType": "set",
+                  "match": {
+                    "field": [
+                      "twentyPercentMoreRobuxCanadaExpVariant"
+                    ],
+                    "robloxSubdomain": "premiumfeatures",
+                    "regex": "^/v1/products$"
+                  },
+                  "value": null
+                },
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "Payments.BuyRobux.TwentyPercentMoreRobux": {
+                        "packagesVariant": null
+                      },
+                      "Payments.BuyRobux.TwentyPercentMoreRobux.Brazil": {
+                        "packagesVariant": 1
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "enableCanada",
+              "label": "Enabled for Canada",
+              "description": "Enables 20% more robux packages for Canada",
+              "operations": [
+                {
+                  "type": "json",
+                  "jsonType": "set",
+                  "match": {
+                    "field": [
+                      "twentyPercentMoreRobuxCanadaExpVariant"
+                    ],
+                    "robloxSubdomain": "premiumfeatures",
+                    "regex": "^/v1/products$"
+                  },
+                  "value": 1
+                },
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "Payments.BuyRobux.TwentyPercentMoreRobux": {
+                        "packagesVariant": null
+                      },
+                      "Payments.BuyRobux.TwentyPercentMoreRobux.Brazil": {
+                        "packagesVariant": null
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disables 20% more robux packages",
+              "operations": [
+                {
+                  "type": "json",
+                  "jsonType": "set",
+                  "match": {
+                    "field": [
+                      "twentyPercentMoreRobuxCanadaExpVariant"
+                    ],
+                    "robloxSubdomain": "premiumfeatures",
+                    "regex": "^/v1/products$"
+                  },
+                  "value": null
+                },
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "Payments.BuyRobux.TwentyPercentMoreRobux": {
+                        "packagesVariant": null
+                      },
+                      "Payments.BuyRobux.TwentyPercentMoreRobux.Brazil": {
+                        "packagesVariant": null
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "screenTimeRestrictions",
+          "name": "Parental screen time restrictions setting",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enables parental screen time restrictions",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "parent-screen-time-restrictions": {
+                      "enableParentalScreenTimeControls": true
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disables parental screen time restrictions",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "parent-screen-time-restrictions": {
+                      "enableParentalScreenTimeControls": false
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "messagesNews",
+          "name": "News tab in messages",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enables news tab in messages",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "private-messages-ui": {
+                      "displayNewsTab": true
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disables news tab in messages",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "private-messages-ui": {
+                      "displayNewsTab": false
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "securityKeys",
+          "name": "2SV Security keys",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enables security keys",
+              "operations": [
+                {
+                  "type": "json",
+                  "jsonType": "override",
+                  "match": {
+                    "robloxSubdomain": "twostepverification",
+                    "regex": "^/v1/metadata$"
+                  },
+                  "value": {
+                    "isSecurityKeyTwoStepVerificationAvailable": true,
+                    "isSecurityKeyOnAllPlatformsEnabled": true
+                  }
+                }
+              ]
+            },
+            {
+              "id": "enableAndroid",
+              "label": "Enabled for Web/Android",
+              "description": "Enables security keys for Web and Android",
+              "operations": [
+                {
+                  "type": "json",
+                  "jsonType": "override",
+                  "match": {
+                    "robloxSubdomain": "twostepverification",
+                    "regex": "^/v1/metadata$"
+                  },
+                  "value": {
+                    "isSecurityKeyTwoStepVerificationAvailable": true,
+                    "isSecurityKeyOnAllPlatformsEnabled": true,
+                    "isAndroidSecurityKeyEnabled": true
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disables security keys",
+              "operations": [
+                {
+                  "type": "json",
+                  "jsonType": "override",
+                  "match": {
+                    "robloxSubdomain": "twostepverification",
+                    "regex": "^/v1/metadata$"
+                  },
+                  "value": {
+                    "isSecurityKeyTwoStepVerificationAvailable": false,
+                    "isSecurityKeyOnAllPlatformsEnabled": false,
+                    "isAndroidSecurityKeyEnabled": false
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "displayGroupRank",
+          "name": "Display group rank",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enables displaying group rank",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "group-details-ui": {
+                      "displayRank": true
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disables displaying group rank",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "group-details-ui": {
+                      "displayRank": false
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "displayGroupAnnouncements",
+          "name": "Group guilded announcements",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Show guilded announcements in group",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "group-details-ui": {
+                      "displayGroupAnnouncements": true
+                    },
+                    "configure-group-ui": {
+                      "displayGroupGuildedConfiguration": true
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Do not show group guilded announcements",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "group-details-ui": {
+                      "displayGroupAnnouncements": false
+                    },
+                    "configure-group-ui": {
+                      "displayGroupGuildedConfiguration": false
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "groupMarketplaceEmbed",
+          "name": "Embed avatar item links in Guilded announcements",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enables displaying group marketplace embed",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "group-details-ui": {
+                      "displayMarketplaceEmbed": true
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disables displaying group marketplace embed",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "group-details-ui": {
+                      "displayMarketplaceEmbed": false
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "playButtonAgeOverlay",
+          "name": "Show age verification overlay on play button click",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enables showing age verification overlay on play button click",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "play-button-ui": {
+                      "playButtonOverlayWebFlag": true
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Disables showing age verification overlay on play button click",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "play-button-ui": {
+                      "playButtonOverlayWebFlag": false
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "playButtonVoiceOverlay",
+          "name": "Show voice opt-in overlay on play button click",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enables showing voice opt-in overlay on play button click",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "play-button-ui": {
+                      "voiceOptInWebFlag": true
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disables showing voice opt-in overlay on play button click",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "play-button-ui": {
+                      "voiceOptInWebFlag": false
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "playButtonExplicitVoiceConsent",
+          "name": "Require explicit voice consent on play button click",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enables requiring explicit voice consent",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "play-button-ui": {
+                      "requireExplicitVoiceConsent": true
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disables requiring explicit voice consent",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "play-button-ui": {
+                      "requireExplicitVoiceConsent": false
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "playButtonAvatarOverlay",
+          "name": "Show avatar chat upsell on play button click",
+          "buckets": [
+            {
+              "id": "enableO13",
+              "label": "Enabled for 13+",
+              "description": "Enables showing avatar chat overlay on play button click for 13+ users",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "play-button-ui": {
+                      "cameraOptInWebFlag": true,
+                      "cameraOptInWebFlagU13": false
+                    }
+                  }
+                },
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "1": {
+                      "Voice.AvatarChat.U13Upsell": {
+                        "ShouldShowUpsell": false
+                      },
+                      "Voice.AvatarChat.Upsell": {
+                        "ShouldShowUpsell": true
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "enableU13",
+              "label": "Enabled for <13 users",
+              "description": "Enables showing avatar chat overlay on play button click for <13 users",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "play-button-ui": {
+                      "cameraOptInWebFlag": false,
+                      "cameraOptInWebFlagU13": true
+                    }
+                  }
+                },
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "1": {
+                      "Voice.AvatarChat.U13Upsell": {
+                        "ShouldShowUpsell": true
+                      },
+                      "Voice.AvatarChat.Upsell": {
+                        "ShouldShowUpsell": false
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disables showing avatar chat overlay on play button click",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "play-button-ui": {
+                      "cameraOptInWebFlag": false,
+                      "cameraOptInWebFlagU13": false
+                    }
+                  }
+                },
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "1": {
+                      "Voice.AvatarChat.U13Upsell": {
+                        "ShouldShowUpsell": false
+                      },
+                      "Voice.AvatarChat.Upsell": {
+                        "ShouldShowUpsell": false
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "playButtonVoiceOverlayV2Design",
+          "name": "Use V2 design Voice chat upsell on play button click",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enables the V2 design for voice chat upsell on play button click",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "play-button-ui": {
+                      "useVoiceUpsellV2Design": true
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disables the V2 design for voice chat upsell on play button click",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "play-button-ui": {
+                      "useVoiceUpsellV2Design": false
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "playButtonAvatarOverlayU13Design",
+          "name": "Use <13 design for avatar chat upsell on play button click",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enables the <13 design for avatar chat upsell on play button click",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "play-button-ui": {
+                      "useCameraU13Design": true
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disables the <13 design for avatar chat upsell on play button click",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "play-button-ui": {
+                      "useCameraU13Design": false
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "checkGroupAccessible",
+          "name": "Check if current group page is accessible",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enables checking group accessibility",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "group-details-ui": {
+                      "checkGroupOrigin": true
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disables checking group accessibility",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "group-details-ui": {
+                      "checkGroupOrigin": false
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "displayGroupWall",
+          "name": "Display Group wall",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enables displaying wall",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "group-details-ui": {
+                      "displayWall": true
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disables displaying wall",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "group-details-ui": {
+                      "displayWall": false
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "receiveWarningsOnDisable2SV",
+          "name": "Receive warnings on disabling 2SV",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enables receiving warnings on disabling 2SV",
+              "operations": [
+                {
+                  "type": "json",
+                  "jsonType": "set",
+                  "match": {
+                    "robloxSubdomain": "twostepverification",
+                    "field": [
+                      "receiveWarningsOnDisableTwoStep"
+                    ],
+                    "regex": "^/v1/metadata$"
+                  },
+                  "value": true
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disables receiving warnings on disabling 2SV",
+              "operations": [
+                {
+                  "type": "json",
+                  "jsonType": "set",
+                  "match": {
+                    "robloxSubdomain": "twostepverification",
+                    "field": [
+                      "receiveWarningsOnDisableTwoStep"
+                    ],
+                    "regex": "^/v1/metadata$"
+                  },
+                  "value": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "authenticatorWithVerifiedPhone",
+          "name": "Authenticator with verified phone number",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enables authenticator with verified phone number",
+              "operations": [
+                {
+                  "type": "json",
+                  "jsonType": "set",
+                  "match": {
+                    "field": [
+                      "isAuthenticatorWithVerifiedPhoneEnabled"
+                    ],
+                    "robloxSubdomain": "twostepverification",
+                    "regex": "^/v1/metadata$"
+                  },
+                  "value": true
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disables authenticator with verified phone number",
+              "operations": [
+                {
+                  "type": "json",
+                  "jsonType": "set",
+                  "match": {
+                    "field": [
+                      "isAuthenticatorWithVerifiedPhoneEnabled"
+                    ],
+                    "robloxSubdomain": "twostepverification",
+                    "regex": "^/v1/metadata$"
+                  },
+                  "value": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "twoStepVerification",
+          "name": "Two step verification",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enables two step verification",
+              "operations": [
+                {
+                  "type": "json",
+                  "jsonType": "set",
+                  "match": {
+                    "field": [
+                      "twoStepVerificationEnabled"
+                    ],
+                    "robloxSubdomain": "twostepverification",
+                    "regex": "^/v1/metadata$"
+                  },
+                  "value": true
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disables two step verification",
+              "operations": [
+                {
+                  "type": "json",
+                  "jsonType": "set",
+                  "match": {
+                    "field": [
+                      "twoStepVerificationEnabled"
+                    ],
+                    "robloxSubdomain": "twostepverification",
+                    "regex": "^/v1/metadata$"
+                  },
+                  "value": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "changeUsername",
+          "name": "Change username setting",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enables the change username feature",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "account-settings-ui": {
+                      "displayChangeUsername": true
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disables the change username feature",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "account-settings-ui": {
+                      "displayChangeUsername": false
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "displaySocialMedia",
+          "name": "Social media linking",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enables social media linking",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "account-settings-ui": {
+                      "displaySocialMedia": true
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disables social media linking",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "account-settings-ui": {
+                      "displaySocialMedia": false
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "displayTradeQualityFilter",
+          "name": "Trade Quality filter setting",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enables the trade quality filter setting",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "account-settings-ui": {
+                      "displayTradeQualityFilter": true
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disables the trade quality filter setting",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "account-settings-ui": {
+                      "displayTradeQualityFilter": false
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "displayGuildedSocialLink",
+          "name": "Guilded social link",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enables the Guilded social link",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "account-settings-ui": {
+                      "displayGuildedSocialLink": true
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disables the Guilded social link",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "account-settings-ui": {
+                      "displayGuildedSocialLink": false
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "accountDeactivationButton",
+          "name": "Account Deactivation button",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Display account deactivation button",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "account-settings-ui": {
+                      "displayAccountDeactivation": true
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Hide account deactivation button",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "account-settings-ui": {
+                      "displayAccountDeactivation": false
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "accountDeletionButton",
+          "name": "Account Deletion initiate button",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Display account deletion button",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "account-settings-ui": {
+                      "displayAccountDeletion": true
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Hide account deletion button",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "account-settings-ui": {
+                      "displayAccountDeletion": false
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "reactAvatarMarketplace",
+          "name": "React Avatar Marketplace search",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Use React Avatar Marketplace search",
+              "operations": [
+                {
+                  "type": "dom",
+                  "domType": "modify",
+                  "selector": "[catalog-page]",
+                  "attributes": {
+                    "id": "catalog-react-container"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Use Angular Avatar Marketplace search",
+              "operations": [
+                {
+                  "type": "dom",
+                  "domType": "modify",
+                  "selector": "[catalog-page]",
+                  "attributes": {
+                    "id": null
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "newVoiceConsentModal",
+          "name": "New Voice Consent modal",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enable new voice consent modal",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "account-settings-ui": {
+                      "displayNewVoiceConsentModalCopy": true
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disable new voice consent modal",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "account-settings-ui": {
+                      "displayNewVoiceConsentModalCopy": false
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "parentalControlsExtendedDescription",
+          "name": "Parental Controls settings extended parents description",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enables extended parental controls description",
+              "operations": [
+                {
+                  "type": "json",
+                  "jsonType": "set",
+                  "match": {
+                    "robloxSubdomain": "apis",
+                    "regex": "^/user-settings-api/v1/user-settings/metadata$",
+                    "field": [
+                      "useExtendedParentControlsText"
+                    ]
+                  },
+                  "value": true
+                }
+              ]
+            },
+            {
+              "id": "enable",
+              "label": "Disabled",
+              "description": "Disables extended parental controls description",
+              "operations": [
+                {
+                  "type": "json",
+                  "jsonType": "set",
+                  "match": {
+                    "robloxSubdomain": "apis",
+                    "regex": "^/user-settings-api/v1/user-settings/metadata$",
+                    "field": [
+                      "useExtendedParentControlsText"
+                    ]
+                  },
+                  "value": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "hideInventory",
+          "name": "Hide inventory setting",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enables the ability to hide inventory",
+              "operations": [
+                {
+                  "type": "json",
+                  "jsonType": "set",
+                  "match": {
+                    "robloxSubdomain": "www",
+                    "regex": "^/my/settings/json$",
+                    "field": [
+                      "CanHideInventory"
+                    ]
+                  },
+                  "value": true
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disables the ability to hide inventory",
+              "operations": [
+                {
+                  "type": "json",
+                  "jsonType": "set",
+                  "match": {
+                    "robloxSubdomain": "www",
+                    "regex": "^/my/settings/json$",
+                    "field": [
+                      "CanHideInventory"
+                    ]
+                  },
+                  "value": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "userDisplayNames",
+          "name": "User display names",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enables the ability to change and view display names",
+              "operations": [
+                {
+                  "type": "dom",
+                  "domType": "modify",
+                  "selector": "#roblox-display-names",
+                  "attributes": {
+                    "data-enabled": "true"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disables the ability to change and view display names",
+              "operations": [
+                {
+                  "type": "dom",
+                  "domType": "modify",
+                  "selector": "#roblox-display-names",
+                  "attributes": {
+                    "data-enabled": "false"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2svSingleMethodEnforcement",
+          "name": "2SV Single Method Eeforcement",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enables single method 2SV enforcement",
+              "operations": [
+                {
+                  "type": "json",
+                  "jsonType": "set",
+                  "match": {
+                    "robloxSubdomain": "twostepverification",
+                    "regex": "^/v1/metadata$",
+                    "field": [
+                      "isSingleMethodEnforcementEnabled"
+                    ]
+                  },
+                  "value": true
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disables single method 2SV enforcement",
+              "operations": [
+                {
+                  "type": "json",
+                  "jsonType": "set",
+                  "match": {
+                    "robloxSubdomain": "twostepverification",
+                    "regex": "^/v1/metadata$",
+                    "field": [
+                      "isSingleMethodEnforcementEnabled"
+                    ]
+                  },
+                  "value": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2svSMSMethod",
+          "name": "2SV SMS method",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enables the ability to use SMS as a 2SV method",
+              "operations": [
+                {
+                  "type": "json",
+                  "jsonType": "set",
+                  "match": {
+                    "robloxSubdomain": "twostepverification",
+                    "regex": "^/v1/metadata$",
+                    "field": [
+                      "isSmsTwoStepVerificationAvailable"
+                    ]
+                  },
+                  "value": true
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disables the ability to use SMS as a 2SV method",
+              "operations": [
+                {
+                  "type": "json",
+                  "jsonType": "set",
+                  "match": {
+                    "robloxSubdomain": "twostepverification",
+                    "regex": "^/v1/metadata$",
+                    "field": [
+                      "isSmsTwoStepVerificationAvailable"
+                    ]
+                  },
+                  "value": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "parentalControlsV2",
+          "name": "Parental Controls V2 and redesigned Privacy Settings",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enable parental controls V2 menu",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "account-settings-ui": {
+                      "isParentalControlsV2Enabled": true
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disable parental controls V2 menu",
+              "operations": [
+                {
+                  "type": "guac",
+                  "guacType": "override",
+                  "overrides": {
+                    "account-settings-ui": {
+                      "isParentalControlsV2Enabled": false
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "expandedHomePage",
+          "name": "Expanded home page",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Remove ads and expand home page content",
+              "operations": [
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "Website.Homepage": {
+                        "IsExpandHomeContentEnabled": true
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "dom",
+                  "domType": "modify",
+                  "selector": ".home-container",
+                  "classList": {
+                    "add": [
+                      "expand-max-width"
+                    ]
+                  }
+                },
+                {
+                  "type": "dom",
+                  "domType": "remove",
+                  "selector": ".abp-container"
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Restore home page content size",
+              "operations": [
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "Website.Homepage": {
+                        "IsExpandHomeContentEnabled": false
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "dom",
+                  "domType": "modify",
+                  "selector": ".home-container",
+                  "classList": {
+                    "remove": [
+                      "expand-max-width"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Reseller trade button",
+          "id": "resellerTradeButton",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enable the reseller trade button",
+              "operations": [
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "AvatarMarketplace.UI": {
+                        "showResellerTradeButton": true
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disable the reseller trade button",
+              "operations": [
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "AvatarMarketplace.UI": {
+                        "showResellerTradeButton": false
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Group announcement notifications upsell",
+          "id": "groupAnnouncementNotifications",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enable the group announcement notifications upsell",
+              "operations": [
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "UserCommunities.Groups.Notifications": {
+                        "notificationsUpsellConfig": {
+                          "inTreatment": true
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disable the group announcement notifications upsell",
+              "operations": [
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "UserCommunities.Groups.Notifications": {
+                        "notificationsUpsellConfig": {
+                          "inTreatment": false
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Experience guilded linking",
+          "id": "experienceGuildedLinking",
+          "buckets": [
+            {
+              "id": "enable",
+              "label": "Enabled",
+              "description": "Enable guilded experience linking",
+              "operations": [
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "UserCommunities.EDP.CommunityLinks": {
+                        "communityLinkDisplayConfig": {
+                          "inTreatment": false
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "disable",
+              "label": "Disabled",
+              "description": "Disable guilded experience linking",
+              "operations": [
+                {
+                  "type": "ixp",
+                  "ixpType": "override",
+                  "overrides": {
+                    "1": {
+                      "UserCommunities.EDP.CommunityLinks": {
+                        "communityLinkDisplayConfig": {
+                          "inTreatment": false
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
