@@ -30,4 +30,6 @@
 }, {
   "name": "BodyColors3s",
   "versions": ["1.3.45"]
+}, {
+  "name": "UserProfileLastOnline"
 }]
