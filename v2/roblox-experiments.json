@@ -9,7 +9,7 @@
         "buckets": [{
           "id": "disable",
           "label": "Enabled",
-          "descriptpion": "Hide favorites count",
+          "description": "Hide favorites count",
           "operations": [{
             "type": "guac",
             "guacType": "override",
