@@ -15,7 +15,7 @@
             "guacType": "override",
             "overrides": {
               "app-policy": {
-                "EnableAggregateLikesFavoritesCount": true
+                "EnableAggregateLikesFavoritesCount": false
               }
             }
           }]
