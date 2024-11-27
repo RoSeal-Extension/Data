@@ -4,11 +4,138 @@
     "name": "Main Website",
     "experiments": [
       {
-        "id": "removePremiumBilling",
-        "name": "Remvoe premium in billing",
+        "id": "hideItemFavoritesCount",
+        "name": "Hide avatar item favorites count",
+        "buckets": [{
+          "id": "disable",
+          "label": "Enabled",
+          "descriptpion": "Hide favorites count",
+          "operations": [{
+            "type": "guac",
+            "guacType": "override",
+            "overrides": {
+              "app-policy": {
+                "EnableAggregateLikesFavoritesCount": true
+              }
+            }
+          }]
+        }, {
+          "id": "disable",
+          "label": "Disabled",
+          "description": "Show favorites count",
+          "operations": [{
+            "type": "guac",
+            "guacType": "override",
+            "overrides": {
+              "app-policy": {
+                "EnableAggregateLikesFavoritesCount": true
+              }
+            }
+          }]
+        }]
+      },
+      {
+        "id": "chatKeystrokeCollection",
+        "name": "Log keystrokes in chat conversations",
         "buckets": [{
           "id": "enable",
           "label": "Enabled",
+          "description": "Enable keystroke collection",
+          "operations": [{
+            "type": "guac",
+            "guacType": "override",
+            "overrides": {
+              "app-policy": {
+                "EnableKeystrokeCollection": true
+              }
+            }
+          }]
+        }, {
+          "id": "disable",
+          "label": "Disabled",
+          "description": "Disable keystroke collection",
+          "operations": [{
+            "type": "guac",
+            "guacType": "override",
+            "overrides": {
+              "app-policy": {
+                "EnableKeystrokeCollection": false
+              }
+            }
+          }]
+        }]
+      },
+      {
+        "id": "vpcPlayButtonUpsells",
+        "name": "Show VPC play button upsells ",
+        "buckets": [{
+          "id": "enable",
+          "label": "Enabled",
+          "description": "Show VPC play button upsells",
+          "operations": [{
+            "type": "guac",
+            "guacType": "override",
+            "overrides": {
+              "app-policy": {
+                "shouldShowVpcPlayButtonUpsells": true
+              }
+            }
+          }]
+        }, {
+          "id": "disable",
+          "label": "Disabled",
+          "description": "Do not show VPC play button upsells",
+          "operations": [{
+            "type": "guac",
+            "guacType": "override",
+            "overrides": {
+              "app-policy": {
+                "shouldShowVpcPlayButtonUpsells": false
+              }
+            }
+          }]
+        }]
+      },
+      {
+        "id": "texasU18VPC",
+        "name": "Texas under 18 VPC",
+        "buckets": [{
+          "id": "enable",
+          "labeL": "Enabled",
+          "description": "Enable under 18 VPC in Texas",
+          "operations": [{
+            "type": "guac",
+            "guacType": "override",
+            "overrides": {
+              "texas-u18-vpc-optimization": {
+                "texasU18VPCOptimizationEnabled": true,
+                "texasU18VPCOptimizationEnabledForEveryone": true
+              }
+            }
+          }]
+        }, {
+          "id": "disable",
+          "labeL": "Disabled",
+          "description": "Disable under 18 VPC in Texas",
+          "operations": [{
+            "type": "guac",
+            "guacType": "override",
+            "overrides": {
+              "texas-u18-vpc-optimization": {
+                "texasU18VPCOptimizationEnabled": false,
+                "texasU18VPCOptimizationEnabledForEveryone": false
+              }
+            }
+          }]
+        }]
+      },
+      {
+        "id": "removePremiumBilling",
+        "name": "Remove primary premium view in billing",
+        "buckets": [{
+          "id": "enable",
+          "label": "Enabled",
+          "descritpion": "Show Premium as a sub-subscription",
           "operations": [
             {
               "type": "json",
@@ -26,6 +153,7 @@
         }, {
           "id": "disable",
           "label": "Disabled",
+          "description": "Show Premium in billing settings",
           "operations": [
             {
               "type": "json",
@@ -49,6 +177,7 @@
           {
             "id": "enable",
             "label": "Enabled",
+            "description": "Allow horizontal scroll on carousels",
             "operations": [
               {
                 "type": "ixp",
@@ -66,6 +195,7 @@
           {
             "id": "disable",
             "label": "Disabled",
+            "description": "Do not allow horizontal scroll on carousels",
             "operations": [
               {
                 "type": "ixp",
@@ -89,6 +219,7 @@
           {
             "id": "enable",
             "label": "Enabled",
+            "description": "Use new scroll arrows",
             "operations": [
               {
                 "type": "ixp",
@@ -104,6 +235,7 @@
           {
             "id": "disable",
             "label": "Disabled",
+            "description": "Use old scroll arrows",
             "operations": [
               {
                 "type": "ixp",
@@ -125,6 +257,7 @@
           {
             "id": "enable",
             "label": "Enabled",
+            "description": "Show updated play buttons",
             "operations": [
               {
                 "type": "ixp",
@@ -140,6 +273,7 @@
           {
             "id": "disable",
             "label": "Disabled",
+            "description": "Do not show updated play buttons",
             "operations": [
               {
                 "type": "ixp",
@@ -2078,12 +2212,12 @@
       },
       {
         "id": "avatarMarketplaceInfiniteScroll",
-        "name": "Avatar Marketplace landing infinite scroll",
+        "name": "Avatar Marketplace infinite scroll",
         "buckets": [
           {
             "id": "enable",
             "label": "Enabled",
-            "description": "Enable infinite scrolling on Avatar Marketplace landing",
+            "description": "Enable infinite scrolling on Avatar Marketplace",
             "operations": [
               {
                 "type": "ixp",
@@ -2095,13 +2229,22 @@
                     }
                   }
                 }
+              },
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "app-policy": {
+                    "EnableContinuousLoad": true
+                  }
+                }
               }
             ]
           },
           {
             "id": "disable",
             "label": "Disabled",
-            "description": "Disable infinite scrolling on Avatar Marketplace landing",
+            "description": "Disable infinite scrolling on Avatar Marketplace",
             "operations": [
               {
                 "type": "ixp",
@@ -2111,6 +2254,15 @@
                     "AvatarMarketplace.RecommendationsAndSearch": {
                       "infiniteScroll": false
                     }
+                  }
+                }
+              },
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "app-policy": {
+                    "EnableContinuousLoad": false
                   }
                 }
               }
