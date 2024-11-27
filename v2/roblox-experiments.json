@@ -4,6 +4,45 @@
     "name": "Main Website",
     "experiments": [
       {
+        "id": "removePremiumBilling",
+        "name": "Remvoe premium in billing",
+        "buckets": [{
+          "id": "enable",
+          "label": "Enabled",
+          "operations": [
+            {
+              "type": "json",
+              "jsonType": "set",
+              "match": {
+                "field": [
+                  "isPaymentMethodChangesEnabled"
+                ],
+                "robloxSubdomain": "apis",
+                "regex": "^/v1/subscriptions/metadata$"
+              },
+              "value": true
+            }
+          ]
+        }, {
+          "id": "disable",
+          "label": "Disabled",
+          "operations": [
+            {
+              "type": "json",
+              "jsonType": "set",
+              "match": {
+                "field": [
+                  "isPaymentMethodChangesEnabled"
+                ],
+                "robloxSubdomain": "apis",
+                "regex": "^/v1/subscriptions/metadata$"
+              },
+              "value": false
+            }
+          ]
+        }]
+      },
+      {
         "id": "homePageHorizontalScroll",
         "name": "Home page horizontal scroll",
         "buckets": [
