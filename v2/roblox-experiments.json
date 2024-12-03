@@ -350,7 +350,7 @@
                 "ixpType": "override",
                 "overrides": {
                   "1": {
-                    "Website.GameDetails": {
+                    "Website.GameDetails.Exposure": {
                       "IsEventsSectionUprankEnabled": true
                     }
                   }
@@ -368,7 +368,7 @@
                 "ixpType": "override",
                 "overrides": {
                   "1": {
-                    "Website.GameDetails": {
+                    "Website.GameDetails.Exposure": {
                       "IsEventsSectionUprankEnabled": false
                     }
                   }
@@ -392,7 +392,7 @@
                 "ixpType": "override",
                 "overrides": {
                   "1": {
-                    "Website.GameDetails": {
+                    "Website.GameDetails.Exposure": {
                       "IsEventsSectionRedesignEnabled": true
                     }
                   }
@@ -410,7 +410,7 @@
                 "ixpType": "override",
                 "overrides": {
                   "1": {
-                    "Website.GameDetails": {
+                    "Website.GameDetails.Exposure": {
                       "IsEventsSectionRedesignEnabled": false
                     }
                   }
