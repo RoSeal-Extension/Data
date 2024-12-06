@@ -7,7 +7,7 @@
         "id": "hideItemFavoritesCount",
         "name": "Hide avatar item favorites count",
         "buckets": [{
-          "id": "disable",
+          "id": "enable",
           "label": "Enabled",
           "description": "Hide favorites count",
           "operations": [{
