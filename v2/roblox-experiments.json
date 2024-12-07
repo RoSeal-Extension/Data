@@ -4,6 +4,54 @@
     "name": "Main Website",
     "experiments": [
       {
+        "id": "downloadDeferredDeeplinkToken",
+        "name": "Deferred deeplink token creation on installer download",
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enables deferred deeplink token creation",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "ExperienceDetailsPage.Windows.ClientDownload": {
+                      "isDeferredDeeplinkTokenCreationEnabled": true
+                    },
+                    "ExperienceDetailsPage.ClientDownload": {
+                      "isDeferredDeeplinkTokenCreationEnabled": true
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disables deferred deeplink creation",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "ExperienceDetailsPage.Windows.ClientDownload": {
+                      "isDeferredDeeplinkTokenCreationEnabled": false
+                    },
+                    "ExperienceDetailsPage.ClientDownload": {
+                      "isDeferredDeeplinkTokenCreationEnabled": false
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
         "id": "hideItemFavoritesCount",
         "name": "Hide avatar item favorites count",
         "buckets": [{
@@ -101,7 +149,7 @@
         "name": "Texas under 18 VPC",
         "buckets": [{
           "id": "enable",
-          "labeL": "Enabled",
+          "label": "Enabled",
           "description": "Enable under 18 VPC in Texas",
           "operations": [{
             "type": "guac",
@@ -115,7 +163,7 @@
           }]
         }, {
           "id": "disable",
-          "labeL": "Disabled",
+          "label": "Disabled",
           "description": "Disable under 18 VPC in Texas",
           "operations": [{
             "type": "guac",
