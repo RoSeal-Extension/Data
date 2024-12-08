@@ -563,6 +563,9 @@
                 "overrides": {
                   "configure-group-ui": {
                     "displayGroupForumsConfiguration": true
+                  },
+                  "group-details-ui": {
+                    "displayGroupForums": true
                   }
                 }
               }
@@ -579,6 +582,9 @@
                 "overrides": {
                   "configure-group-ui": {
                     "displayGroupForumsConfiguration": false
+                  },
+                  "group-details-ui": {
+                    "displayGroupForums": false
                   }
                 }
               }
