@@ -3223,7 +3223,7 @@
       },
       {
         "id": "invisibleMode",
-        "name": "Invisible mode",
+        "name": "Invisible mode (shelved, does not work)",
         "buckets": [
           {
             "id": "enable",
