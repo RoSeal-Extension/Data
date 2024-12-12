@@ -53,11 +53,11 @@
       },
       {
         "id": "hideItemFavoritesCount",
-        "name": "Hide avatar item favorites count",
+        "name": "Hide favorites, likes, and dislikes count",
         "buckets": [{
           "id": "enable",
           "label": "Enabled",
-          "description": "Hide favorites count",
+          "description": "Hide counts",
           "operations": [{
             "type": "guac",
             "guacType": "override",
@@ -70,7 +70,7 @@
         }, {
           "id": "disable",
           "label": "Disabled",
-          "description": "Show favorites count",
+          "description": "Show counts",
           "operations": [{
             "type": "guac",
             "guacType": "override",
