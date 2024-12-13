@@ -4,6 +4,47 @@
     "name": "Main Website",
     "experiments": [
       {
+        "id": "myTransactionsDelayBanner",
+        "name": "Delay banner on My Transactions page",
+        "buckets": [{
+          "id": "enable",
+          "label": "Enabled",
+          "description": "Show banner",
+          "operations": [
+            {
+              "type": "json",
+              "jsonType": "set",
+              "match": {
+                "field": [
+                  "isMyTransactionsDelayBannerEnabled"
+                ],
+                "robloxSubdomain": "economy",
+                "regex": "^/v2/metadata$"
+              },
+              "value": true
+            }
+          ]
+        }, {
+          "id": "disable",
+          "label": "Disabled",
+          "description": "Hide banner",
+          "operations": [
+            {
+              "type": "json",
+              "jsonType": "set",
+              "match": {
+                "field": [
+                  "isMyTransactionsDelayBannerEnabled"
+                ],
+                "robloxSubdomain": "economy",
+                "regex": "^/v2/metadata$"
+              },
+              "value": false
+            }
+          ]
+        }]
+      },
+      {
         "id": "downloadDeferredDeeplinkToken",
         "name": "Deferred deeplink token creation on installer download",
         "buckets": [
