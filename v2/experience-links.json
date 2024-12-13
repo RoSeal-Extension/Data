@@ -846,6 +846,28 @@
     ]
   },
   {
+    "universeIds": [1914542037],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "dreamsphere.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [2765784373],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "phighting.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false
+      }
+    ]
+  },
+  {
     "universeIds": [
       510348090,
       508458950
