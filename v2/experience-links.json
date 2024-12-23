@@ -863,7 +863,8 @@
         "type": "communityWiki",
         "url": "phighting.miraheze.org",
         "locale": "en",
-        "fromFandomInterwiki": false
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
       }
     ]
   },
