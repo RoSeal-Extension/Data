@@ -1222,9 +1222,37 @@
         "type": "communityWiki",
         "url": "pet-simulator.fandom.com",
         "locale": "en",
-        "fromFandomInterwiki": false
+        "fromFandomInterwiki": true
       }
     ]
+  },
+  {
+    "universeIds": [6401952734],
+    "links": [{
+      "type": "communityWiki",
+      "url": "pets-go.fandom.com",
+      "locale": "en",
+      "fromFandomInterwiki": true
+    }]
+  },
+  {
+    "universeIds": [4126908979],
+    "Links": [{
+      "type": "communityWiki",
+      "url": "parkour-reborn.fandom.com",
+      "locale": "en",
+      "fromFandomInterwiki": true,
+      "isOfficialWiki": true
+    }]
+  },
+  {
+    "universeIds": [3541611379],
+    "links": [{
+      "type": "communityWiki",
+      "url": "tdx.fandom.com",
+      "locale": "en",
+      "fromFandomInterwiki": true
+    }]
   },
   {
     "universeIds": [
