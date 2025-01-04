@@ -4,6 +4,41 @@
     "name": "Main Website",
     "experiments": [
       {
+        "id": "userFriendRecommendations",
+        "name": "User friend list friend recommendations",
+        "buckets": [{
+          "id": "enable",
+          "label": "Enable",
+          "description": "Enable friend recommendations",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "overrides": {
+              "1": {
+                "Social.Friends": {
+                  "friend_recommendation_source": "frequents"
+                }
+              }
+            }
+          }]
+        }, {
+          "id": "disable",
+          "label": "Disable",
+          "description": "Disable friend recommendations",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "overrides": {
+              "1": {
+                "Social.Friends": {
+                  "friend_recommendation_source": "none"
+                }
+              }
+            }
+          }]
+        }]
+      },
+      {
         "id": "myTransactionsDelayBanner",
         "name": "Delay banner on My Transactions page",
         "buckets": [{
