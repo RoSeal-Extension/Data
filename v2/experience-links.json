@@ -861,7 +861,7 @@
     "links": [
       {
         "type": "communityWiki",
-        "url": "phighting.miraheze.org",
+        "url": "phighting.wiki",
         "locale": "en",
         "fromFandomInterwiki": false,
         "isOfficialWiki": true
@@ -1237,7 +1237,7 @@
   },
   {
     "universeIds": [4126908979],
-    "Links": [{
+    "links": [{
       "type": "communityWiki",
       "url": "parkour-reborn.fandom.com",
       "locale": "en",
@@ -1255,6 +1255,112 @@
     }]
   },
   {
+    "universeIds": [1939753232],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "arena-ballistic.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [5211275114],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "caverncrusher.com",
+        "locale": "en",
+        "fromFandomInterwiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [4864117649],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "utg.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [3666294218],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "oaklandsrblxwiki.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [4252370517],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "dovedale.wiki",
+        "locale": "en",
+        "fromFandomInterwiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [4791585001],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "hellmet.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [4712126054],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "combatinitiation.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [4342047058],
+    "links": [{
+      "type": "communityWiki",
+      "url": "gbp.miraheze.org",
+      "locale": "en",
+      "fromFandomInterwiki": false
+    }]
+  },
+  {
+    "universeIds": [5750914919],
+    "links": [{
+      "type": "communityWiki",
+      "url": "fischipedia.org",
+      "locale": "en",
+      "fromFandomInterwiki": false,
+      "isOfficialWiki": true
+    }]
+  },
+  {
+    "universeIds": [6483209208],
+    "links": [{
+      "type": "communityWiki",
+      "url": "hybridcafe.wiki",
+      "locale": "en",
+      "fromFandomInterwiki": false,
+      "isOfficialWiki": true
+    }]
+  },
+  {
     "universeIds": [
       92605824,
       4371550953
@@ -1262,7 +1368,7 @@
     "links": [
       {
         "type": "communityWiki",
-        "url": "robloxgalaxy.wiki",
+        "url": "galaxypedia.org",
         "locale": "en",
         "fromFandomInterwiki": false
       }
