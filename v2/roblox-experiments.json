@@ -4,8 +4,8 @@
     "name": "Main Website",
     "experiments": [
       {
-        "id": "enableWebbloxComponents",
-        "name": "Enable Webblox components",
+        "id": "webbloxComponents",
+        "name": "Webblox components",
         "buckets": [
           {
             "id": "enable",
