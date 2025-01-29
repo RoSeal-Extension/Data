@@ -6,106 +6,124 @@
       {
         "id": "enableWebbloxComponents",
         "name": "Enable Webblox components",
-        "buckets": [{
-          "id": "enable",
-          "label": "Enabled",
-          "description": "Enable webblox components",
-          "operations": [{
-            "type": "dom",
-            "domType": "modify",
-            "selector": "meta[name=\"twitter:card\"]",
-            "attributes": {
-              "name": "webblox-enabled"
-            }
-          }, {
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable webblox components",
+            "operations": [
+              {
+                "type": "dom",
+                "domType": "modify",
+                "selector": "meta[name=\"twitter:card\"]",
+                "attributes": {
+                  "name": "webblox-enabled"
+                }
+              }
+            ]
+          },
+          {
             "id": "disable",
             "label": "Disabled",
             "description": "Disable webblox components",
-            "operations": [{
-              "type": "dom",
-              "domType": "modify",
-              "selector": "meta[name=\"webblox-enabled\"]",
-              "attributes": {
-                "name": "disabled"
+            "operations": [
+              {
+                "type": "dom",
+                "domType": "modify",
+                "selector": "meta[name=\"webblox-enabled\"]",
+                "attributes": {
+                  "name": "disabled"
+                }
               }
-            }]
-        }]
+            ]
+          }
+        ]
       },
       {
         "id": "userFriendRecommendations",
         "name": "User friend list friend recommendations",
-        "buckets": [{
-          "id": "enable",
-          "label": "Enabled",
-          "description": "Enable friend recommendations",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "Social.Friends": {
-                  "friend_recommendation_source": "frequents"
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable friend recommendations",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Social.Friends": {
+                      "friend_recommendation_source": "frequents"
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }, {
-          "id": "disable",
-          "label": "Disabled",
-          "description": "Disable friend recommendations",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "Social.Friends": {
-                  "friend_recommendation_source": "none"
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable friend recommendations",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Social.Friends": {
+                      "friend_recommendation_source": "none"
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }]
+            ]
+          }
+        ]
       },
       {
         "id": "myTransactionsDelayBanner",
         "name": "Delay banner on My Transactions page",
-        "buckets": [{
-          "id": "enable",
-          "label": "Enabled",
-          "description": "Show banner",
-          "operations": [
-            {
-              "type": "json",
-              "jsonType": "set",
-              "match": {
-                "field": [
-                  "isMyTransactionsDelayBannerEnabled"
-                ],
-                "robloxSubdomain": "economy",
-                "regex": "^/v2/metadata$"
-              },
-              "value": true
-            }
-          ]
-        }, {
-          "id": "disable",
-          "label": "Disabled",
-          "description": "Hide banner",
-          "operations": [
-            {
-              "type": "json",
-              "jsonType": "set",
-              "match": {
-                "field": [
-                  "isMyTransactionsDelayBannerEnabled"
-                ],
-                "robloxSubdomain": "economy",
-                "regex": "^/v2/metadata$"
-              },
-              "value": false
-            }
-          ]
-        }]
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Show banner",
+            "operations": [
+              {
+                "type": "json",
+                "jsonType": "set",
+                "match": {
+                  "field": [
+                    "isMyTransactionsDelayBannerEnabled"
+                  ],
+                  "robloxSubdomain": "economy",
+                  "regex": "^/v2/metadata$"
+                },
+                "value": true
+              }
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Hide banner",
+            "operations": [
+              {
+                "type": "json",
+                "jsonType": "set",
+                "match": {
+                  "field": [
+                    "isMyTransactionsDelayBannerEnabled"
+                  ],
+                  "robloxSubdomain": "economy",
+                  "regex": "^/v2/metadata$"
+                },
+                "value": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "downloadDeferredDeeplinkToken",
@@ -158,169 +176,200 @@
       {
         "id": "hideItemFavoritesCount",
         "name": "Hide favorites, likes, and dislikes count",
-        "buckets": [{
-          "id": "enable",
-          "label": "Enabled",
-          "description": "Hide counts",
-          "operations": [{
-            "type": "guac",
-            "guacType": "override",
-            "overrides": {
-              "app-policy": {
-                "EnableAggregateLikesFavoritesCount": false
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Hide counts",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "app-policy": {
+                    "EnableAggregateLikesFavoritesCount": false
+                  }
+                }
               }
-            }
-          }]
-        }, {
-          "id": "disable",
-          "label": "Disabled",
-          "description": "Show counts",
-          "operations": [{
-            "type": "guac",
-            "guacType": "override",
-            "overrides": {
-              "app-policy": {
-                "EnableAggregateLikesFavoritesCount": true
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Show counts",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "app-policy": {
+                    "EnableAggregateLikesFavoritesCount": true
+                  }
+                }
               }
-            }
-          }]
-        }]
+            ]
+          }
+        ]
       },
       {
         "id": "chatKeystrokeCollection",
         "name": "Log keystrokes in chat conversations",
-        "buckets": [{
-          "id": "enable",
-          "label": "Enabled",
-          "description": "Enable keystroke collection",
-          "operations": [{
-            "type": "guac",
-            "guacType": "override",
-            "overrides": {
-              "app-policy": {
-                "EnableKeystrokeCollection": true
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable keystroke collection",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "app-policy": {
+                    "EnableKeystrokeCollection": true
+                  }
+                }
               }
-            }
-          }]
-        }, {
-          "id": "disable",
-          "label": "Disabled",
-          "description": "Disable keystroke collection",
-          "operations": [{
-            "type": "guac",
-            "guacType": "override",
-            "overrides": {
-              "app-policy": {
-                "EnableKeystrokeCollection": false
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable keystroke collection",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "app-policy": {
+                    "EnableKeystrokeCollection": false
+                  }
+                }
               }
-            }
-          }]
-        }]
+            ]
+          }
+        ]
       },
       {
         "id": "vpcPlayButtonUpsells",
         "name": "Show VPC play button upsells ",
-        "buckets": [{
-          "id": "enable",
-          "label": "Enabled",
-          "description": "Show VPC play button upsells",
-          "operations": [{
-            "type": "guac",
-            "guacType": "override",
-            "overrides": {
-              "app-policy": {
-                "shouldShowVpcPlayButtonUpsells": true
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Show VPC play button upsells",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "app-policy": {
+                    "shouldShowVpcPlayButtonUpsells": true
+                  }
+                }
               }
-            }
-          }]
-        }, {
-          "id": "disable",
-          "label": "Disabled",
-          "description": "Do not show VPC play button upsells",
-          "operations": [{
-            "type": "guac",
-            "guacType": "override",
-            "overrides": {
-              "app-policy": {
-                "shouldShowVpcPlayButtonUpsells": false
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Do not show VPC play button upsells",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "app-policy": {
+                    "shouldShowVpcPlayButtonUpsells": false
+                  }
+                }
               }
-            }
-          }]
-        }]
+            ]
+          }
+        ]
       },
       {
         "id": "texasU18VPC",
         "name": "Texas under 18 VPC",
-        "buckets": [{
-          "id": "enable",
-          "label": "Enabled",
-          "description": "Enable under 18 VPC in Texas",
-          "operations": [{
-            "type": "guac",
-            "guacType": "override",
-            "overrides": {
-              "texas-u18-vpc-optimization": {
-                "texasU18VPCOptimizationEnabled": true,
-                "texasU18VPCOptimizationEnabledForEveryone": true
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable under 18 VPC in Texas",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "texas-u18-vpc-optimization": {
+                    "texasU18VPCOptimizationEnabled": true,
+                    "texasU18VPCOptimizationEnabledForEveryone": true
+                  }
+                }
               }
-            }
-          }]
-        }, {
-          "id": "disable",
-          "label": "Disabled",
-          "description": "Disable under 18 VPC in Texas",
-          "operations": [{
-            "type": "guac",
-            "guacType": "override",
-            "overrides": {
-              "texas-u18-vpc-optimization": {
-                "texasU18VPCOptimizationEnabled": false,
-                "texasU18VPCOptimizationEnabledForEveryone": false
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable under 18 VPC in Texas",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "texas-u18-vpc-optimization": {
+                    "texasU18VPCOptimizationEnabled": false,
+                    "texasU18VPCOptimizationEnabledForEveryone": false
+                  }
+                }
               }
-            }
-          }]
-        }]
+            ]
+          }
+        ]
       },
       {
         "id": "removePremiumBilling",
         "name": "Remove primary premium view in billing",
-        "buckets": [{
-          "id": "enable",
-          "label": "Enabled",
-          "descritpion": "Show Premium as a sub-subscription",
-          "operations": [
-            {
-              "type": "json",
-              "jsonType": "set",
-              "match": {
-                "field": [
-                  "isPaymentMethodChangesEnabled"
-                ],
-                "robloxSubdomain": "apis",
-                "regex": "^/v1/subscriptions/metadata$"
-              },
-              "value": true
-            }
-          ]
-        }, {
-          "id": "disable",
-          "label": "Disabled",
-          "description": "Show Premium in billing settings",
-          "operations": [
-            {
-              "type": "json",
-              "jsonType": "set",
-              "match": {
-                "field": [
-                  "isPaymentMethodChangesEnabled"
-                ],
-                "robloxSubdomain": "apis",
-                "regex": "^/v1/subscriptions/metadata$"
-              },
-              "value": false
-            }
-          ]
-        }]
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "descritpion": "Show Premium as a sub-subscription",
+            "operations": [
+              {
+                "type": "json",
+                "jsonType": "set",
+                "match": {
+                  "field": [
+                    "isPaymentMethodChangesEnabled"
+                  ],
+                  "robloxSubdomain": "apis",
+                  "regex": "^/v1/subscriptions/metadata$"
+                },
+                "value": true
+              }
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Show Premium in billing settings",
+            "operations": [
+              {
+                "type": "json",
+                "jsonType": "set",
+                "match": {
+                  "field": [
+                    "isPaymentMethodChangesEnabled"
+                  ],
+                  "robloxSubdomain": "apis",
+                  "regex": "^/v1/subscriptions/metadata$"
+                },
+                "value": false
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "homePageHorizontalScroll",
@@ -378,7 +427,9 @@
                 "ixpType": "override",
                 "overrides": {
                   "1": {
-                    "Website.Homepage": { "IsNewScrollArrowsEnabled": true }
+                    "Website.Homepage": {
+                      "IsNewScrollArrowsEnabled": true
+                    }
                   }
                 }
               }
@@ -394,7 +445,9 @@
                 "ixpType": "override",
                 "overrides": {
                   "1": {
-                    "Website.Homepage": { "IsNewScrollArrowsEnabled": false }
+                    "Website.Homepage": {
+                      "IsNewScrollArrowsEnabled": false
+                    }
                   }
                 }
               }
@@ -416,7 +469,9 @@
                 "ixpType": "override",
                 "overrides": {
                   "1": {
-                    "Website.PlayButton": { "HasUpdatedPlayButtons": true }
+                    "Website.PlayButton": {
+                      "HasUpdatedPlayButtons": true
+                    }
                   }
                 }
               }
@@ -432,7 +487,9 @@
                 "ixpType": "override",
                 "overrides": {
                   "1": {
-                    "Website.PlayButton": { "HasUpdatedPlayButtons": false }
+                    "Website.PlayButton": {
+                      "HasUpdatedPlayButtons": false
+                    }
                   }
                 }
               }
