@@ -4,11 +4,39 @@
     "name": "Main Website",
     "experiments": [
       {
+        "id": "enableWebbloxComponents",
+        "name": "Enable Webblox components",
+        "buckets": [{
+          "id": "enable",
+          "label": "Enabled",
+          "description": "Enable webblox components",
+          "operations": [{
+            "type": "dom",
+            "domType": "modify",
+            "selector": "meta[name=\"twitter:card\"]",
+            "attributes": {
+              "name": "webblox-enabled"
+            }
+          }, {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable webblox components",
+            "operations": [{
+              "type": "dom",
+              "domType": "modify",
+              "selector": "meta[name=\"webblox-enabled\"]",
+              "attributes": {
+                "name": "disabled"
+              }
+            }]
+        }]
+      },
+      {
         "id": "userFriendRecommendations",
         "name": "User friend list friend recommendations",
         "buckets": [{
           "id": "enable",
-          "label": "Enable",
+          "label": "Enabled",
           "description": "Enable friend recommendations",
           "operations": [{
             "type": "ixp",
@@ -23,7 +51,7 @@
           }]
         }, {
           "id": "disable",
-          "label": "Disable",
+          "label": "Disabled",
           "description": "Disable friend recommendations",
           "operations": [{
             "type": "ixp",
