@@ -4,6 +4,53 @@
     "name": "Main Website",
     "experiments": [
       {
+        "id": "2025-02-marketplaceRevamp",
+        "name": "Marketplace revamp",
+        "buckets": [{
+          "id": "enable",
+          "label": "Enabled",
+          "description": "Enable marketplace revamp",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "overrides": {
+              "AvatarExperience.Web.Catalog": {
+                "refreshEnabled": true,
+                "robuxInThumbnail": false
+              }
+            }
+          }]
+        }, {
+          "id": "enableWithRobuxInThumbnail",
+          "label": "Enabled with Robux in thumbnail",
+          "description": "Enable marketplace revamp with Robux in avatar item cards",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "overrides": {
+              "AvatarExperience.Web.Catalog": {
+                "refreshEnabled": true,
+                "robuxInThumbnail": true
+              }
+            }
+          }]
+        },  {
+          "id": "disable",
+          "label": "Disabled",
+          "description": "Disable Marketplace revamp",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "overrides": {
+              "AvatarExperience.Web.Catalog": {
+                "refreshEnabled": false,
+                "robuxInThumbnail": false
+              }
+            }
+          }]
+        }]
+      },
+      {
         "id": "webbloxComponents",
         "name": "Webblox components",
         "buckets": [
