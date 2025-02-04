@@ -14,9 +14,11 @@
             "type": "ixp",
             "ixpType": "override",
             "overrides": {
-              "AvatarExperience.Web.Catalog": {
-                "refreshEnabled": true,
-                "robuxInThumbnail": false
+              "1": {
+                "AvatarExperience.Web.Catalog": {
+                  "refreshEnabled": true,
+                  "robuxInThumbnail": false
+                }
               }
             }
           }]
@@ -28,9 +30,11 @@
             "type": "ixp",
             "ixpType": "override",
             "overrides": {
-              "AvatarExperience.Web.Catalog": {
-                "refreshEnabled": true,
-                "robuxInThumbnail": true
+              "1": {
+                "AvatarExperience.Web.Catalog": {
+                  "refreshEnabled": true,
+                  "robuxInThumbnail": true
+                }
               }
             }
           }]
@@ -42,9 +46,11 @@
             "type": "ixp",
             "ixpType": "override",
             "overrides": {
-              "AvatarExperience.Web.Catalog": {
-                "refreshEnabled": false,
-                "robuxInThumbnail": false
+              "1": {
+                "AvatarExperience.Web.Catalog": {
+                  "refreshEnabled": false,
+                  "robuxInThumbnail": false
+                }
               }
             }
           }]
@@ -381,7 +387,7 @@
           {
             "id": "enable",
             "label": "Enabled",
-            "descritpion": "Show Premium as a sub-subscription",
+            "description": "Show Premium as a sub-subscription",
             "operations": [
               {
                 "type": "json",
