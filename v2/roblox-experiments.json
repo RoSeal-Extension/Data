@@ -4,6 +4,56 @@
     "name": "Main Website",
     "experiments": [
       {
+        "id": "2025-02-bonusItemUpsell",
+        "name": "Bonus item purchase upsell",
+        "buckets": [{
+          "id": "0",
+          "label": "Variant 0",
+          "description": "Enable variant 0",
+          "operations": [{
+            "type": "ixp",
+            "ixpOverride": "override",
+            "overrides": {
+              "1": {
+                "Optimization.PurchaseModalBonusBanner": {
+                  "upsellModalVariant": 0
+                }
+              }
+            }
+          }]
+        }, {
+          "id": "1",
+          "label": "Variant 1",
+          "description": "Enable variant 1",
+          "operations": [{
+            "type": "ixp",
+            "ixpOverride": "override",
+            "overrides": {
+              "1": {
+                "Optimization.PurchaseModalBonusBanner": {
+                  "upsellModalVariant": 1
+                }
+              }
+            }
+          }]
+        }, {
+          "id": "2",
+          "label": "Variant 2",
+          "description": "Enable variant 2",
+          "operations": [{
+            "type": "ixp",
+            "ixpOverride": "override",
+            "overrides": {
+              "1": {
+                "Optimization.PurchaseModalBonusBanner": {
+                  "upsellModalVariant": 2
+                }
+              }
+            }
+          }]
+        }]
+      },
+      {
         "id": "2025-02-marketplaceRevamp",
         "name": "Marketplace revamp",
         "buckets": [{
