@@ -4,6 +4,41 @@
     "name": "Main Website",
     "experiments": [
       {
+        "id": "2025-02",
+        "name": "Community forum comment subscribe button",
+        "buckets": [{
+          "id": "enable",
+          "label": "Enabled",
+          "description": "Enable forum comment subscribe button",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "overrides": {
+              "1": {
+                "UserCommunities.Groups.ForumNotifications": {
+                  "receiveSubscriberNotifications": true
+                }
+              }
+            }
+          }]
+        }, {
+          "id": "disable",
+          "label": "Disabled",
+          "description": "Disable forum comment subscribe button",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "overrides": {
+              "1": {
+                "UserCommunities.Groups.ForumNotifications": {
+                  "receiveSubscriberNotifications": false
+                }
+              }
+            }
+          }]
+        }]
+      },
+      {
         "id": "2025-02-bonusItemUpsell",
         "name": "Bonus item purchase upsell",
         "buckets": [{
@@ -12,7 +47,7 @@
           "description": "Enable variant 0",
           "operations": [{
             "type": "ixp",
-            "ixpOverride": "override",
+            "ixpType": "override",
             "overrides": {
               "1": {
                 "Optimization.PurchaseModalBonusBanner": {
@@ -27,7 +62,7 @@
           "description": "Enable variant 1",
           "operations": [{
             "type": "ixp",
-            "ixpOverride": "override",
+            "ixpType": "override",
             "overrides": {
               "1": {
                 "Optimization.PurchaseModalBonusBanner": {
@@ -42,11 +77,26 @@
           "description": "Enable variant 2",
           "operations": [{
             "type": "ixp",
-            "ixpOverride": "override",
+            "ixpType": "override",
             "overrides": {
               "1": {
                 "Optimization.PurchaseModalBonusBanner": {
                   "upsellModalVariant": 2
+                }
+              }
+            }
+          }]
+        }, {
+          "id": "disable",
+          "labeL": "Disabled",
+          "description": "Disable bonus upsell",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "overrides": {
+              "1": {
+                "Optimization.PurchaseModalBonusBanner": {
+                  "upsellModalVariant": null
                 }
               }
             }
