@@ -13,8 +13,8 @@
                 "sortId": "Genre_V1_Trending_in_Survival_V1",
                 "filtersSupported": false
             }, {
-                "id": 3,
-                "versionName": "3",
+                "id": 5,
+                "versionName": "5",
                 "sortId": "Genre_V1_Trending_in_Survival_V4",
                 "filtersSupported": true
             }]
