@@ -1,0 +1,23 @@
+{
+    "sorts": [
+        {
+            "id": "genre_trending_in_survival",
+            "versions": [{
+                "id": 1,
+                "versionName": "1",
+                "sortId": "Trending_in_Survival",
+                "filtersSupported": false
+            }, {
+                "id": 2,
+                "versionName": "2",
+                "sortId": "Genre_V1_Trending_in_Survival_V1",
+                "filtersSupported": false
+            }, {
+                "id": 3,
+                "versionName": "3",
+                "sortId": "Genre_V1_Trending_in_Survival_V4",
+                "filtersSupported": true
+            }]
+        }
+    ]
+}
