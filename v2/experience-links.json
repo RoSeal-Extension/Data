@@ -1535,5 +1535,71 @@
       "locale": "en",
       "fromFandomInterwiki": false
     }]
+  },
+  {
+    "universeIds": [5203828273],
+    "links": [{
+      "type": "communityWiki",
+      "url": "dti-dress-to-impress.fandom.com",
+      "locale": "en",
+      "fromFandomInterwiki": false
+    }]
+  },
+  {
+    "universeIds": [2082205150],
+    "links": [{
+      "type": "communityWiki",
+      "url": "retro-dev.fandom.com",
+      "locale": "en",
+      "fromFandomInterwiki": false
+    }]
+  },
+  {
+    "universeIds": [2408700413],
+    "links": [{
+      "type": "communityWiki",
+      "url": "kaijuparadiseofficial.miraheze.org",
+      "locale": "en",
+      "fromFandomInterwiki": false,
+      "isOfficialWiki": true
+    }]
+  },
+  {
+    "universeIds": [2851381018],
+    "links": [{
+      "type": "communityWiki",
+      "url": "taxi-boss.fandom.com",
+      "locale": "en",
+      "fromFandomInterwiki": false,
+      "isOfficialWiki": true
+    }]
+  },
+  {
+    "universeIds": [4070221768],
+    "links": [{
+      "type": "communityWiki",
+      "url": "pet-rift.fandom.com",
+      "locale": "en",
+      "fromFandomInterwiki": false
+    }]
+  },
+  {
+    "universeIds": [1871908106],
+    "links": [{
+      "type": "communityWiki",
+      "url": "outlaster.miraheze.org",
+      "locale": "en",
+      "fromFandomInterwiki": false,
+      "isOfficialWiki": true
+    }]
+  },
+  {
+    "universeIds": [1914542037, 2683013108, 2683013108],
+    "links": [{
+      "type": "communityWiki",
+      "url": "dreamsphere.miraheze.org",
+      "locale": "en",
+      "fromFandomInterwiki": false
+    }]
   }
 ]
