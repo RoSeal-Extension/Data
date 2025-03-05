@@ -852,7 +852,8 @@
         "type": "communityWiki",
         "url": "dreamsphere.miraheze.org",
         "locale": "en",
-        "fromFandomInterwiki": false
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
       }
     ]
   },
