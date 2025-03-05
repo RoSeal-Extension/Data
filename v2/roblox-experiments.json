@@ -4,6 +4,72 @@
     "name": "Main Website",
     "experiments": [
       {
+        "id": "2025-03-searchLandingPage",
+        "name": "Search landing page",
+        "buckets": [{
+          "id": "enable",
+          "label": "Enabled",
+          "description": "Enable search landing page",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "overrides": {
+              "1": {
+                "PlayerApp.HomePage.UX.WholePageRanking": {
+                  "shouldShowSearchLandingPageWeb": true
+                }
+              }
+            }
+          }]
+        }, {
+          "id": "disable",
+          "label": "Disabled",
+          "description": "Disable search landing page",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "overrides": {
+              "1": {
+                "PlayerApp.HomePage.UX.WholePageRanking": {
+                  "shouldShowSearchLandingPageWeb": false
+                }
+              }
+            }
+          }]
+        }]
+      },
+      {
+        "id": "2025-03-fiatPaidAccessTransactions",
+        "name": "Fiat paid access transactions in transactions",
+        "buckets": [{
+          "id": "enable",
+          "label": "Enabled",
+          "description": "Show fiat paid access transactions",
+          "operations": [{
+            "type": "guac",
+            "guacType": "override",
+            "overrides": {
+              "fiat-paid-access-transactions": {
+                "isFiatPaidAccessEnabled": true
+              }
+            }
+          }]
+        }, {
+          "id": "Disable",
+          "label": "Disabled",
+          "description": "Hide fiat paid access transactions",
+          "operations": [{
+            "type": "guac",
+            "guacType": "override",
+            "overrides": {
+              "fiat-paid-access-transactions": {
+                "isFiatPaidAccessEnabled": false
+              }
+            }
+          }]
+        }]
+      },
+      {
         "id": "2025-02-forumCommentSubscribtions",
         "name": "Community forum comment subscribe button",
         "buckets": [{
@@ -88,7 +154,7 @@
           }]
         }, {
           "id": "disable",
-          "labeL": "Disabled",
+          "label": "Disabled",
           "description": "Disable bonus upsell",
           "operations": [{
             "type": "ixp",
