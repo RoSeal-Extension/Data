@@ -4,6 +4,37 @@
     "name": "Main Website",
     "experiments": [
       {
+        "id": "2025-03-onlineStatusPrivacy",
+        "name": "Online status privacy setting",
+        "buckets": [{
+          "id": "enable",
+          "label": "Enabled",
+          "description": "Enable online status privacy settings",
+          "operations": [{
+            "type": "guac",
+            "guacType": "override",
+            "overrides": {
+              "account-settings-ui": {
+                "displayOnlineStatusSettings": true
+              }
+            }
+          }]
+        }, {
+          "id": "disable",
+          "label": "Disabled",
+          "description": "Disable online status privacy settings",
+          "operations": [{
+            "type": "guac",
+            "guacType": "override",
+            "overrides": {
+              "account-settings-ui": {
+                "displayOnlineStatusSettings": false
+              }
+            }
+          }]
+        }]
+      },
+      {
         "id": "2025-03-searchLandingPage",
         "name": "Search landing page",
         "buckets": [{
