@@ -1603,5 +1603,41 @@
       "locale": "en",
       "fromFandomInterwiki": false
     }]
+  },
+  {
+    "universeIds": [4201418016],
+    "links": [{
+      "type": "communityWiki",
+      "url": "fabled-legacy-roblox.fandom.com",
+      "locale": "en",
+      "fromFandomInterwiki": true
+    }]
+  },
+  {
+    "universeIds": [5203828273],
+    "links": [{
+      "type": "communityWiki",
+      "url": "dti-dress-to-impress.fandom.com",
+      "locale": "en",
+      "fromFandomInterwiki": true
+    }]
+  },
+  {
+    "universeIds": [1166268759, 6052381448],
+    "links": [{
+      "type": "communityWiki",
+      "url": "the-true-backrooms-roblox.fandom.com",
+      "locale": "en",
+      "fromFandomInterwiki": true
+    }]
+  },
+  {
+    "universeIds": [380561452],
+    "links": [{
+      "type": "communityWiki",
+      "url": "hexaria-full-version.fandom.com",
+      "locale": "en",
+      "fromFandomInterwiki": true
+    }]
   }
 ]

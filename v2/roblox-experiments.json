@@ -4,254 +4,807 @@
     "name": "Main Website",
     "experiments": [
       {
+        "id": "2025-04-homeAddFriendsTile",
+        "name": "Add friends tile in friends row on Home page",
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Use add friends tile",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Social.Friends": {
+                      "enableAddFriendsTileOnWeb": true
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Do not use add friends tile",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Social.Friends": {
+                      "enableAddFriendsTileOnWeb": false
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2025-04-newFriendRequestsBadge",
+        "name": "New friend requests badge",
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Use new friend requests badge",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Social.Friends": {
+                      "enableNewFriendRequestsBadge": true
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Do not use friend requests badge",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Social.Friends": {
+                      "enableNewFriendRequestsBadge": false
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2025-04-playerFeedbackWeb",
+        "name": "Player feedback modal on web",
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable player feedback modal",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "ExperienceDetailsPage.PlayerFeedback": {
+                      "EnablePlayerFeedbackWebMvp": true
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable player feedback modal",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "ExperienceDetailsPage.PlayerFeedback": {
+                      "EnablePlayerFeedbackWebMvp": false
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2025-04-androidRobuxUpsell",
+        "name": "Android Robux upsell",
+        "buckets": [
+          {
+            "id": "belowBundles",
+            "label": "Below bundles",
+            "description": "Show below bundles",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Payments.BuyRobux.AndroidGiftCardUpsell": {
+                      "variant": "BelowBundles"
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "aboveBundles",
+            "label": "Above bundles",
+            "description": "Show above bundles",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Payments.BuyRobux.AndroidGiftCardUpsell": {
+                      "variant": "AboveBundles"
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable gift card upsell",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Payments.BuyRobux.AndroidGiftCardUpsell": {
+                      "variant": "Control"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2025-04-mobileRobuxLandingPage",
+        "name": "Mobile Robux landing page",
+        "buckets": [
+          {
+            "id": "variantA",
+            "label": "Variant A",
+            "description": "Use Variant A page",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Website.MobileLandingPage": {
+                      "LandingPageType": "robux_upsell"
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "variantB",
+            "label": "Variant B",
+            "description": "Use Variant B page",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Website.MobileLandingPage": {
+                      "LandingPageType": "robux_upsell_with_background"
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable landing page experiment",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Website.MobileLandingPage": {
+                      "LandingPageType": "default"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2025-04-vpcPrepaidCardCopy",
+        "name": "Copy VPC prepaid card",
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable copying VPC prepaid card info",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "AccountManagement.VerifiedParentalConsent.ParentExperienceAfterLogin": {
+                      "prepaidCardCopyEnabled": true
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable copying VPC prepaid card info",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "AccountManagement.VerifiedParentalConsent.ParentExperienceAfterLogin": {
+                      "prepaidCardCopyEnabled": false
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2025-04-vpcVerificationMethod",
+        "name": "VPC Verification Method",
+        "buckets": [
+          {
+            "id": "card",
+            "label": "Card verification",
+            "description": "Use card verification method",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "AccountManagement.VerifiedParentalConsent.ParentExperienceAfterLogin": {
+                      "expVerificationMethod": "CardVerification"
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "id",
+            "label": "ID verification",
+            "description": "Use ID verification method",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "AccountManagement.VerifiedParentalConsent.ParentExperienceAfterLogin": {
+                      "expVerificationMethod": "IdVerification"
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "both",
+            "label": "All verification methods",
+            "description": "Use card verification and id verification methods",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "AccountManagement.VerifiedParentalConsent.ParentExperienceAfterLogin": {
+                      "expVerificationMethod": "Both"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2025-04-moreVPC",
+        "name": "More VPC",
+        "buckets": [
+          {
+            "id": "askYourParentTitle",
+            "label": "Ask Your Parent Title",
+            "description": "Enabled with Ask Your Parent Title",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "AccountManagement.VerifiedParentalConsent.ChildExperience": {
+                      "expNewChildModal": "askYouParentTitle"
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "permissionNeededTitle",
+            "label": "Permission Needed Title",
+            "description": "Enabled with Permission Needed Title",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "AccountManagement.VerifiedParentalConsent.ChildExperience": {
+                      "expNewChildModal": "permissionNeededTitle"
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "Visualized",
+            "label": "Visualized",
+            "description": "Enabled with Visualized",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "AccountManagement.VerifiedParentalConsent.ChildExperience": {
+                      "expNewChildModal": "visualized"
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "Disabled",
+            "label": "Disabled",
+            "description": "Disabled",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "AccountManagement.VerifiedParentalConsent.ChildExperience": {
+                      "expNewChildModal": "control"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2025-04-communityRolesSyncing",
+        "name": "Community and Group roles synced message",
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Show message",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "configure-group-ui": {
+                    "displayGroupRolesSynced": true
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Do not show message",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "configure-group-ui": {
+                    "displayGroupRolesSynced": false
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2025-04-renamePaymentsTab",
+        "name": "Rename account settings payments tab",
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Rename Payments tab to Spending tab",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "account-settings-ui": {
+                    "renamePaymentsToSpendingTab": true
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Keep Payments tab naming",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "account-settings-ui": {
+                    "renamePaymentsToSpendingTab": false
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
         "id": "2025-03-onlineStatusPrivacy",
         "name": "Online status privacy setting",
-        "buckets": [{
-          "id": "enable",
-          "label": "Enabled",
-          "description": "Enable online status privacy settings",
-          "operations": [{
-            "type": "guac",
-            "guacType": "override",
-            "overrides": {
-              "account-settings-ui": {
-                "displayOnlineStatusSettings": true
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable online status privacy settings",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "account-settings-ui": {
+                    "displayOnlineStatusSettings": true
+                  }
+                }
               }
-            }
-          }]
-        }, {
-          "id": "disable",
-          "label": "Disabled",
-          "description": "Disable online status privacy settings",
-          "operations": [{
-            "type": "guac",
-            "guacType": "override",
-            "overrides": {
-              "account-settings-ui": {
-                "displayOnlineStatusSettings": false
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable online status privacy settings",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "account-settings-ui": {
+                    "displayOnlineStatusSettings": false
+                  }
+                }
               }
-            }
-          }]
-        }]
+            ]
+          }
+        ]
       },
       {
         "id": "2025-03-searchLandingPage",
         "name": "Search landing page",
-        "buckets": [{
-          "id": "enable",
-          "label": "Enabled",
-          "description": "Enable search landing page",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "PlayerApp.HomePage.UX.WholePageRanking": {
-                  "shouldShowSearchLandingPageWeb": true
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable search landing page",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "PlayerApp.HomePage.UX.WholePageRanking": {
+                      "shouldShowSearchLandingPageWeb": true
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }, {
-          "id": "disable",
-          "label": "Disabled",
-          "description": "Disable search landing page",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "PlayerApp.HomePage.UX.WholePageRanking": {
-                  "shouldShowSearchLandingPageWeb": false
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable search landing page",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "PlayerApp.HomePage.UX.WholePageRanking": {
+                      "shouldShowSearchLandingPageWeb": false
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }]
+            ]
+          }
+        ]
       },
       {
         "id": "2025-03-fiatPaidAccessTransactions",
         "name": "Fiat paid access transactions in transactions",
-        "buckets": [{
-          "id": "enable",
-          "label": "Enabled",
-          "description": "Show fiat paid access transactions",
-          "operations": [{
-            "type": "guac",
-            "guacType": "override",
-            "overrides": {
-              "fiat-paid-access-transactions": {
-                "isFiatPaidAccessEnabled": true
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Show fiat paid access transactions",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "fiat-paid-access-transactions": {
+                    "isFiatPaidAccessEnabled": true
+                  }
+                }
               }
-            }
-          }]
-        }, {
-          "id": "Disable",
-          "label": "Disabled",
-          "description": "Hide fiat paid access transactions",
-          "operations": [{
-            "type": "guac",
-            "guacType": "override",
-            "overrides": {
-              "fiat-paid-access-transactions": {
-                "isFiatPaidAccessEnabled": false
+            ]
+          },
+          {
+            "id": "Disable",
+            "label": "Disabled",
+            "description": "Hide fiat paid access transactions",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "fiat-paid-access-transactions": {
+                    "isFiatPaidAccessEnabled": false
+                  }
+                }
               }
-            }
-          }]
-        }]
+            ]
+          }
+        ]
       },
       {
         "id": "2025-02-forumCommentSubscribtions",
         "name": "Community forum comment subscribe button",
-        "buckets": [{
-          "id": "enable",
-          "label": "Enabled",
-          "description": "Enable forum comment subscribe button",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "UserCommunities.Groups.ForumNotifications": {
-                  "receiveSubscriberNotifications": true
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable forum comment subscribe button",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "UserCommunities.Groups.ForumNotifications": {
+                      "receiveSubscriberNotifications": true
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }, {
-          "id": "disable",
-          "label": "Disabled",
-          "description": "Disable forum comment subscribe button",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "UserCommunities.Groups.ForumNotifications": {
-                  "receiveSubscriberNotifications": false
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable forum comment subscribe button",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "UserCommunities.Groups.ForumNotifications": {
+                      "receiveSubscriberNotifications": false
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }]
+            ]
+          }
+        ]
       },
       {
         "id": "2025-02-bonusItemUpsell",
         "name": "Bonus item purchase upsell",
-        "buckets": [{
-          "id": "0",
-          "label": "Variant 0",
-          "description": "Enable variant 0",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "Optimization.PurchaseModalBonusBanner": {
-                  "upsellModalVariant": 0
+        "buckets": [
+          {
+            "id": "0",
+            "label": "Variant 0",
+            "description": "Enable variant 0",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Optimization.PurchaseModalBonusBanner": {
+                      "upsellModalVariant": 0
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }, {
-          "id": "1",
-          "label": "Variant 1",
-          "description": "Enable variant 1",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "Optimization.PurchaseModalBonusBanner": {
-                  "upsellModalVariant": 1
+            ]
+          },
+          {
+            "id": "1",
+            "label": "Variant 1",
+            "description": "Enable variant 1",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Optimization.PurchaseModalBonusBanner": {
+                      "upsellModalVariant": 1
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }, {
-          "id": "2",
-          "label": "Variant 2",
-          "description": "Enable variant 2",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "Optimization.PurchaseModalBonusBanner": {
-                  "upsellModalVariant": 2
+            ]
+          },
+          {
+            "id": "2",
+            "label": "Variant 2",
+            "description": "Enable variant 2",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Optimization.PurchaseModalBonusBanner": {
+                      "upsellModalVariant": 2
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }, {
-          "id": "disable",
-          "label": "Disabled",
-          "description": "Disable bonus upsell",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "Optimization.PurchaseModalBonusBanner": {
-                  "upsellModalVariant": null
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable bonus upsell",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Optimization.PurchaseModalBonusBanner": {
+                      "upsellModalVariant": null
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }]
+            ]
+          }
+        ]
       },
       {
         "id": "2025-02-marketplaceRevamp",
         "name": "Marketplace revamp",
-        "buckets": [{
-          "id": "enable",
-          "label": "Enabled",
-          "description": "Enable marketplace revamp",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "AvatarExperience.Web.Catalog": {
-                  "refreshEnabled": true,
-                  "robuxInThumbnail": false
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable marketplace revamp",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "AvatarExperience.Web.Catalog": {
+                      "refreshEnabled": true,
+                      "robuxInThumbnail": false
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }, {
-          "id": "enableWithRobuxInThumbnail",
-          "label": "Enabled with Robux in thumbnail",
-          "description": "Enable marketplace revamp with Robux in avatar item cards",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "AvatarExperience.Web.Catalog": {
-                  "refreshEnabled": true,
-                  "robuxInThumbnail": true
+            ]
+          },
+          {
+            "id": "enableWithRobuxInThumbnail",
+            "label": "Enabled with Robux in thumbnail",
+            "description": "Enable marketplace revamp with Robux in avatar item cards",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "AvatarExperience.Web.Catalog": {
+                      "refreshEnabled": true,
+                      "robuxInThumbnail": true
+                    }
+                  }
                 }
               }
-            }
-          }]
-        },  {
-          "id": "disable",
-          "label": "Disabled",
-          "description": "Disable Marketplace revamp",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "AvatarExperience.Web.Catalog": {
-                  "refreshEnabled": false,
-                  "robuxInThumbnail": false
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable Marketplace revamp",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "AvatarExperience.Web.Catalog": {
+                      "refreshEnabled": false,
+                      "robuxInThumbnail": false
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }]
+            ]
+          }
+        ]
       },
       {
         "id": "webbloxComponents",
