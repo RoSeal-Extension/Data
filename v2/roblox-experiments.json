@@ -18,7 +18,27 @@
                 "overrides": {
                   "1": {
                     "Social.Friends": {
-                      "enableAddFriendsTileOnWeb": true
+                      "enableAddFriendsTileOnWeb": true,
+                      "enableNewFriendRequestsBadge": false
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "enableWithNewFriendRequestCount",
+            "label": "Enable with New Friend Request Count",
+            "description": "Use add friends tile with new friend request count",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Social.Friends": {
+                      "enableAddFriendsTileOnWeb": true,
+                      "enableNewFriendRequestsBadge": true
                     }
                   }
                 }
@@ -36,48 +56,7 @@
                 "overrides": {
                   "1": {
                     "Social.Friends": {
-                      "enableAddFriendsTileOnWeb": false
-                    }
-                  }
-                }
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "id": "2025-04-newFriendRequestsBadge",
-        "name": "New friend requests badge",
-        "buckets": [
-          {
-            "id": "enable",
-            "label": "Enabled",
-            "description": "Use new friend requests badge",
-            "operations": [
-              {
-                "type": "ixp",
-                "ixpType": "override",
-                "overrides": {
-                  "1": {
-                    "Social.Friends": {
-                      "enableNewFriendRequestsBadge": true
-                    }
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "id": "disable",
-            "label": "Disabled",
-            "description": "Do not use friend requests badge",
-            "operations": [
-              {
-                "type": "ixp",
-                "ixpType": "override",
-                "overrides": {
-                  "1": {
-                    "Social.Friends": {
+                      "enableAddFriendsTileOnWeb": false,
                       "enableNewFriendRequestsBadge": false
                     }
                   }
