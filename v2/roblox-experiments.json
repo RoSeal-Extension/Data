@@ -4,6 +4,41 @@
     "name": "Main Website",
     "experiments": [
       {
+        "id": "2025-04-newHomeSortHeader",
+        "name": "New sort header on home page",
+        "buckets": [{
+          "id": "enable",
+          "label": "Enabled",
+          "description": "Enable new sort header",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "overrides": {
+              "1": {
+                "PlayerApp.GridUI": {
+                  "IsNewSortHeaderEnabled": true
+                }
+              }
+            }
+          }]
+        }, {
+          "id": "disable",
+          "label": "Disabled",
+          "description": "Use old sort header",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "overrides": {
+              "1": {
+                "PlayerApp.GridUI": {
+                  "IsNewSortHeaderEnabled": false
+                }
+              }
+            }
+          }]
+        }]
+      },
+      {
         "id": "2025-04-homeAddFriendsTile",
         "name": "Add friends tile in friends row on Home page",
         "buckets": [
