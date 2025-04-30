@@ -4,6 +4,68 @@
     "name": "Main Website",
     "experiments": [
       {
+        "id": "2024-12-phoneVerificationResendButton",
+        "name": "Phone verification resend button",
+        "buckets": [{
+          "id": "enable",
+          "label": "Enabled",
+          "description": "Show phone verification resend button",
+          "operations": [{
+            "type": "guac",
+            "guacType": "override",
+            "overrides": {
+              "account-settings-ui": {
+                "showPhoneVerificationResendButton": true
+              }
+            }
+          }]
+        }, {
+          "id": "disable",
+          "label": "Disabled",
+          "description": "Do not show phone verification resend button",
+          "operations": [{
+            "type": "guac",
+            "guacType": "override",
+            "overrides": {
+              "account-settings-ui": {
+                "showPhoneVerificationResendButton": false
+              }
+            }
+          }]
+        }]
+      },
+      {
+        "id": "2025-04-renamePrivacySettingsTab",
+        "name": "Rename privacy settings tab",
+        "buckets": [{
+          "id": "enable",
+          "label": "Enabled",
+          "description": "Rename privacy settings tab to Privacy & Content Restrictions",
+          "operations": [{
+            "type": "guac",
+            "guacType": "override",
+            "overrides": {
+              "account-settings-ui": {
+                "renamePrivacyToPrivacyContentRestrictionsTab": true
+              }
+            }
+          }]
+        }, {
+          "id": "disable",
+          "label": "Disabled",
+          "description": "Keep old privacy settings tab name",
+          "operations": [{
+            "type": "guac",
+            "guacType": "override",
+            "overrides": {
+              "account-settings-ui": {
+                "renamePrivacyToPrivacyContentRestrictionsTab": false
+              }
+            }
+          }]
+        }]
+      },
+      {
         "id": "2025-04-newHomeSortHeader",
         "name": "New sort header on home page",
         "buckets": [{
