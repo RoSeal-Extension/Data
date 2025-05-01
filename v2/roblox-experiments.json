@@ -4,6 +4,132 @@
     "name": "Main Website",
     "experiments": [
       {
+        "id": "2025-04-abuseReportRevamp",
+        "name": "Abuse report revamp",
+        "buckets": [{
+          "id": "enable",
+          "label": "Enabled",
+          "description": "Enable abuse report revamp",
+          "operations": [{
+            "type": "dom",
+            "domType": "modify",
+            "selector": "[data-is-ar-revamp-enabled]",
+            "attributes": {
+              "data-is-ar-revamp-enabled": "True"
+            }
+          }]
+        }, {
+          "id": "disable",
+          "label": "Disabled",
+          "description": "Disable abuse report revamp",
+          "operations": [{
+            "type": "dom",
+            "domType": "modify",
+            "selector": "[data-is-ar-revamp-enabled]",
+            "attributes": {
+              "data-is-ar-revamp-enabled": "False"
+            }
+          }]
+        }]
+      },
+      {
+        "id": "2025-05-expandedGiftCardCountries",
+        "name": "Expanded gift card countries",
+        "buckets": [{
+          "id": "enable",
+          "label": "Enabled",
+          "description": "Enable expanded countries",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "overrides": {
+              "1": { 
+                "PaymentsOptimization.GiftCards": {
+                  "variant": "ExpandedCountries"
+                }
+              }
+            }
+          }]
+        }, {
+          "id": "disable",
+          "label": "Disable",
+          "description": "Disable expanded countries",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "overrides": {
+              "1": { 
+                "PaymentsOptimization.GiftCards": {
+                  "variant": "Control"
+                }
+              }
+            }
+          }]
+        }]
+      },
+      {
+        "id": "2025-05-devProductsReportAbuseRevamp",
+        "name": "Developer products in report abuse revamped page",
+        "buckets": [{
+          "id": "enable",
+          "label": "Enabled",
+          "description": "Enable developer products",
+          "operations": [{
+            "type": "guac",
+            "guacType": "override",
+            "overrides": {
+              "abuse-reporting-revamp": {
+                "EnableDevProducts": true
+              }
+            }
+          }]
+        }, {
+          "id": "disable",
+          "label": "Disabled",
+          "description": "Disable developer products",
+          "operations": [{
+            "type": "guac",
+            "guacType": "override",
+            "overrides": {
+              "abuse-reporting-revamp": {
+                "EnableDevProducts": false
+              }
+            }
+          }]
+        }]
+      },
+      {
+        "id": "2025-05-reportAbuseDSALink",
+        "name": "DSA link in report abuse",
+        "buckets": [{
+          "id": "enable",
+          "label": "Enabled",
+          "description": "Show DSA link report abuse",
+          "operations": [{
+            "type": "guac",
+            "guacType": "override",
+            "overrides": {
+              "report-abuse-ui": {
+                "displayDsaLink": true
+              }
+            }
+          }]
+        }, {
+          "id": "disable",
+          "label": "Disabled",
+          "description": "Do not show DSA link report abuse",
+          "operations": [{
+            "type": "guac",
+            "guacType": "override",
+            "overrides": {
+              "report-abuse-ui": {
+                "displayDsaLink": false
+              }
+            }
+          }]
+        }]
+      },
+      {
         "id": "2024-12-phoneVerificationResendButton",
         "name": "Phone verification resend button",
         "buckets": [{
