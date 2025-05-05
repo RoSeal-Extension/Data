@@ -4,6 +4,68 @@
     "name": "Main Website",
     "experiments": [
       {
+        "id": "2025-05-chatOSAContext",
+        "name": "Show OSA context messages for chat conversations",
+        "buckets": [{
+          "id": "enable",
+          "label": "Enabled",
+          "description": "Enable OSA context messages",
+          "operations": [{
+            "type": "guac",
+            "guacType": "override",
+            "overrides": {
+              "chat-ui": {
+                "useOneToOneOsaContextCards": 100
+              }
+            }
+          }]
+        }, {
+          "id": "disable",
+          "label": "Disabled",
+          "description": "Disable OSA context messages",
+          "operations": [{
+            "type": "guac",
+            "guacType": "override",
+            "overrides": {
+              "chat-ui": {
+                "useOneToOneOsaContextCards": 0
+              }
+            }
+          }]
+        }]
+      },
+      {
+        "id": "2025-05-chatTimeouts",
+        "name": "Chat timeouts for chat conversations",
+        "buckets": [{
+          "id": "enable",
+          "label": "Enabled",
+          "description": "Enable chat timeouts",
+          "operations": [{
+            "type": "guac",
+            "guacType": "override",
+            "overrides": {
+              "chat-ui": {
+                "useChatTimeouts": 100
+              }
+            }
+          }]
+        }, {
+          "id": "disable",
+          "label": "Disabled",
+          "description": "Disable chat timeouts",
+          "operations": [{
+            "type": "guac",
+            "guacType": "override",
+            "overrides": {
+              "chat-ui": {
+                "useChatTimeouts": 0
+              }
+            }
+          }]
+        }]
+      },
+      {
         "id": "2025-04-abuseReportRevamp",
         "name": "Abuse report revamp",
         "buckets": [{
