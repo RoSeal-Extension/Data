@@ -66,6 +66,68 @@
         }]
       },
       {
+        "id": "2025-05-chatPaginatedFriends",
+        "name": "Paginated friends in chat conversations",
+        "buckets": [{
+          "id": "enable",
+          "label": "Enabled",
+          "description": "Enable paginated friends",
+          "operations": [{
+            "type": "guac",
+            "guacType": "override",
+            "overrides": {
+              "chat-ui": {
+                "usePaginatedFriends": 100
+              }
+            }
+          }]
+        }, {
+          "id": "disable",
+          "label": "Disabled",
+          "description": "Disable paginated frieds",
+          "operations": [{
+            "type": "guac",
+            "guacType": "override",
+            "overrides": {
+              "chat-ui": {
+                "usePaginatedFriends": 0
+              }
+            }
+          }]
+        }]
+      },
+      {
+        "id": "2025-05-chatContactCards",
+        "name": "Contact cards in chat conversations",
+        "buckets": [{
+          "id": "enable",
+          "label": "Enabled",
+          "description": "Enable contact cards",
+          "operations": [{
+            "type": "guac",
+            "guacType": "override",
+            "overrides": {
+              "chat-ui": {
+                "isWebChatTcEnabled": true
+              }
+            }
+          }]
+        }, {
+          "id": "disable",
+          "label": "Disabled",
+          "description": "Disable contact cards",
+          "operations": [{
+            "type": "guac",
+            "guacType": "override",
+            "overrides": {
+              "chat-ui": {
+                "isWebChatTcEnabled": false
+              }
+            }
+          }]
+        }]
+      },
+      {
         "id": "2025-04-abuseReportRevamp",
         "name": "Abuse report revamp",
         "buckets": [{
