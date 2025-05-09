@@ -4,6 +4,37 @@
     "name": "Main Website",
     "experiments": [
       {
+        "id": "2025-05-friendsToConnections",
+        "name": "Rename Friends to Connections",
+        "buckets": [{
+          "id": "enable",
+          "label": "Enabled",
+          "description": "Rename to Connections",
+          "operations": [{
+            "type": "guac",
+            "guacType": "override",
+            "overrides": {
+              "web-rename-friends": {
+                "renameFriendsToConnections": true
+              }
+            }
+          }]
+        }, {
+          "id": "disable",
+          "label": "Disabled",
+          "description": "Do not rename to Connections",
+          "operations": [{
+            "type": "guac",
+            "guacType": "override",
+            "overrides": {
+              "web-rename-friends": {
+                "renameFriendsToConnections": false
+              }
+            }
+          }]
+        }]
+      },
+      {
         "id": "2025-05-chatOSAContext",
         "name": "Show OSA context messages for chat conversations",
         "buckets": [{
