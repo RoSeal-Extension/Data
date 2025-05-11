@@ -1639,5 +1639,14 @@
       "locale": "en",
       "fromFandomInterwiki": true
     }]
+  },
+  {
+    "universeIds": [6504986360],
+    "links": [{
+      "type": "communityWiki",
+      "url": "bgs-infinity.fandom.com",
+      "locale": "en",
+      "fromFandomInterwiki": false
+    }]
   }
 ]
