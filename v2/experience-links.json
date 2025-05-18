@@ -1648,5 +1648,14 @@
       "locale": "en",
       "fromFandomInterwiki": false
     }]
+  },
+  {
+    "universeIds": [3148127455],
+    "links": [{
+      "type": "communityWiki",
+      "url": "getadrink.miraheze.org",
+      "locale": "en",
+      "isOfficialWiki": true
+    }]
   }
 ]
