@@ -14,7 +14,7 @@
             "type": "json",
             "jsonType": "set",
             "match": {
-              "field": ["components", "CommunityProfileHeader", "hasSocialModules"],
+              "field": ["components", "CommunityProfileHeader", "", "hasSocialModules"],
               "robloxSubdomain": "apis",
               "regex": "^/profile-platform-api/v1/profiles/get$",
               "method": "post"
@@ -29,7 +29,7 @@
             "type": "json",
             "jsonType": "set",
             "match": {
-              "field": ["components", "CommunityProfileHeader", "hasSocialModules"],
+              "field": ["components", "CommunityProfileHeader", "", "hasSocialModules"],
               "robloxSubdomain": "apis",
               "regex": "^/profile-platform-api/v1/profiles/get$",
               "method": "post"
