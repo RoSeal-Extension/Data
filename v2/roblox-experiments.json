@@ -4,6 +4,41 @@
     "name": "Main Website",
     "experiments": [
       {
+        "id": "2025-05-accountRecoveryRedesign",
+        "name": "Account recovery page redesign",
+        "buckets": [{
+          "id": "enable",
+          "label": "Enabled",
+          "description": "Enable page redesign",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "overrides": {
+              "1": {
+                "AccountSecurity.SelfRecovery.RecoveryUI": {
+                  "isRecoveryRevampUIEnabled": true
+                }
+              }
+            }
+          }]
+        }, {
+          "id": "disable",
+          "label": "Disabled",
+          "description": "Use old page design",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "overrides": {
+              "1": {
+                "AccountSecurity.SelfRecovery.RecoveryUI": {
+                  "isRecoveryRevampUIEnabled": false
+                }
+              }
+            }
+          }]
+        }]
+      },
+      {
         "id": "2025-05-renameCommunityMembers",
         "name": "Rename Community Members to Followers on all Communities",
         "buckets": [{
