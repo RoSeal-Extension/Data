@@ -4,6 +4,76 @@
     "name": "Main Website",
     "experiments": [
       {
+        "id": "2025-05-hideEmptyCommunityTabs",
+        "name": "Hide empty Community tabs",
+        "buckets": [{
+          "id": "enable",
+          "label": "Enabled",
+          "description": "Hide empty Community tab",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "overrides": {
+              "1": {
+                "Social.CommunityPage": {
+                  "hideEmptyCommunityTabs": true
+                }
+              }
+            }
+          }]
+        }, {
+          "id": "disable",
+          "label": "Disabled",
+          "description": "Do not hide empty Community tab",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "overrides": {
+              "1": {
+                "Social.CommunityPage": {
+                  "hideEmptyCommunityTabs": false
+                }
+              }
+            }
+          }]
+        }]
+      },
+      {
+        "id": "2025-05-communityHeaderRedesign",
+        "name": "Redesigned and reworked community header",
+        "buckets": [{
+          "id": "enable",
+          "label": "Enabled",
+          "description": "Enable new redesign",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "overrides": {
+              "1": {
+                "UserCommunities.Groups.Discovery": {
+                  "enableCommunityProfileHeaderRedesign": true
+                }
+              }
+            }
+          }]
+        }, {
+          "id": "disable",
+          "label": "Disabled",
+          "description": "Use the old Community header redesign",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "overrides": {
+              "1": {
+                "UserCommunities.Groups.Discovery": {
+                  "enableCommunityProfileHeaderRedesign": false
+                }
+              }
+            }
+          }]
+        }]
+      },
+      {
         "id": "2025-05-friendsToConnections",
         "name": "Rename Friends to Connections",
         "buckets": [{
@@ -234,7 +304,12 @@
             "guacType": "override",
             "overrides": {
               "abuse-reporting-revamp": {
-                "EnableDevProducts": true
+                "EnableDevProducts": true,
+                "EnableGroupComment": true,
+                "EnableGroupPost": true,
+                "EnableGroupWall": true,
+                "EnableGroupRoleset": true,
+                "EnableCommunityGroupStatus": true
               }
             }
           }]
@@ -247,7 +322,12 @@
             "guacType": "override",
             "overrides": {
               "abuse-reporting-revamp": {
-                "EnableDevProducts": false
+                "EnableDevProducts": false,
+                "EnableGroupComment": false,
+                "EnableGroupPost": false,
+                "EnableGroupWall": false,
+                "EnableGroupRoleset": false,
+                "EnableCommunityGroupStatus": false
               }
             }
           }]
