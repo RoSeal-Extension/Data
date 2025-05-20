@@ -4,6 +4,39 @@
     "name": "Main Website",
     "experiments": [
       {
+        "id": "2025-05-renameCommunityMembers",
+        "name": "Rename Community Members to Followers on all Communities",
+        "buckets": [{
+          "id": "enable",
+          "label": "Enabled",
+          "description": "Enable Followers rename",
+          "operations": [{
+            "type": "json",
+            "jsonType": "set",
+            "match": {
+              "field": ["components", "CommunityProfileHeader", "hasSocialModules"],
+              "robloxSubdomain": "apis",
+              "regex": "^/profile-platform-api/v1/profiles/get$"
+            },
+            "value": false
+          }]
+        }, {
+          "id": "disable",
+          "label": "Disabled",
+          "description": "Disable Followers rename",
+          "operations": [{
+            "type": "json",
+            "jsonType": "set",
+            "match": {
+              "field": ["components", "CommunityProfileHeader", "hasSocialModules"],
+              "robloxSubdomain": "apis",
+              "regex": "^/profile-platform-api/v1/profiles/get$"
+            },
+            "value": true
+          }]
+        }]
+      },
+      {
         "id": "2025-05-hideEmptyCommunityTabs",
         "name": "Hide empty Community tabs",
         "buckets": [{
