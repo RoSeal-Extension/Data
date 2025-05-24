@@ -1655,7 +1655,17 @@
       "type": "communityWiki",
       "url": "getadrink.miraheze.org",
       "locale": "en",
+      "fromFandomInterwiki": false,
       "isOfficialWiki": true
+    }]
+  },
+  {
+    "universeIds": [1157126388],
+    "links": [{
+      "type": "communityWiki",
+      "url": "roblox-bear.fandom.com",
+      "locale": "en",
+      "fromFandomInterwiki": true
     }]
   }
 ]
