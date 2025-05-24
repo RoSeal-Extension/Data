@@ -108,6 +108,18 @@
         }
     },
     {
+        "dataCenterId": 363,
+        "location": {
+            "city": "Ashburn",
+            "region": "Virginia",
+            "country": "US",
+            "latLong": [
+                "39.0437",
+                "-77.4875"
+            ]
+        }
+    },
+    {
         "dataCenterId": 365,
         "location": {
             "city": "Los Angeles",
@@ -116,6 +128,18 @@
             "latLong": [
                 "34.0522",
                 "-118.2437"
+            ]
+        }
+    },
+    {
+        "dataCenterId": 366,
+        "location": {
+            "city": "Ashburn",
+            "region": "Virginia",
+            "country": "US",
+            "latLong": [
+                "39.0437",
+                "-77.4875"
             ]
         }
     },
@@ -230,12 +254,12 @@
     {
         "dataCenterId": 387,
         "location": {
-            "city": "New York City",
-            "region": "New York",
+            "city": "Secaucus",
+            "region": "New Jersey",
             "country": "US",
             "latLong": [
-                "40.7143",
-                "-74.0060"
+                "40.7895",
+                "-74.0565"
             ]
         }
     },
@@ -768,7 +792,79 @@
         }
     },
     {
+        "dataCenterId": 475,
+        "location": {
+            "city": "Ashburn",
+            "region": "Virginia",
+            "country": "US",
+            "latLong": [
+                "39.0437",
+                "-77.4875"
+            ]
+        }
+    },
+    {
+        "dataCenterId": 478,
+        "location": {
+            "city": "Ashburn",
+            "region": "Virginia",
+            "country": "US",
+            "latLong": [
+                "39.0437",
+                "-77.4875"
+            ]
+        }
+    },
+    {
+        "dataCenterId": 480,
+        "location": {
+            "city": "Ashburn",
+            "region": "Virginia",
+            "country": "US",
+            "latLong": [
+                "39.0437",
+                "-77.4875"
+            ]
+        }
+    },
+    {
         "dataCenterId": 481,
+        "location": {
+            "city": "Ashburn",
+            "region": "Virginia",
+            "country": "US",
+            "latLong": [
+                "39.0437",
+                "-77.4875"
+            ]
+        }
+    },
+    {
+        "dataCenterId": 482,
+        "location": {
+            "city": "Ashburn",
+            "region": "Virginia",
+            "country": "US",
+            "latLong": [
+                "39.0437",
+                "-77.4875"
+            ]
+        }
+    },
+    {
+        "dataCenterId": 485,
+        "location": {
+            "city": "Ashburn",
+            "region": "Virginia",
+            "country": "US",
+            "latLong": [
+                "39.0437",
+                "-77.4875"
+            ]
+        }
+    },
+    {
+        "dataCenterId": 486,
         "location": {
             "city": "Ashburn",
             "region": "Virginia",
