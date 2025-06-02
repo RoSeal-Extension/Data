@@ -379,6 +379,7 @@
                 "EnableGroupPost": true,
                 "EnableGroupWall": true,
                 "EnableGroupRoleset": true,
+                "EnableExperience": true,
                 "EnableCommunityGroupStatus": true
               }
             }
@@ -397,6 +398,7 @@
                 "EnableGroupPost": false,
                 "EnableGroupWall": false,
                 "EnableGroupRoleset": false,
+                "EnableExperience": false,
                 "EnableCommunityGroupStatus": false
               }
             }
