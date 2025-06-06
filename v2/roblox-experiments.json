@@ -4,6 +4,41 @@
     "name": "Main Website",
     "experiments": [
       {
+        "id": "2025-06-communityListRedesign",
+        "name": "Community List sidebar redesign",
+        "buckets": [{
+          "id": "enable",
+          "label": "Enabled",
+          "description": "Enable redesign",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "overrides": {
+              "1": {
+                "Social.CommunityPage": {
+                  "showGroupsListRedesign": true
+                }
+              }
+            }
+          }]
+        }, {
+          "id": "disable",
+          "label": "Disabled",
+          "description": "Disable redesign",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "overrides": {
+              "1": {
+                "Social.CommunityPage": {
+                  "showGroupsListRedesign": false
+                }
+              }
+            }
+          }]
+        }]
+      },
+      {
         "id": "2025-05-accountRecoveryRedesign",
         "name": "Account recovery page redesign",
         "buckets": [{
