@@ -1,0 +1,21 @@
+[{
+    "passId": 1142100573,
+    "benefitType": "meta",
+    "displayTitle": "Walmart Discovered Pass",
+    "links": [{
+        "type": "primary",
+        "link": "walmart.com/walmartdiscovered",
+        "name": "More Info"
+    }],
+    "sharedUniverses": [{
+        "id": 5650396773
+    }, {
+        "id": 1176784616
+    }, {
+        "id": 5026970880
+    }, {
+        "id": 1001911915
+    }, {
+        "id": 4044606250
+    }]
+}]
