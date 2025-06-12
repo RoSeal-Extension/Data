@@ -1,10 +1,11 @@
 [{
     "passId": 1142100573,
     "benefitType": "meta",
-    "displayTitle": "Walmart Discovered Pass",
+    "displayName": "Walmart Discovered Pass",
     "iconData": {
         "type": "GameIcon",
-        "targetId": 4664112354
+        "targetId": 4664112354,
+        "size": "150x150"
     },
     "links": [{
         "type": "primary",
