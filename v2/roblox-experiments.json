@@ -4,6 +4,134 @@
     "name": "Main Website",
     "experiments": [
       {
+        "id": "2025-06-helpArticleSuggestions",
+        "name": "Display Help Article suggestions on support form",
+        "buckets": [{
+          "id": "enable",
+          "label": "Enabled",
+          "description": "Enable Help Article suggestions",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "overrides": {
+              "1": {
+                "CustomerCare.SupportForm.HelpArticleSuggestions": {
+                  "show_hc_article_suggestions": true
+                }
+              }
+            }
+          }]
+        }, {
+          "id": "disable",
+          "label": "Disabled",
+          "description": "Disable Help Article suggestions",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "overrides": {
+              "1": {
+                "CustomerCare.SupportForm.HelpArticleSuggestions": {
+                  "show_hc_article_suggestions": false
+                }
+              }
+            }
+          }]
+        }]
+      },
+      {
+        "id": "2025-06-ageGroupDisplay",
+        "name": "Display Age Group in Account Settings",
+        "buckets": [{
+          "id": "enable",
+          "label": "Enabled",
+          "description": "Enable Age Group display",
+          "operations": [{
+            "type": "guac",
+            "guacType": "override",
+            "overrides": {
+              "account-settings-ui": {
+                "displayAgeGroup": true
+              }
+            }
+          }]
+        }, {
+          "id": "disable",
+          "label": "Disable",
+          "description": "Disable Age Group display",
+          "operations": [{
+            "type": "guac",
+            "guacType": "override",
+            "overrides": {
+              "account-settings-ui": {
+                "displayAgeGroup": false
+              }
+            }
+          }]
+        }]
+      },
+      {
+        "id": "2025-06-birthdayPicker",
+        "name": "Birthday Picker",
+        "buckets": [{
+          "id": "enable",
+          "label": "Enabled",
+          "description": "Enable Birthday Picker",
+          "operations": [{
+            "type": "guac",
+            "guacType": "override",
+            "overrides": {
+              "account-settings-ui": {
+                "displayBirthdayPicker": true
+              }
+            }
+          }]
+        }, {
+          "id": "disable",
+          "label": "Disabled",
+          "description": "Disable Birthday Picker",
+          "operations": [{
+            "type": "guac",
+            "guacType": "override",
+            "overrides": {
+              "account-settings-ui": {
+                "displayBirthdayPicker": false
+              }
+            }
+          }]
+        }]
+      },
+      {
+        "id": "2025-06-ageVerificationSettingsDisplay",
+        "name": "Age Verification Settings Display in Settings",
+        "buckets": [{
+          "id": "enable",
+          "label": "Enabled",
+          "description": "Enable Age Verification Display",
+          "operations": [{
+            "type": "guac",
+            "guacType": "override",
+            "overrides": {
+              "account-settings-ui": {
+                "displayAgeVerification": true
+              }
+            }
+          }]
+        }, {
+          "id": "disable",
+          "label": "Disabled",
+          "description": "Disable Age Verification Display",
+          "operations": [{
+            "type": "guac",
+            "guacType": "override",
+            "overrides": {
+              "account-settings-ui": {
+                "displayAgeVerification": false
+              }
+            }
+          }]
+        }]
+      },
+      {
         "id": "2025-06-communityListRedesign",
         "name": "Community List sidebar redesign",
         "buckets": [{
