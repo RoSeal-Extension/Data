@@ -1667,5 +1667,14 @@
       "locale": "en",
       "fromFandomInterwiki": true
     }]
+  },
+  {
+    "universeIds": [7436755782],
+    "links": [{
+      "type": "communityWiki",
+      "url": "growagarden.fandom.com",
+      "locale": "en",
+      "fromFandomInterwiki": false
+    }]
   }
 ]
