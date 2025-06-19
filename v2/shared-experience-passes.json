@@ -1,7 +1,11 @@
 [{
     "passId": 1142100573,
-    "benefitType": "varied",
     "displayName": "Walmart Discovered Pass",
+    "benefitData": {
+        "type": "varied",
+        "period": "monthly",
+        "universesChangeAfterPeriod": true
+    },
     "iconData": {
         "type": "GameIcon",
         "targetId": 4664112354,
