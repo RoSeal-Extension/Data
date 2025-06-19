@@ -12,9 +12,9 @@
         "size": "150x150"
     },
     "links": [{
-        "type": "primary",
+        "type": "control",
         "link": "walmart.com/walmartdiscovered",
-        "name": "More Info"
+        "label": "More Info"
     }],
     "sourceUniverseId": 4664112354,
     "sharedUniverses": [{
