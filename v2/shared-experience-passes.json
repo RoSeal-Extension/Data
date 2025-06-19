@@ -13,7 +13,7 @@
     },
     "links": [{
         "type": "control",
-        "link": "walmart.com/walmartdiscovered",
+        "url": "walmart.com/walmartdiscovered",
         "label": "More Info"
     }],
     "sourceUniverseId": 4664112354,
