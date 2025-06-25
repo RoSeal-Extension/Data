@@ -4,6 +4,47 @@
     "name": "Main Website",
     "experiments": [
       {
+        "id": "2025-06-premiumFeaturesHighCog",
+        "name": "Premium features high cog",
+        "buckets": [{
+          "id": "enable",
+          "label": "Enabled",
+          "description": "Enable high cog experiment",
+           "operations": [
+              {
+                "type": "json",
+                "jsonType": "set",
+                "match": {
+                  "field": [
+                    "underHighCogsExperiment"
+                  ],
+                  "robloxSubdomain": "premiumfeatures",
+                  "regex": "^/v1/products$"
+                },
+                "value": true
+              }
+            ]
+        }, {
+          "id": "disable",
+          "label": "Disabled",
+          "description": "Disable high cog experiment",
+           "operations": [
+              {
+                "type": "json",
+                "jsonType": "set",
+                "match": {
+                  "field": [
+                    "underHighCogsExperiment"
+                  ],
+                  "robloxSubdomain": "premiumfeatures",
+                  "regex": "^/v1/products$"
+                },
+                "value": false
+              }
+            ]
+        }]
+      },
+      {
         "id": "2025-06-helpArticleSuggestions",
         "name": "Display Help Article suggestions on support form",
         "buckets": [{
