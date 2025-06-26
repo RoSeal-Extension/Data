@@ -4,6 +4,76 @@
     "name": "Main Website",
     "experiments": [
       {
+        "id": "2025-06-communityMemberListRedesign",
+        "name": "Community member list redesign",
+        "buckets": [{
+          "id": "enable",
+          "label": "Enabled",
+          "description": "Enable redesign",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "overrides": {
+              "1": {
+                "Social.CommunityPage": {
+                  "showMembersListModalRedesign": true
+                }
+              }
+            }
+          }]
+        }, {
+          "id": "disable",
+          "label": "Disabled",
+          "description": "Disable redesign",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "overrides": {
+              "1": {
+                "Social.CommunityPage": {
+                  "showMembersListModalRedesign": false
+                }
+              }
+            }
+          }]
+        }]
+      },
+      {
+        "id": "2025-06-communityExperienceListRedesign",
+        "name": "Community experience list redesign",
+        "buckets": [{
+          "id": "enable",
+          "label": "Enabled",
+          "description": "Enable redesign",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "overrides": {
+              "1": {
+                "Social.CommunityPage": {
+                  "showGroupExperiencesRedesign": true
+                }
+              }
+            }
+          }]
+        }, {
+          "id": "disable",
+          "label": "Disabled",
+          "description": "Disable redesign",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "overrides": {
+              "1": {
+                "Social.CommunityPage": {
+                  "showGroupExperiencesRedesign": false
+                }
+              }
+            }
+          }]
+        }]
+      },
+      {
         "id": "2025-06-hideContactSyncSettings",
         "name": "Hide contact sync settings",
         "buckets": [{
