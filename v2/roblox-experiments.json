@@ -4,6 +4,37 @@
     "name": "Main Website",
     "experiments": [
       {
+        "id": "2025-06-hideContactSyncSettings",
+        "name": "Hide contact sync settings",
+        "buckets": [{
+          "id": "enable",
+          "label": "Enabled",
+          "description": "Enable hide contact sync settings",
+          "operations": [{
+            "type": "guac",
+            "guacType": "override",
+            "overrides": {
+              "account-settings-ui": {
+                "hideDeviceContactSyncSettings": true
+              }
+            }
+          }]
+        }, {
+          "id": "disable",
+          "label": "Disabled",
+          "description": "Disable hide contact sync settings",
+          "operations": [{
+            "type": "guac",
+            "guacType": "override",
+            "overrides": {
+              "account-settings-ui": {
+                "hideDeviceContactSyncSettings": false
+              }
+            }
+          }]
+        }]
+      },
+      {
         "id": "2025-06-premiumFeaturesHighCog",
         "name": "Premium features high cog",
         "buckets": [{
