@@ -4,6 +4,44 @@
     "name": "Main Website",
     "experiments": [
       {
+        "id": "2025-06-communityContentModeration",
+        "name": "Community content moderation settings",
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable content moderation settings",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "configure-group-ui": {
+                    "displayContentModerationConfiguration": true
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable content moderation settings",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "configure-group-ui": {
+                    "displayContentModerationConfiguration": false
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
         "id": "2025-05-newStartingDialog",
         "name": "New starting dialog",
         "buckets": [{
