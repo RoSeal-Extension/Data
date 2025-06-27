@@ -4,6 +4,41 @@
     "name": "Main Website",
     "experiments": [
       {
+        "id": "2025-05-newStartingDialog",
+        "name": "New starting dialog",
+        "buckets": [{
+          "id": "enable",
+          "label": "Enabled",
+          "description": "Enable new starting dialog",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "overrides": {
+              "1": {
+                "Website.DownloadFlow": {
+                  "showNewInstruction": true
+                }
+              }
+            }
+          }]
+        }, {
+          "id": "disable",
+          "label": "Disabled",
+          "description": "Disable new starting dialog",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "overrides": {
+              "1": {
+                "Website.DownloadFlow": {
+                  "showNewInstruction": false
+                }
+              }
+            }
+          }]
+        }]
+      },
+      {
         "id": "2025-06-communityMemberListRedesign",
         "name": "Community member list redesign",
         "buckets": [{
