@@ -1676,5 +1676,14 @@
       "locale": "en",
       "fromFandomInterwiki": false
     }]
+  },
+  {
+    "universeIds": [7218065222],
+    "links": [{
+      "type": "communityWiki",
+      "url": "digtionary.org",
+      "locale": "en",
+      "fromFandomInterwiki": false
+    }]
   }
 ]
