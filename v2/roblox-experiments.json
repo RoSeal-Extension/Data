@@ -4,6 +4,41 @@
     "name": "Main Website",
     "experiments": [
       {
+        "id": "2025-07-avatarEditorMigration",
+        "name": "Avatar editor React migration",
+        "buckets": [{
+          "id": "enable",
+          "label": "Enabled",
+          "description": "Enable avatar editor React migration",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "overrides": {
+              "1": {
+                "AvatarExperience.Web.Editor": {
+                  "useReactAvatarEditor": true
+                }
+              }
+            }
+          }]
+        }, {
+          "id": "disable",
+          "label": "Disabled",
+          "description": "Disable avatar editor React migration",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "overrides": {
+              "1": {
+                "AvatarExperience.Web.Editor": {
+                  "useReactAvatarEditor": false
+                }
+              }
+            }
+          }]
+        }]
+      },
+      {
         "id": "2025-06-communityContentModeration",
         "name": "Community content moderation settings",
         "buckets": [
