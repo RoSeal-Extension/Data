@@ -3,6 +3,138 @@
     "id": "www",
     "name": "Main Website",
     "experiments": [
+    {
+        "id": "2025-07-avatarScaleInTab",
+        "name": "Avatar scale inside of tab",
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Set inside of tab",
+            "operations": [
+              {
+                "type": "json",
+                "jsonType": "set",
+                "match": {
+                  "field": [
+                    "isAvatarScaleEmbeddedInTab"
+                  ],
+                  "robloxSubdomain": "avatar",
+                  "regex": "^/v1/avatar/metadata$"
+                },
+                "value": true
+              }
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Set outside of tab",
+            "operations": [
+              {
+                "type": "json",
+                "jsonType": "set",
+                "match": {
+                  "field": [
+                    "isAvatarScaleEmbeddedInTab"
+                  ],
+                  "robloxSubdomain": "avatar",
+                  "regex": "^/v1/avatar/metadata$"
+                },
+                "value": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2025-07-avatarBodyTypeScaleOutOfTab",
+        "name": "Avatar Body type scale outside of tab",
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Set outside of tab",
+            "operations": [
+              {
+                "type": "json",
+                "jsonType": "set",
+                "match": {
+                  "field": [
+                    "isBodyTypeScaleOutOfTab"
+                  ],
+                  "robloxSubdomain": "avatar",
+                  "regex": "^/v1/avatar/metadata$"
+                },
+                "value": true
+              }
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Set inside of tab",
+            "operations": [
+              {
+                "type": "json",
+                "jsonType": "set",
+                "match": {
+                  "field": [
+                    "isBodyTypeScaleOutOfTab"
+                  ],
+                  "robloxSubdomain": "avatar",
+                  "regex": "^/v1/avatar/metadata$"
+                },
+                "value": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2025-07-myTransactions2YearLimitBanner",
+        "name": "Temporary 2-year transaction limit banner",
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Show banner",
+            "operations": [
+              {
+                "type": "json",
+                "jsonType": "set",
+                "match": {
+                  "field": [
+                    "isTrsQueryWindowLimitBannerEnabled"
+                  ],
+                  "robloxSubdomain": "economy",
+                  "regex": "^/v2/metadata$"
+                },
+                "value": true
+              }
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Hide banner",
+            "operations": [
+              {
+                "type": "json",
+                "jsonType": "set",
+                "match": {
+                  "field": [
+                    "isTrsQueryWindowLimitBannerEnabled"
+                  ],
+                  "robloxSubdomain": "economy",
+                  "regex": "^/v2/metadata$"
+                },
+                "value": false
+              }
+            ]
+          }
+        ]
+      },
       {
         "id": "2025-07-avatarEditorMigration",
         "name": "Avatar editor React migration",
