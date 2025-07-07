@@ -1686,5 +1686,315 @@
       "fromFandomInterwiki": false,
       "isOfficialWiki": true
     }]
+  },
+  {
+    "universeIds": [5829613337],
+    "links": [{
+      "type": "communityWiki",
+      "url": "sewh.miraheze.org",
+      "locale": "en",
+      "fromFandomInterwiki": false,
+      "isOfficialWiki": false
+    }]
+  },
+  {
+    "universeIds": [1359573625],
+    "links": [{
+      "type": "communityWiki",
+      "url": "deepwoken.fandom.com",
+      "locale": "en",
+      "fromFandomInterwiki": false,
+      "isOfficialWiki": true
+    }]
+  },
+  {
+    "universeIds": [481618399],
+    "links": [{
+      "type": "communityWiki",
+      "url": "wiki.blockate.com",
+      "locale": "en",
+      "fromFandomInterwiki": false,
+      "isOfficialWiki": true
+    }]
+  },
+  {
+    "universeIds": [5351931175],
+    "links": [{
+      "type": "communityWiki",
+      "url": "titancorp.miraheze.org",
+      "locale": "en",
+      "fromFandomInterwiki": false,
+      "isOfficialWiki": true
+    }]
+  },
+  {
+    "universeIds": [807930589],
+    "links": [{
+      "type": "communityWiki",
+      "url": "thewild-west.fandom.com",
+      "locale": "en",
+      "fromFandomInterwiki": false,
+      "isOfficialWiki": true
+    }]
+  },
+  {
+    "universeIds": [7489122072],
+    "links": [{
+      "type": "communityWiki",
+      "url": "blooddebt1999.miraheze.org",
+      "locale": "en",
+      "fromFandomInterwiki": false,
+      "isOfficialWiki": true
+    }]
+  },
+  {
+    "universeIds": [3317064564],
+    "links": [{
+      "type": "communityWiki",
+      "url": "centaura.fandom.com",
+      "locale": "en",
+      "fromFandomInterwiki": false,
+      "isOfficialWiki": true
+    }]
+  },
+  {
+    "universeIds": [2031579354],
+    "links": [{
+      "type": "communityWiki",
+      "url": "dead-ahead.fandom.com",
+      "locale": "en",
+      "fromFandomInterwiki": false,
+      "isOfficialWiki": true
+    }]
+  },
+  {
+    "universeIds": [16876831],
+    "links": [{
+      "type": "communityWiki",
+      "url": "roblox-blood-iron.fandom.com",
+      "locale": "en",
+      "fromFandomInterwiki": false,
+      "isOfficialWiki": true
+    }]
+  },
+  {
+    "universeIds": [1582293268],
+    "links": [{
+      "type": "communityWiki",
+      "url": "tower-blitz.fandom.com",
+      "locale": "en",
+      "fromFandomInterwiki": false,
+      "isOfficialWiki": true
+    }]
+  },
+  {
+    "universeIds": [7937194831],
+    "links": [{
+      "type": "communityWiki",
+      "url": "steal-a-pet.fandom.com",
+      "locale": "en",
+      "fromFandomInterwiki": false,
+      "isOfficialWiki": false
+    }]
+  },
+  {
+    "universeIds": [3104101863],
+    "links": [{
+      "type": "communityWiki",
+      "url": "michaels-zombies-roblox.fandom.com",
+      "locale": "en",
+      "fromFandomInterwiki": false,
+      "isOfficialWiki": true
+    }]
+  },
+  {
+    "universeIds": [2548183080],
+    "links": [{
+      "type": "communityWiki",
+      "url": "pilgrammed-rblx.fandom.com",
+      "locale": "en",
+      "fromFandomInterwiki": false,
+      "isOfficialWiki": true
+    }]
+  },
+  {
+    "universeIds": [6508759464],
+    "links": [{
+      "type": "communityWiki",
+      "url": "grace-rbx.fandom.com",
+      "locale": "en",
+      "fromFandomInterwiki": false,
+      "isOfficialWiki": false
+    }]
+  },
+  {
+    "universeIds": [3717264063],
+    "links": [{
+      "type": "communityWiki",
+      "url": "nicosnextbots.miraheze.org",
+      "locale": "en",
+      "fromFandomInterwiki": false,
+      "isOfficialWiki": false
+    }]
+  },
+  {
+    "universeIds": [7018190066],
+    "links": [{
+      "type": "communityWiki",
+      "url": "deadrails.fandom.com",
+      "locale": "en",
+      "fromFandomInterwiki": false,
+      "isOfficialWiki": false
+    }]
+  },
+  {
+    "universeIds": [2619619496],
+    "links": [{
+      "type": "communityWiki",
+      "url": "robloxbedwars.fandom.com",
+      "locale": "en",
+      "fromFandomInterwiki": false,
+      "isOfficialWiki": false
+    }]
+  },
+  {
+    "universeIds": [5193569427],
+    "links": [{
+      "type": "communityWiki",
+      "url": "projectremixroblox.miraheze.org",
+      "locale": "en",
+      "fromFandomInterwiki": false,
+      "isOfficialWiki": false
+    }]
+  },
+  {
+    "universeIds": [3347455347],
+    "links": [{
+      "type": "communityWiki",
+      "url": "airship-assault.fandom.com",
+      "locale": "en",
+      "fromFandomInterwiki": false,
+      "isOfficialWiki": false
+    }]
+  },
+  {
+    "universeIds": [3647333358],
+    "links": [{
+      "type": "communityWiki",
+      "url": "evade-nextbot.fandom.com",
+      "locale": "en",
+      "fromFandomInterwiki": false,
+      "isOfficialWiki": true
+    }]
+  },
+  {
+    "universeIds": [5803093656],
+    "links": [{
+      "type": "communityWiki",
+      "url": "blue-heater.fandom.com",
+      "locale": "en",
+      "fromFandomInterwiki": false,
+      "isOfficialWiki": true
+    }]
+  },
+  {
+    "universeIds": [3997171304],
+    "links": [{
+      "type": "communityWiki",
+      "url": "rfti.fandom.com",
+      "locale": "en",
+      "fromFandomInterwiki": false,
+      "isOfficialWiki": true
+    }]
+  },
+  {
+    "universeIds": [4653177191],
+    "links": [{
+      "type": "communityWiki",
+      "url": "wm.miraheze.org",
+      "locale": "en",
+      "fromFandomInterwiki": false,
+      "isOfficialWiki": true
+    }]
+  },
+  {
+    "universeIds": [260395717],
+    "links": [{
+      "type": "communityWiki",
+      "url": "dreadrblx.fandom.com",
+      "locale": "en",
+      "fromFandomInterwiki": false,
+      "isOfficialWiki": true
+    }]
+  },
+  {
+    "universeIds": [169302362],
+    "links": [{
+      "type": "communityWiki",
+      "url": "project-lazarus.fandom.com",
+      "locale": "en",
+      "fromFandomInterwiki": false,
+      "isOfficialWiki": true
+    }]
+  },
+  {
+    "universeIds": [1049111999],
+    "links": [{
+      "type": "communityWiki",
+      "url": "ips2.fandom.com",
+      "locale": "en",
+      "fromFandomInterwiki": false,
+      "isOfficialWiki": true
+    }]
+  },
+  {
+    "universeIds": [5764473273],
+    "links": [{
+      "type": "communityWiki",
+      "url": "periastron-stars-rpg.fandom.com",
+      "locale": "en",
+      "fromFandomInterwiki": false,
+      "isOfficialWiki": false
+    }]
+  },
+  {
+    "universeIds": [187796008],
+    "links": [{
+      "type": "communityWiki",
+      "url": "those-who-remain.fandom.com",
+      "locale": "en",
+      "fromFandomInterwiki": false,
+      "isOfficialWiki": false
+    }]
+  },
+  {
+    "universeIds": [323675642],
+    "links": [{
+      "type": "communityWiki",
+      "url": "http://flood-escape-2.fandom.com/",
+      "locale": "en",
+      "fromFandomInterwiki": false,
+      "isOfficialWiki": false
+    }]
+  },
+  {
+    "universeIds": [1516533665],
+    "links": [{
+      "type": "communityWiki",
+      "url": "piggy.fandom.com",
+      "locale": "en",
+      "fromFandomInterwiki": false,
+      "isOfficialWiki": false
+    }]
+  },
+  {
+    "universeIds": [6331902150],
+    "links": [{
+      "type": "communityWiki",
+      "url": "forsaken.wiki",
+      "locale": "en",
+      "fromFandomInterwiki": false,
+      "isOfficialWiki": true
+    }]
   }
 ]
