@@ -1996,5 +1996,24 @@
       "fromFandomInterwiki": false,
       "isOfficialWiki": true
     }]
+  },
+  {
+    "universeIds": [3615728730],
+    "links": [{
+      "type": "communityWiki",
+      "url": "rbx-derelict.fandom.com",
+      "locale": "en",
+      "fromFandomInterwiki": true,
+      "isOfficialWiki": true
+    }]
+  },
+  {
+    "universeIds": [2157872230],
+    "links": [{
+      "type": "communityWiki",
+      "url": "infectious-smile.fandom.com",
+      "locale": "en",
+      "fromFandomInterwiki": true
+    }]
   }
 ]
