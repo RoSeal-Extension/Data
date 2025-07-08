@@ -1274,7 +1274,8 @@
         "type": "communityWiki",
         "url": "caverncrusher.com",
         "locale": "en",
-        "fromFandomInterwiki": false
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
       }
     ]
   },
@@ -1307,7 +1308,8 @@
         "type": "communityWiki",
         "url": "dovedale.wiki",
         "locale": "en",
-        "fromFandomInterwiki": false
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
       }
     ]
   },
@@ -1339,7 +1341,8 @@
       "type": "communityWiki",
       "url": "gbp.miraheze.org",
       "locale": "en",
-      "fromFandomInterwiki": false
+      "fromFandomInterwiki": false,
+      "isOfficialWiki": true
     }]
   },
   {
@@ -1694,7 +1697,7 @@
       "url": "sewh.miraheze.org",
       "locale": "en",
       "fromFandomInterwiki": false,
-      "isOfficialWiki": false
+      "isOfficialWiki": true 
     }]
   },
   {
@@ -1883,8 +1886,7 @@
       "type": "communityWiki",
       "url": "evade-nextbot.fandom.com",
       "locale": "en",
-      "fromFandomInterwiki": false,
-      "isOfficialWiki": true
+      "fromFandomInterwiki": false
     }]
   },
   {
@@ -1971,7 +1973,7 @@
     "universeIds": [323675642],
     "links": [{
       "type": "communityWiki",
-      "url": "http://flood-escape-2.fandom.com/",
+      "url": "flood-escape-2.fandom.com/",
       "locale": "en",
       "fromFandomInterwiki": false,
       "isOfficialWiki": false
