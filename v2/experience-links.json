@@ -846,7 +846,9 @@
     ]
   },
   {
-    "universeIds": [1914542037],
+    "universeIds": [
+      1914542037
+    ],
     "links": [
       {
         "type": "communityWiki",
@@ -858,7 +860,9 @@
     ]
   },
   {
-    "universeIds": [2765784373],
+    "universeIds": [
+      2765784373
+    ],
     "links": [
       {
         "type": "communityWiki",
@@ -1229,35 +1233,49 @@
     ]
   },
   {
-    "universeIds": [6401952734],
-    "links": [{
-      "type": "communityWiki",
-      "url": "pets-go.fandom.com",
-      "locale": "en",
-      "fromFandomInterwiki": true
-    }]
+    "universeIds": [
+      6401952734
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "pets-go.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": true
+      }
+    ]
   },
   {
-    "universeIds": [4126908979],
-    "links": [{
-      "type": "communityWiki",
-      "url": "parkour-reborn.fandom.com",
-      "locale": "en",
-      "fromFandomInterwiki": true,
-      "isOfficialWiki": true
-    }]
+    "universeIds": [
+      4126908979
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "parkour-reborn.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": true,
+        "isOfficialWiki": true
+      }
+    ]
   },
   {
-    "universeIds": [3541611379],
-    "links": [{
-      "type": "communityWiki",
-      "url": "tdx.fandom.com",
-      "locale": "en",
-      "fromFandomInterwiki": true
-    }]
+    "universeIds": [
+      3541611379
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "tdx.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": true
+      }
+    ]
   },
   {
-    "universeIds": [1939753232],
+    "universeIds": [
+      1939753232
+    ],
     "links": [
       {
         "type": "communityWiki",
@@ -1268,7 +1286,9 @@
     ]
   },
   {
-    "universeIds": [5211275114],
+    "universeIds": [
+      5211275114
+    ],
     "links": [
       {
         "type": "communityWiki",
@@ -1280,7 +1300,9 @@
     ]
   },
   {
-    "universeIds": [4864117649],
+    "universeIds": [
+      4864117649
+    ],
     "links": [
       {
         "type": "communityWiki",
@@ -1291,7 +1313,9 @@
     ]
   },
   {
-    "universeIds": [3666294218],
+    "universeIds": [
+      3666294218
+    ],
     "links": [
       {
         "type": "communityWiki",
@@ -1302,7 +1326,9 @@
     ]
   },
   {
-    "universeIds": [4252370517],
+    "universeIds": [
+      4252370517
+    ],
     "links": [
       {
         "type": "communityWiki",
@@ -1314,7 +1340,9 @@
     ]
   },
   {
-    "universeIds": [4791585001],
+    "universeIds": [
+      4791585001
+    ],
     "links": [
       {
         "type": "communityWiki",
@@ -1325,7 +1353,9 @@
     ]
   },
   {
-    "universeIds": [4712126054],
+    "universeIds": [
+      4712126054
+    ],
     "links": [
       {
         "type": "communityWiki",
@@ -1336,33 +1366,45 @@
     ]
   },
   {
-    "universeIds": [4342047058],
-    "links": [{
-      "type": "communityWiki",
-      "url": "gbp.miraheze.org",
-      "locale": "en",
-      "fromFandomInterwiki": false,
-      "isOfficialWiki": true
-    }]
+    "universeIds": [
+      4342047058
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "gbp.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
   },
   {
-    "universeIds": [5750914919],
-    "links": [{
-      "type": "communityWiki",
-      "url": "fischipedia.org",
-      "locale": "en",
-      "fromFandomInterwiki": false,
-      "isOfficialWiki": true
-    }]
+    "universeIds": [
+      5750914919
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "fischipedia.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
   },
   {
-    "universeIds": [6483209208],
-    "links": [{
-      "type": "communityWiki",
-      "url": "hybridcafe.wiki",
-      "locale": "en",
-      "fromFandomInterwiki": false
-    }]
+    "universeIds": [
+      6483209208
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "hybridcafe.wiki",
+        "locale": "en",
+        "fromFandomInterwiki": false
+      }
+    ]
   },
   {
     "universeIds": [
@@ -1523,499 +1565,1744 @@
     ]
   },
   {
-    "universeIds": [4367208330],
-    "links": [{
-      "type": "communityWiki",
-      "url": "urbanshade.org",
-      "locale": "en",
-      "fromFandomInterwiki": false,
-      "isOfficialWiki": true
-    }]
+    "universeIds": [
+      4367208330
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "urbanshade.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
   },
   {
-    "universeIds": [3211189518],
-    "links": [{
-      "type": "communityWiki",
-      "url": "findeverything.miraheze.org",
-      "locale": "en",
-      "fromFandomInterwiki": false
-    }]
+    "universeIds": [
+      3211189518
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "findeverything.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false
+      }
+    ]
   },
   {
-    "universeIds": [5203828273],
-    "links": [{
-      "type": "communityWiki",
-      "url": "dti-dress-to-impress.fandom.com",
-      "locale": "en",
-      "fromFandomInterwiki": false
-    }]
+    "universeIds": [
+      5203828273
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "dti-dress-to-impress.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false
+      }
+    ]
   },
   {
-    "universeIds": [2082205150],
-    "links": [{
-      "type": "communityWiki",
-      "url": "retro-dev.fandom.com",
-      "locale": "en",
-      "fromFandomInterwiki": false
-    }]
+    "universeIds": [
+      2082205150
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "retro-dev.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false
+      }
+    ]
   },
   {
-    "universeIds": [2408700413],
-    "links": [{
-      "type": "communityWiki",
-      "url": "kaijuparadiseofficial.miraheze.org",
-      "locale": "en",
-      "fromFandomInterwiki": false,
-      "isOfficialWiki": true
-    }]
+    "universeIds": [
+      2408700413
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "kaijuparadiseofficial.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
   },
   {
-    "universeIds": [2851381018],
-    "links": [{
-      "type": "communityWiki",
-      "url": "taxi-boss.fandom.com",
-      "locale": "en",
-      "fromFandomInterwiki": false,
-      "isOfficialWiki": true
-    }]
+    "universeIds": [
+      2851381018
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "taxi-boss.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
   },
   {
-    "universeIds": [4070221768],
-    "links": [{
-      "type": "communityWiki",
-      "url": "pet-rift.fandom.com",
-      "locale": "en",
-      "fromFandomInterwiki": false
-    }]
+    "universeIds": [
+      4070221768
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "pet-rift.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false
+      }
+    ]
   },
   {
-    "universeIds": [1871908106],
-    "links": [{
-      "type": "communityWiki",
-      "url": "outlaster.miraheze.org",
-      "locale": "en",
-      "fromFandomInterwiki": false,
-      "isOfficialWiki": true
-    }]
+    "universeIds": [
+      1871908106
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "outlaster.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
   },
   {
-    "universeIds": [1914542037, 2683013108, 2683013108],
-    "links": [{
-      "type": "communityWiki",
-      "url": "dreamsphere.miraheze.org",
-      "locale": "en",
-      "fromFandomInterwiki": false
-    }]
+    "universeIds": [
+      1914542037,
+      2683013108,
+      2683013108
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "dreamsphere.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false
+      }
+    ]
   },
   {
-    "universeIds": [4201418016],
-    "links": [{
-      "type": "communityWiki",
-      "url": "fabled-legacy-roblox.fandom.com",
-      "locale": "en",
-      "fromFandomInterwiki": true
-    }]
+    "universeIds": [
+      4201418016
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "fabled-legacy-roblox.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": true
+      }
+    ]
   },
   {
-    "universeIds": [5203828273],
-    "links": [{
-      "type": "communityWiki",
-      "url": "dti-dress-to-impress.fandom.com",
-      "locale": "en",
-      "fromFandomInterwiki": true
-    }]
+    "universeIds": [
+      5203828273
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "dti-dress-to-impress.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": true
+      }
+    ]
   },
   {
-    "universeIds": [1166268759, 6052381448],
-    "links": [{
-      "type": "communityWiki",
-      "url": "the-true-backrooms-roblox.fandom.com",
-      "locale": "en",
-      "fromFandomInterwiki": true
-    }]
+    "universeIds": [
+      1166268759,
+      6052381448
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "the-true-backrooms-roblox.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": true
+      }
+    ]
   },
   {
-    "universeIds": [380561452],
-    "links": [{
-      "type": "communityWiki",
-      "url": "hexaria-full-version.fandom.com",
-      "locale": "en",
-      "fromFandomInterwiki": true
-    }]
+    "universeIds": [
+      380561452
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "hexaria-full-version.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": true
+      }
+    ]
   },
   {
-    "universeIds": [6504986360],
-    "links": [{
-      "type": "communityWiki",
-      "url": "bgs-infinity.fandom.com",
-      "locale": "en",
-      "fromFandomInterwiki": false
-    }]
+    "universeIds": [
+      6504986360
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "bgs-infinity.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false
+      }
+    ]
   },
   {
-    "universeIds": [3148127455],
-    "links": [{
-      "type": "communityWiki",
-      "url": "getadrink.miraheze.org",
-      "locale": "en",
-      "fromFandomInterwiki": false,
-      "isOfficialWiki": true
-    }]
+    "universeIds": [
+      3148127455
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "getadrink.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
   },
   {
-    "universeIds": [1157126388],
-    "links": [{
-      "type": "communityWiki",
-      "url": "roblox-bear.fandom.com",
-      "locale": "en",
-      "fromFandomInterwiki": true
-    }]
+    "universeIds": [
+      1157126388
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "roblox-bear.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": true
+      }
+    ]
   },
   {
-    "universeIds": [7436755782],
-    "links": [{
-      "type": "communityWiki",
-      "url": "growagarden.fandom.com",
-      "locale": "en",
-      "fromFandomInterwiki": false
-    }]
+    "universeIds": [
+      7436755782
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "growagarden.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false
+      }
+    ]
   },
   {
-    "universeIds": [7218065222],
-    "links": [{
-      "type": "communityWiki",
-      "url": "digtionary.org",
-      "locale": "en",
-      "fromFandomInterwiki": false,
-      "isOfficialWiki": true
-    }]
+    "universeIds": [
+      7218065222
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "digtionary.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
   },
   {
-    "universeIds": [5829613337],
-    "links": [{
-      "type": "communityWiki",
-      "url": "sewh.miraheze.org",
-      "locale": "en",
-      "fromFandomInterwiki": false,
-      "isOfficialWiki": true 
-    }]
+    "universeIds": [
+      5829613337
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "sewh.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
   },
   {
-    "universeIds": [1359573625],
-    "links": [{
-      "type": "communityWiki",
-      "url": "deepwoken.fandom.com",
-      "locale": "en",
-      "fromFandomInterwiki": false,
-      "isOfficialWiki": true
-    }]
+    "universeIds": [
+      1359573625
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "deepwoken.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
   },
   {
-    "universeIds": [481618399],
-    "links": [{
-      "type": "communityWiki",
-      "url": "wiki.blockate.com",
-      "locale": "en",
-      "fromFandomInterwiki": false,
-      "isOfficialWiki": true
-    }]
+    "universeIds": [
+      481618399
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "wiki.blockate.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
   },
   {
-    "universeIds": [5351931175],
-    "links": [{
-      "type": "communityWiki",
-      "url": "titancorp.miraheze.org",
-      "locale": "en",
-      "fromFandomInterwiki": false,
-      "isOfficialWiki": true
-    }]
+    "universeIds": [
+      5351931175
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "titancorp.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
   },
   {
-    "universeIds": [807930589],
-    "links": [{
-      "type": "communityWiki",
-      "url": "thewild-west.fandom.com",
-      "locale": "en",
-      "fromFandomInterwiki": false,
-      "isOfficialWiki": true
-    }]
+    "universeIds": [
+      807930589
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "thewild-west.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
   },
   {
-    "universeIds": [7489122072],
-    "links": [{
-      "type": "communityWiki",
-      "url": "blooddebt1999.miraheze.org",
-      "locale": "en",
-      "fromFandomInterwiki": false,
-      "isOfficialWiki": true
-    }]
+    "universeIds": [
+      7489122072
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "blooddebt1999.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
   },
   {
-    "universeIds": [3317064564],
-    "links": [{
-      "type": "communityWiki",
-      "url": "centaura.fandom.com",
-      "locale": "en",
-      "fromFandomInterwiki": false,
-      "isOfficialWiki": true
-    }]
+    "universeIds": [
+      3317064564
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "centaura.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
   },
   {
-    "universeIds": [2031579354],
-    "links": [{
-      "type": "communityWiki",
-      "url": "dead-ahead.fandom.com",
-      "locale": "en",
-      "fromFandomInterwiki": false,
-      "isOfficialWiki": true
-    }]
+    "universeIds": [
+      2031579354
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "dead-ahead.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
   },
   {
-    "universeIds": [16876831],
-    "links": [{
-      "type": "communityWiki",
-      "url": "roblox-blood-iron.fandom.com",
-      "locale": "en",
-      "fromFandomInterwiki": false,
-      "isOfficialWiki": true
-    }]
+    "universeIds": [
+      16876831
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "roblox-blood-iron.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
   },
   {
-    "universeIds": [1582293268],
-    "links": [{
-      "type": "communityWiki",
-      "url": "tower-blitz.fandom.com",
-      "locale": "en",
-      "fromFandomInterwiki": false,
-      "isOfficialWiki": true
-    }]
+    "universeIds": [
+      1582293268
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "tower-blitz.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
   },
   {
-    "universeIds": [7937194831],
-    "links": [{
-      "type": "communityWiki",
-      "url": "steal-a-pet.fandom.com",
-      "locale": "en",
-      "fromFandomInterwiki": false,
-      "isOfficialWiki": false
-    }]
+    "universeIds": [
+      7937194831
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "steal-a-pet.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
   },
   {
-    "universeIds": [3104101863],
-    "links": [{
-      "type": "communityWiki",
-      "url": "michaels-zombies-roblox.fandom.com",
-      "locale": "en",
-      "fromFandomInterwiki": false,
-      "isOfficialWiki": true
-    }]
+    "universeIds": [
+      3104101863
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "michaels-zombies-roblox.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
   },
   {
-    "universeIds": [2548183080],
-    "links": [{
-      "type": "communityWiki",
-      "url": "pilgrammed-rblx.fandom.com",
-      "locale": "en",
-      "fromFandomInterwiki": false,
-      "isOfficialWiki": true
-    }]
+    "universeIds": [
+      2548183080
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "pilgrammed-rblx.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
   },
   {
-    "universeIds": [6508759464],
-    "links": [{
-      "type": "communityWiki",
-      "url": "grace-rbx.fandom.com",
-      "locale": "en",
-      "fromFandomInterwiki": false,
-      "isOfficialWiki": false
-    }]
+    "universeIds": [
+      6508759464
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "grace-rbx.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
   },
   {
-    "universeIds": [3717264063],
-    "links": [{
-      "type": "communityWiki",
-      "url": "nicosnextbots.miraheze.org",
-      "locale": "en",
-      "fromFandomInterwiki": false,
-      "isOfficialWiki": false
-    }]
+    "universeIds": [
+      3717264063
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "nicosnextbots.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
   },
   {
-    "universeIds": [7018190066],
-    "links": [{
-      "type": "communityWiki",
-      "url": "deadrails.fandom.com",
-      "locale": "en",
-      "fromFandomInterwiki": false,
-      "isOfficialWiki": false
-    }]
+    "universeIds": [
+      7018190066
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "deadrails.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
   },
   {
-    "universeIds": [2619619496],
-    "links": [{
-      "type": "communityWiki",
-      "url": "robloxbedwars.fandom.com",
-      "locale": "en",
-      "fromFandomInterwiki": false,
-      "isOfficialWiki": false
-    }]
+    "universeIds": [
+      2619619496
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "robloxbedwars.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
   },
   {
-    "universeIds": [5193569427],
-    "links": [{
-      "type": "communityWiki",
-      "url": "projectremixroblox.miraheze.org",
-      "locale": "en",
-      "fromFandomInterwiki": false,
-      "isOfficialWiki": false
-    }]
+    "universeIds": [
+      5193569427
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "projectremixroblox.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
   },
   {
-    "universeIds": [3347455347],
-    "links": [{
-      "type": "communityWiki",
-      "url": "airship-assault.fandom.com",
-      "locale": "en",
-      "fromFandomInterwiki": false,
-      "isOfficialWiki": false
-    }]
+    "universeIds": [
+      3347455347
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "airship-assault.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
   },
   {
-    "universeIds": [3647333358],
-    "links": [{
-      "type": "communityWiki",
-      "url": "evade-nextbot.fandom.com",
-      "locale": "en",
-      "fromFandomInterwiki": false
-    }]
+    "universeIds": [
+      3647333358
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "evade-nextbot.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false
+      }
+    ]
   },
   {
-    "universeIds": [5803093656],
-    "links": [{
-      "type": "communityWiki",
-      "url": "blue-heater.fandom.com",
-      "locale": "en",
-      "fromFandomInterwiki": false,
-      "isOfficialWiki": true
-    }]
+    "universeIds": [
+      5803093656
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "blue-heater.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
   },
   {
-    "universeIds": [3997171304],
-    "links": [{
-      "type": "communityWiki",
-      "url": "rfti.fandom.com",
-      "locale": "en",
-      "fromFandomInterwiki": false,
-      "isOfficialWiki": true
-    }]
+    "universeIds": [
+      3997171304
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "rfti.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
   },
   {
-    "universeIds": [4653177191],
-    "links": [{
-      "type": "communityWiki",
-      "url": "wm.miraheze.org",
-      "locale": "en",
-      "fromFandomInterwiki": false,
-      "isOfficialWiki": true
-    }]
+    "universeIds": [
+      4653177191
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "wm.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
   },
   {
-    "universeIds": [260395717],
-    "links": [{
-      "type": "communityWiki",
-      "url": "dreadrblx.fandom.com",
-      "locale": "en",
-      "fromFandomInterwiki": false,
-      "isOfficialWiki": true
-    }]
+    "universeIds": [
+      260395717
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "dreadrblx.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
   },
   {
-    "universeIds": [169302362],
-    "links": [{
-      "type": "communityWiki",
-      "url": "project-lazarus.fandom.com",
-      "locale": "en",
-      "fromFandomInterwiki": false,
-      "isOfficialWiki": true
-    }]
+    "universeIds": [
+      169302362
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "project-lazarus.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
   },
   {
-    "universeIds": [1049111999],
-    "links": [{
-      "type": "communityWiki",
-      "url": "ips2.fandom.com",
-      "locale": "en",
-      "fromFandomInterwiki": false,
-      "isOfficialWiki": true
-    }]
+    "universeIds": [
+      1049111999
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "ips2.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
   },
   {
-    "universeIds": [5764473273],
-    "links": [{
-      "type": "communityWiki",
-      "url": "periastron-stars-rpg.fandom.com",
-      "locale": "en",
-      "fromFandomInterwiki": false,
-      "isOfficialWiki": false
-    }]
+    "universeIds": [
+      5764473273
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "periastron-stars-rpg.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
   },
   {
-    "universeIds": [187796008],
-    "links": [{
-      "type": "communityWiki",
-      "url": "those-who-remain.fandom.com",
-      "locale": "en",
-      "fromFandomInterwiki": false,
-      "isOfficialWiki": false
-    }]
+    "universeIds": [
+      187796008
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "those-who-remain.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
   },
   {
-    "universeIds": [323675642],
-    "links": [{
-      "type": "communityWiki",
-      "url": "flood-escape-2.fandom.com/",
-      "locale": "en",
-      "fromFandomInterwiki": false,
-      "isOfficialWiki": false
-    }]
+    "universeIds": [
+      323675642
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "flood-escape-2.fandom.com/",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
   },
   {
-    "universeIds": [1516533665],
-    "links": [{
-      "type": "communityWiki",
-      "url": "piggy.fandom.com",
-      "locale": "en",
-      "fromFandomInterwiki": false,
-      "isOfficialWiki": false
-    }]
+    "universeIds": [
+      1516533665
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "piggy.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
   },
   {
-    "universeIds": [6331902150],
-    "links": [{
-      "type": "communityWiki",
-      "url": "forsaken.wiki",
-      "locale": "en",
-      "fromFandomInterwiki": false,
-      "isOfficialWiki": true
-    }]
+    "universeIds": [
+      6331902150
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "forsaken.wiki",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
   },
   {
-    "universeIds": [3615728730],
-    "links": [{
-      "type": "communityWiki",
-      "url": "rbx-derelict.fandom.com",
-      "locale": "en",
-      "fromFandomInterwiki": true,
-      "isOfficialWiki": true
-    }]
+    "universeIds": [
+      3615728730
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "rbx-derelict.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": true,
+        "isOfficialWiki": true
+      }
+    ]
   },
   {
-    "universeIds": [2157872230],
-    "links": [{
-      "type": "communityWiki",
-      "url": "infectious-smile.fandom.com",
-      "locale": "en",
-      "fromFandomInterwiki": true
-    }]
+    "universeIds": [
+      2157872230
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "infectious-smile.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      7095682825
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "beakswiki.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      1434182982
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "wiki.eggsdstudios.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      6398411075
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "bloxnoyb.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      4343171923
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "studlands-rpg-roblox.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      3764534614
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "rune-slayerrblx.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      3291589472
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "voxlpedia.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      7546582051
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "dungeonheroes.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      4395344197
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "flexyourweather.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      3448264866
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "industrialist.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      1511649232
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "journey-to-the-sun-official.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      4981761600
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "abyssal.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      375716943
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "robloxdday.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      44532244
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "brickwars.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      6084311607
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "official3ps.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      2365625034
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "trepidationroblox.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      6743352936,
+      4965586188
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "starstruck.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      3166350952
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "depthspelunking.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      6525444058
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "noobsincombatcoldfront.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      2033000034
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "noobsincombat.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      4875932103
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "asylumrejectswiki.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      3163813433
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "robloxcriticalstrike.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      6711018203
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "kaleidoscope.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      7427548753
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "biast.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      3326279937
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "blackout.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      6884266247
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "animerangerx.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      1281592938
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "entrenched-roblox.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      7414497778
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "multicrew-tank-combat.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      2491559356
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "cursed-tank-simulator.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      5269058522
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "lexingtonandconcord.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      770538576
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "naval-warfare-roblox.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      2929752024
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "towerworld.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      1943254200
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "unofficialrgd.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      3478678937
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "roblox-grass-cutting-incremental.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      6263381091
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "horizonblue1919.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      918677693
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "ronroblox.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      7344582593
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "die-of-death.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      6329693946
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "umt.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      659118871
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "wiki.playstreamlined.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      2575793677
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "aniphobia-overhaul.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      5341215625
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "muffinassault.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      5648898470
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "reality-compromised.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      321279858,
+      3365661357
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "sharkbite.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      65708455
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "rise-of-the-dead-rbx.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      1831550657
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "creatures-of-sonaria-official.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      1235188606
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "dragon-adventures.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      1278035280
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "warrior-cats-ultimate-edition-wcue.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      1775919872
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "doodle-world.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      7623259179
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "nullscape.wiki",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      6676839751
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "rorvik.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      2533478584
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "skyven.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      2251388500
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "twisted-roblox-game.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      2471596693
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "twistingruin.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      5779606636
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "subterra.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      5682590751
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "lootify.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      5898577904
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "musketsnmagic.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      5446312375
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "ballgame.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      4398901283
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "wiki.wubbygame.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      3351351160
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "frontlinekarelia.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      2859037720,
+      5476563860,
+      6906822557
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "roblox-stars-align.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      5072279323
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "beattherobloxian.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      1548876253
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "voxelventure.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      4883864516
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "projecttemi.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      4260784961
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "napoleonic-wars-rblx.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      653118530
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "zombiestories.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      4583112039
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "hs-rebirth.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      3741075732
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "chain.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      3808081382
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "the-strongest-battlegrounds-rblx.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      3508322461
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "jujutsu-shenanigans.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      5518485441
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "offical-outlaws-of-robloxia.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      73754455
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "saktkia51.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      7065948,
+      19682040,
+      428729192,
+      4460205606,
+      367134119
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "innovation-inc.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      21918360,
+      31874845,
+      22711661,
+      31874825,
+      31874906,
+      568189489,
+      31874888,
+      4863897785
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "pinewood.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      1484369645,
+      1483988059
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "sci-pathos-iii.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
   }
 ]
