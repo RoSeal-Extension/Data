@@ -4,6 +4,41 @@
     "name": "Main Website",
     "experiments": [
       {
+        "id": "2025-07-robuxPageRedesign",
+        "name": "Robux page redesign (iOS)",
+        "buckets": [{
+          "id": "enable",
+          "label": "Enabled",
+          "description": "Enable robux page redesign",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "override": {
+              "1": {
+                "Payments.BuyRobux.PersonalizedBonus": {
+                  "IosBuyRobuxRedesign": "Redesign"
+                }
+              }
+            }
+          }]
+        }, {
+          "id": "disable",
+          "label": "Disabled",
+          "description": "Disable robux page redesign",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "override": {
+              "1": {
+                "Payments.BuyRobux.PersonalizedBonus": {
+                  "IosBuyRobuxRedesign": "Control"
+                }
+              }
+            }
+          }]
+        }]
+      },
+      {
         "id": "2025-07-musicCharts",
         "name": "Music sorts on charts page",
         "buckets": [{
