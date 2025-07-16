@@ -3,7 +3,73 @@
     "id": "www",
     "name": "Main Website",
     "experiments": [
-    {
+      {
+        "id": "2025-07-musicCharts",
+        "name": "Music sorts on charts page",
+        "buckets": [{
+          "id": "enable",
+          "label": "Enabled",
+          "description": "Enable Music sorts on charts page",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "override": {
+              "1": {
+                "Website.GamesPage": {
+                  "isMusicChartsCarouselEnabled": true
+                }
+              }
+            }
+          }]
+        }, {
+          "id": "disable",
+          "label": "Disabled",
+          "description": "Disable Music sorts on charts page",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "override": {
+              "1": {
+                "Website.GamesPage": {
+                  "isMusicChartsCarouselEnabled": false
+                }
+              }
+            }
+          }]
+        }]
+      },
+      {
+        "id": "2025-07-communityVerificationLevels",
+        "name": "Community join verificaton levels",
+        "buckets": [{
+          "id": "enable",
+          "label": "Enabled",
+          "description": "Enable verification levels",
+          "operations": [{
+            "type": "guac",
+            "guacType": "override",
+            "override": {
+              "group-details-ui": {
+                "isGroupVerificationRequiredToJoin": true
+              }
+            }
+          }]
+        }, {
+          "id": "disable",
+          "label": "Disabled",
+          "description": "Disable verification levels",
+          "operations": [{
+            "type": "guac",
+            "guacType": "override",
+            "override": {
+              "group-details-ui": {
+                "isGroupVerificationRequiredToJoin": false
+              }
+            }
+          }]
+        }]
+      },
+      {
         "id": "2025-07-avatarScaleInTab",
         "name": "Avatar scale inside of tab",
         "buckets": [
@@ -138,37 +204,44 @@
       {
         "id": "2025-07-avatarEditorMigration",
         "name": "Avatar editor React migration",
-        "buckets": [{
-          "id": "enable",
-          "label": "Enabled",
-          "description": "Enable avatar editor React migration",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "AvatarExperience.Web.Editor": {
-                  "useReactAvatarEditor": true
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable avatar editor React migration",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "AvatarExperience.Web.Editor": {
+                      "useReactAvatarEditor": true
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }, {
-          "id": "disable",
-          "label": "Disabled",
-          "description": "Disable avatar editor React migration",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "AvatarExperience.Web.Editor": {
-                  "useReactAvatarEditor": false
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable avatar editor React migration",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "AvatarExperience.Web.Editor": {
+                      "useReactAvatarEditor": false
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }]
+            ]
+          }
+        ]
       },
       {
         "id": "2025-06-communityContentModeration",
@@ -211,147 +284,176 @@
       {
         "id": "2025-05-newStartingDialog",
         "name": "New starting dialog",
-        "buckets": [{
-          "id": "enable",
-          "label": "Enabled",
-          "description": "Enable new starting dialog",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "Website.DownloadFlow": {
-                  "showNewInstruction": true
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable new starting dialog",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Website.DownloadFlow": {
+                      "showNewInstruction": true
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }, {
-          "id": "disable",
-          "label": "Disabled",
-          "description": "Disable new starting dialog",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "Website.DownloadFlow": {
-                  "showNewInstruction": false
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable new starting dialog",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Website.DownloadFlow": {
+                      "showNewInstruction": false
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }]
+            ]
+          }
+        ]
       },
       {
         "id": "2025-06-communityMemberListRedesign",
         "name": "Community member list redesign",
-        "buckets": [{
-          "id": "enable",
-          "label": "Enabled",
-          "description": "Enable redesign",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "Social.CommunityPage": {
-                  "showMembersListModalRedesign": true
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable redesign",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Social.CommunityPage": {
+                      "showMembersListModalRedesign": true
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }, {
-          "id": "disable",
-          "label": "Disabled",
-          "description": "Disable redesign",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "Social.CommunityPage": {
-                  "showMembersListModalRedesign": false
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable redesign",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Social.CommunityPage": {
+                      "showMembersListModalRedesign": false
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }]
+            ]
+          }
+        ]
       },
       {
         "id": "2025-06-communityExperienceListRedesign",
         "name": "Community experience list redesign",
-        "buckets": [{
-          "id": "enable",
-          "label": "Enabled",
-          "description": "Enable redesign",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "Social.CommunityPage": {
-                  "showGroupExperiencesRedesign": true
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable redesign",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Social.CommunityPage": {
+                      "showGroupExperiencesRedesign": true
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }, {
-          "id": "disable",
-          "label": "Disabled",
-          "description": "Disable redesign",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "Social.CommunityPage": {
-                  "showGroupExperiencesRedesign": false
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable redesign",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Social.CommunityPage": {
+                      "showGroupExperiencesRedesign": false
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }]
+            ]
+          }
+        ]
       },
       {
         "id": "2025-06-hideContactSyncSettings",
         "name": "Hide contact sync settings",
-        "buckets": [{
-          "id": "enable",
-          "label": "Enabled",
-          "description": "Enable hide contact sync settings",
-          "operations": [{
-            "type": "guac",
-            "guacType": "override",
-            "overrides": {
-              "account-settings-ui": {
-                "hideDeviceContactSyncSettings": true
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable hide contact sync settings",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "account-settings-ui": {
+                    "hideDeviceContactSyncSettings": true
+                  }
+                }
               }
-            }
-          }]
-        }, {
-          "id": "disable",
-          "label": "Disabled",
-          "description": "Disable hide contact sync settings",
-          "operations": [{
-            "type": "guac",
-            "guacType": "override",
-            "overrides": {
-              "account-settings-ui": {
-                "hideDeviceContactSyncSettings": false
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable hide contact sync settings",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "account-settings-ui": {
+                    "hideDeviceContactSyncSettings": false
+                  }
+                }
               }
-            }
-          }]
-        }]
+            ]
+          }
+        ]
       },
       {
         "id": "2025-06-premiumFeaturesHighCog",
         "name": "Premium features high cog",
-        "buckets": [{
-          "id": "enable",
-          "label": "Enabled",
-          "description": "Enable high cog experiment",
-           "operations": [
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable high cog experiment",
+            "operations": [
               {
                 "type": "json",
                 "jsonType": "set",
@@ -365,11 +467,12 @@
                 "value": true
               }
             ]
-        }, {
-          "id": "disable",
-          "label": "Disabled",
-          "description": "Disable high cog experiment",
-           "operations": [
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable high cog experiment",
+            "operations": [
               {
                 "type": "json",
                 "jsonType": "set",
@@ -383,700 +486,858 @@
                 "value": false
               }
             ]
-        }]
+          }
+        ]
       },
       {
         "id": "2025-06-helpArticleSuggestions",
         "name": "Display Help Article suggestions on support form",
-        "buckets": [{
-          "id": "enable",
-          "label": "Enabled",
-          "description": "Enable Help Article suggestions",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "CustomerCare.SupportForm.HelpArticleSuggestions": {
-                  "show_hc_article_suggestions": true
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable Help Article suggestions",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "CustomerCare.SupportForm.HelpArticleSuggestions": {
+                      "show_hc_article_suggestions": true
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }, {
-          "id": "disable",
-          "label": "Disabled",
-          "description": "Disable Help Article suggestions",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "CustomerCare.SupportForm.HelpArticleSuggestions": {
-                  "show_hc_article_suggestions": false
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable Help Article suggestions",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "CustomerCare.SupportForm.HelpArticleSuggestions": {
+                      "show_hc_article_suggestions": false
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }]
+            ]
+          }
+        ]
       },
       {
         "id": "2025-06-ageGroupDisplay",
         "name": "Display Age Group in Account Settings",
-        "buckets": [{
-          "id": "enable",
-          "label": "Enabled",
-          "description": "Enable Age Group display",
-          "operations": [{
-            "type": "guac",
-            "guacType": "override",
-            "overrides": {
-              "account-settings-ui": {
-                "displayAgeGroup": true
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable Age Group display",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "account-settings-ui": {
+                    "displayAgeGroup": true
+                  }
+                }
               }
-            }
-          }]
-        }, {
-          "id": "disable",
-          "label": "Disable",
-          "description": "Disable Age Group display",
-          "operations": [{
-            "type": "guac",
-            "guacType": "override",
-            "overrides": {
-              "account-settings-ui": {
-                "displayAgeGroup": false
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disable",
+            "description": "Disable Age Group display",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "account-settings-ui": {
+                    "displayAgeGroup": false
+                  }
+                }
               }
-            }
-          }]
-        }]
+            ]
+          }
+        ]
       },
       {
         "id": "2025-06-birthdayPicker",
         "name": "Birthday Picker",
-        "buckets": [{
-          "id": "enable",
-          "label": "Enabled",
-          "description": "Enable Birthday Picker",
-          "operations": [{
-            "type": "guac",
-            "guacType": "override",
-            "overrides": {
-              "account-settings-ui": {
-                "displayBirthdayPicker": true
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable Birthday Picker",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "account-settings-ui": {
+                    "displayBirthdayPicker": true
+                  }
+                }
               }
-            }
-          }]
-        }, {
-          "id": "disable",
-          "label": "Disabled",
-          "description": "Disable Birthday Picker",
-          "operations": [{
-            "type": "guac",
-            "guacType": "override",
-            "overrides": {
-              "account-settings-ui": {
-                "displayBirthdayPicker": false
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable Birthday Picker",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "account-settings-ui": {
+                    "displayBirthdayPicker": false
+                  }
+                }
               }
-            }
-          }]
-        }]
+            ]
+          }
+        ]
       },
       {
         "id": "2025-06-ageVerificationSettingsDisplay",
         "name": "Age Verification Settings Display in Settings",
-        "buckets": [{
-          "id": "enable",
-          "label": "Enabled",
-          "description": "Enable Age Verification Display",
-          "operations": [{
-            "type": "guac",
-            "guacType": "override",
-            "overrides": {
-              "account-settings-ui": {
-                "displayAgeVerification": true
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable Age Verification Display",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "account-settings-ui": {
+                    "displayAgeVerification": true
+                  }
+                }
               }
-            }
-          }]
-        }, {
-          "id": "disable",
-          "label": "Disabled",
-          "description": "Disable Age Verification Display",
-          "operations": [{
-            "type": "guac",
-            "guacType": "override",
-            "overrides": {
-              "account-settings-ui": {
-                "displayAgeVerification": false
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable Age Verification Display",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "account-settings-ui": {
+                    "displayAgeVerification": false
+                  }
+                }
               }
-            }
-          }]
-        }]
+            ]
+          }
+        ]
       },
       {
         "id": "2025-06-communityListRedesign",
         "name": "Community List sidebar redesign",
-        "buckets": [{
-          "id": "enable",
-          "label": "Enabled",
-          "description": "Enable redesign",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "Social.CommunityPage": {
-                  "showGroupsListRedesign": true
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable redesign",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Social.CommunityPage": {
+                      "showGroupsListRedesign": true
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }, {
-          "id": "disable",
-          "label": "Disabled",
-          "description": "Disable redesign",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "Social.CommunityPage": {
-                  "showGroupsListRedesign": false
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable redesign",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Social.CommunityPage": {
+                      "showGroupsListRedesign": false
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }]
+            ]
+          }
+        ]
       },
       {
         "id": "2025-05-accountRecoveryRedesign",
         "name": "Account recovery page redesign",
-        "buckets": [{
-          "id": "enable",
-          "label": "Enabled",
-          "description": "Enable page redesign",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "AccountSecurity.SelfRecovery.RecoveryUI": {
-                  "isRecoveryRevampUIEnabled": true
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable page redesign",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "AccountSecurity.SelfRecovery.RecoveryUI": {
+                      "isRecoveryRevampUIEnabled": true
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }, {
-          "id": "disable",
-          "label": "Disabled",
-          "description": "Use old page design",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "AccountSecurity.SelfRecovery.RecoveryUI": {
-                  "isRecoveryRevampUIEnabled": false
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Use old page design",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "AccountSecurity.SelfRecovery.RecoveryUI": {
+                      "isRecoveryRevampUIEnabled": false
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }]
+            ]
+          }
+        ]
       },
       {
         "id": "2025-05-renameCommunityMembers",
         "name": "Rename Community Members to Followers on all Communities",
-        "buckets": [{
-          "id": "enable",
-          "label": "Enabled",
-          "description": "Enable Followers rename",
-          "operations": [{
-            "type": "json",
-            "jsonType": "set",
-            "match": {
-              "field": ["components", "CommunityProfileHeader", "", "hasSocialModules"],
-              "robloxSubdomain": "apis",
-              "regex": "^/profile-platform-api/v1/profiles/get$",
-              "method": "post"
-            },
-            "value": false
-          }]
-        }, {
-          "id": "disable",
-          "label": "Disabled",
-          "description": "Disable Followers rename",
-          "operations": [{
-            "type": "json",
-            "jsonType": "set",
-            "match": {
-              "field": ["components", "CommunityProfileHeader", "", "hasSocialModules"],
-              "robloxSubdomain": "apis",
-              "regex": "^/profile-platform-api/v1/profiles/get$",
-              "method": "post"
-            },
-            "value": true
-          }]
-        }]
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable Followers rename",
+            "operations": [
+              {
+                "type": "json",
+                "jsonType": "set",
+                "match": {
+                  "field": [
+                    "components",
+                    "CommunityProfileHeader",
+                    "",
+                    "hasSocialModules"
+                  ],
+                  "robloxSubdomain": "apis",
+                  "regex": "^/profile-platform-api/v1/profiles/get$",
+                  "method": "post"
+                },
+                "value": false
+              }
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable Followers rename",
+            "operations": [
+              {
+                "type": "json",
+                "jsonType": "set",
+                "match": {
+                  "field": [
+                    "components",
+                    "CommunityProfileHeader",
+                    "",
+                    "hasSocialModules"
+                  ],
+                  "robloxSubdomain": "apis",
+                  "regex": "^/profile-platform-api/v1/profiles/get$",
+                  "method": "post"
+                },
+                "value": true
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "2025-05-hideEmptyCommunityTabs",
         "name": "Hide empty Community tabs",
-        "buckets": [{
-          "id": "enable",
-          "label": "Enabled",
-          "description": "Hide empty Community tab",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "Social.CommunityPage": {
-                  "hideEmptyCommunityTabs": true
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Hide empty Community tab",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Social.CommunityPage": {
+                      "hideEmptyCommunityTabs": true
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }, {
-          "id": "disable",
-          "label": "Disabled",
-          "description": "Do not hide empty Community tab",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "Social.CommunityPage": {
-                  "hideEmptyCommunityTabs": false
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Do not hide empty Community tab",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Social.CommunityPage": {
+                      "hideEmptyCommunityTabs": false
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }]
+            ]
+          }
+        ]
       },
       {
         "id": "2025-05-communityHeaderRedesign",
         "name": "Redesigned and reworked community header",
-        "buckets": [{
-          "id": "enable",
-          "label": "Enabled",
-          "description": "Enable new redesign",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "UserCommunities.Groups.Discovery": {
-                  "enableCommunityProfileHeaderRedesign": true
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable new redesign",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "UserCommunities.Groups.Discovery": {
+                      "enableCommunityProfileHeaderRedesign": true
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }, {
-          "id": "disable",
-          "label": "Disabled",
-          "description": "Use the old Community header redesign",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "UserCommunities.Groups.Discovery": {
-                  "enableCommunityProfileHeaderRedesign": false
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Use the old Community header redesign",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "UserCommunities.Groups.Discovery": {
+                      "enableCommunityProfileHeaderRedesign": false
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }]
+            ]
+          }
+        ]
       },
       {
         "id": "2025-05-friendsToConnections",
         "name": "Rename Friends to Connections",
-        "buckets": [{
-          "id": "enable",
-          "label": "Enabled",
-          "description": "Rename to Connections",
-          "operations": [{
-            "type": "guac",
-            "guacType": "override",
-            "overrides": {
-              "web-rename-friends": {
-                "renameFriendsToConnections": true
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Rename to Connections",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "web-rename-friends": {
+                    "renameFriendsToConnections": true
+                  }
+                }
               }
-            }
-          }]
-        }, {
-          "id": "disable",
-          "label": "Disabled",
-          "description": "Do not rename to Connections",
-          "operations": [{
-            "type": "guac",
-            "guacType": "override",
-            "overrides": {
-              "web-rename-friends": {
-                "renameFriendsToConnections": false
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Do not rename to Connections",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "web-rename-friends": {
+                    "renameFriendsToConnections": false
+                  }
+                }
               }
-            }
-          }]
-        }]
+            ]
+          }
+        ]
       },
       {
         "id": "2025-05-chatOSAContext",
         "name": "Show OSA context messages for chat conversations",
-        "buckets": [{
-          "id": "enable",
-          "label": "Enabled",
-          "description": "Enable OSA context messages",
-          "operations": [{
-            "type": "guac",
-            "guacType": "override",
-            "overrides": {
-              "chat-ui": {
-                "useOneToOneOsaContextCards": 100
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable OSA context messages",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "chat-ui": {
+                    "useOneToOneOsaContextCards": 100
+                  }
+                }
               }
-            }
-          }]
-        }, {
-          "id": "disable",
-          "label": "Disabled",
-          "description": "Disable OSA context messages",
-          "operations": [{
-            "type": "guac",
-            "guacType": "override",
-            "overrides": {
-              "chat-ui": {
-                "useOneToOneOsaContextCards": 0
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable OSA context messages",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "chat-ui": {
+                    "useOneToOneOsaContextCards": 0
+                  }
+                }
               }
-            }
-          }]
-        }]
+            ]
+          }
+        ]
       },
       {
         "id": "2025-05-chatTimeouts",
         "name": "Chat timeouts for chat conversations",
-        "buckets": [{
-          "id": "enable",
-          "label": "Enabled",
-          "description": "Enable chat timeouts",
-          "operations": [{
-            "type": "guac",
-            "guacType": "override",
-            "overrides": {
-              "chat-ui": {
-                "useChatTimeouts": 100
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable chat timeouts",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "chat-ui": {
+                    "useChatTimeouts": 100
+                  }
+                }
               }
-            }
-          }]
-        }, {
-          "id": "disable",
-          "label": "Disabled",
-          "description": "Disable chat timeouts",
-          "operations": [{
-            "type": "guac",
-            "guacType": "override",
-            "overrides": {
-              "chat-ui": {
-                "useChatTimeouts": 0
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable chat timeouts",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "chat-ui": {
+                    "useChatTimeouts": 0
+                  }
+                }
               }
-            }
-          }]
-        }]
+            ]
+          }
+        ]
       },
       {
         "id": "2025-05-chatPaginatedFriends",
         "name": "Paginated friends in chat conversations",
-        "buckets": [{
-          "id": "enable",
-          "label": "Enabled",
-          "description": "Enable paginated friends",
-          "operations": [{
-            "type": "guac",
-            "guacType": "override",
-            "overrides": {
-              "chat-ui": {
-                "usePaginatedFriends": 100
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable paginated friends",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "chat-ui": {
+                    "usePaginatedFriends": 100
+                  }
+                }
               }
-            }
-          }]
-        }, {
-          "id": "disable",
-          "label": "Disabled",
-          "description": "Disable paginated frieds",
-          "operations": [{
-            "type": "guac",
-            "guacType": "override",
-            "overrides": {
-              "chat-ui": {
-                "usePaginatedFriends": 0
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable paginated frieds",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "chat-ui": {
+                    "usePaginatedFriends": 0
+                  }
+                }
               }
-            }
-          }]
-        }]
+            ]
+          }
+        ]
       },
       {
         "id": "2025-05-chatContactCards",
         "name": "Contact cards in chat conversations",
-        "buckets": [{
-          "id": "enable",
-          "label": "Enabled",
-          "description": "Enable contact cards",
-          "operations": [{
-            "type": "guac",
-            "guacType": "override",
-            "overrides": {
-              "chat-ui": {
-                "isWebChatTcEnabled": true
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable contact cards",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "chat-ui": {
+                    "isWebChatTcEnabled": true
+                  }
+                }
               }
-            }
-          }]
-        }, {
-          "id": "disable",
-          "label": "Disabled",
-          "description": "Disable contact cards",
-          "operations": [{
-            "type": "guac",
-            "guacType": "override",
-            "overrides": {
-              "chat-ui": {
-                "isWebChatTcEnabled": false
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable contact cards",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "chat-ui": {
+                    "isWebChatTcEnabled": false
+                  }
+                }
               }
-            }
-          }]
-        }]
+            ]
+          }
+        ]
       },
       {
         "id": "2025-04-abuseReportRevamp",
         "name": "Abuse report revamp",
-        "buckets": [{
-          "id": "enable",
-          "label": "Enabled",
-          "description": "Enable abuse report revamp",
-          "operations": [{
-            "type": "dom",
-            "domType": "modify",
-            "selector": "[data-is-ar-revamp-enabled]",
-            "attributes": {
-              "data-is-ar-revamp-enabled": "True"
-            }
-          }]
-        }, {
-          "id": "disable",
-          "label": "Disabled",
-          "description": "Disable abuse report revamp",
-          "operations": [{
-            "type": "dom",
-            "domType": "modify",
-            "selector": "[data-is-ar-revamp-enabled]",
-            "attributes": {
-              "data-is-ar-revamp-enabled": "False"
-            }
-          }]
-        }]
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable abuse report revamp",
+            "operations": [
+              {
+                "type": "dom",
+                "domType": "modify",
+                "selector": "[data-is-ar-revamp-enabled]",
+                "attributes": {
+                  "data-is-ar-revamp-enabled": "True"
+                }
+              }
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable abuse report revamp",
+            "operations": [
+              {
+                "type": "dom",
+                "domType": "modify",
+                "selector": "[data-is-ar-revamp-enabled]",
+                "attributes": {
+                  "data-is-ar-revamp-enabled": "False"
+                }
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "2025-05-expandedGiftCardCountries",
         "name": "Expanded gift card countries",
-        "buckets": [{
-          "id": "enable",
-          "label": "Enabled",
-          "description": "Enable expanded countries",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": { 
-                "PaymentsOptimization.GiftCards": {
-                  "variant": "ExpandedCountries"
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable expanded countries",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "PaymentsOptimization.GiftCards": {
+                      "variant": "ExpandedCountries"
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }, {
-          "id": "disable",
-          "label": "Disable",
-          "description": "Disable expanded countries",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": { 
-                "PaymentsOptimization.GiftCards": {
-                  "variant": "Control"
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disable",
+            "description": "Disable expanded countries",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "PaymentsOptimization.GiftCards": {
+                      "variant": "Control"
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }]
+            ]
+          }
+        ]
       },
       {
         "id": "2025-05-devProductsReportAbuseRevamp",
         "name": "Developer products in report abuse revamped page",
-        "buckets": [{
-          "id": "enable",
-          "label": "Enabled",
-          "description": "Enable developer products",
-          "operations": [{
-            "type": "guac",
-            "guacType": "override",
-            "overrides": {
-              "abuse-reporting-revamp": {
-                "EnableDevProducts": true,
-                "EnableGroupComment": true,
-                "EnableGroupPost": true,
-                "EnableGroupWall": true,
-                "EnableGroupRoleset": true,
-                "EnableExperience": true,
-                "EnableCommunityGroupStatus": true
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable developer products",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "abuse-reporting-revamp": {
+                    "EnableDevProducts": true,
+                    "EnableGroupComment": true,
+                    "EnableGroupPost": true,
+                    "EnableGroupWall": true,
+                    "EnableGroupRoleset": true,
+                    "EnableExperience": true,
+                    "EnableCommunityGroupStatus": true
+                  }
+                }
               }
-            }
-          }]
-        }, {
-          "id": "disable",
-          "label": "Disabled",
-          "description": "Disable developer products",
-          "operations": [{
-            "type": "guac",
-            "guacType": "override",
-            "overrides": {
-              "abuse-reporting-revamp": {
-                "EnableDevProducts": false,
-                "EnableGroupComment": false,
-                "EnableGroupPost": false,
-                "EnableGroupWall": false,
-                "EnableGroupRoleset": false,
-                "EnableExperience": false,
-                "EnableCommunityGroupStatus": false
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable developer products",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "abuse-reporting-revamp": {
+                    "EnableDevProducts": false,
+                    "EnableGroupComment": false,
+                    "EnableGroupPost": false,
+                    "EnableGroupWall": false,
+                    "EnableGroupRoleset": false,
+                    "EnableExperience": false,
+                    "EnableCommunityGroupStatus": false
+                  }
+                }
               }
-            }
-          }]
-        }]
+            ]
+          }
+        ]
       },
       {
         "id": "2025-05-reportAbuseDSALink",
         "name": "DSA link in report abuse",
-        "buckets": [{
-          "id": "enable",
-          "label": "Enabled",
-          "description": "Show DSA link report abuse",
-          "operations": [{
-            "type": "guac",
-            "guacType": "override",
-            "overrides": {
-              "report-abuse-ui": {
-                "displayDsaLink": true
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Show DSA link report abuse",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "report-abuse-ui": {
+                    "displayDsaLink": true
+                  }
+                }
               }
-            }
-          }]
-        }, {
-          "id": "disable",
-          "label": "Disabled",
-          "description": "Do not show DSA link report abuse",
-          "operations": [{
-            "type": "guac",
-            "guacType": "override",
-            "overrides": {
-              "report-abuse-ui": {
-                "displayDsaLink": false
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Do not show DSA link report abuse",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "report-abuse-ui": {
+                    "displayDsaLink": false
+                  }
+                }
               }
-            }
-          }]
-        }]
+            ]
+          }
+        ]
       },
       {
         "id": "2024-12-phoneVerificationResendButton",
         "name": "Phone verification resend button",
-        "buckets": [{
-          "id": "enable",
-          "label": "Enabled",
-          "description": "Show phone verification resend button",
-          "operations": [{
-            "type": "guac",
-            "guacType": "override",
-            "overrides": {
-              "account-settings-ui": {
-                "showPhoneVerificationResendButton": true
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Show phone verification resend button",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "account-settings-ui": {
+                    "showPhoneVerificationResendButton": true
+                  }
+                }
               }
-            }
-          }]
-        }, {
-          "id": "disable",
-          "label": "Disabled",
-          "description": "Do not show phone verification resend button",
-          "operations": [{
-            "type": "guac",
-            "guacType": "override",
-            "overrides": {
-              "account-settings-ui": {
-                "showPhoneVerificationResendButton": false
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Do not show phone verification resend button",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "account-settings-ui": {
+                    "showPhoneVerificationResendButton": false
+                  }
+                }
               }
-            }
-          }]
-        }]
+            ]
+          }
+        ]
       },
       {
         "id": "2025-04-renamePrivacySettingsTab",
         "name": "Rename privacy settings tab",
-        "buckets": [{
-          "id": "enable",
-          "label": "Enabled",
-          "description": "Rename privacy settings tab to Privacy & Content Restrictions",
-          "operations": [{
-            "type": "guac",
-            "guacType": "override",
-            "overrides": {
-              "account-settings-ui": {
-                "renamePrivacyToPrivacyContentRestrictionsTab": true
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Rename privacy settings tab to Privacy & Content Restrictions",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "account-settings-ui": {
+                    "renamePrivacyToPrivacyContentRestrictionsTab": true
+                  }
+                }
               }
-            }
-          }]
-        }, {
-          "id": "disable",
-          "label": "Disabled",
-          "description": "Keep old privacy settings tab name",
-          "operations": [{
-            "type": "guac",
-            "guacType": "override",
-            "overrides": {
-              "account-settings-ui": {
-                "renamePrivacyToPrivacyContentRestrictionsTab": false
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Keep old privacy settings tab name",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "account-settings-ui": {
+                    "renamePrivacyToPrivacyContentRestrictionsTab": false
+                  }
+                }
               }
-            }
-          }]
-        }]
+            ]
+          }
+        ]
       },
       {
         "id": "2025-04-newHomeSortHeader",
         "name": "New sort header on home page",
-        "buckets": [{
-          "id": "enable",
-          "label": "Enabled",
-          "description": "Enable new sort header",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "PlayerApp.GridUI": {
-                  "IsNewSortHeaderEnabled": true
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable new sort header",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "PlayerApp.GridUI": {
+                      "IsNewSortHeaderEnabled": true
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }, {
-          "id": "disable",
-          "label": "Disabled",
-          "description": "Use old sort header",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "PlayerApp.GridUI": {
-                  "IsNewSortHeaderEnabled": false
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Use old sort header",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "PlayerApp.GridUI": {
+                      "IsNewSortHeaderEnabled": false
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }]
+            ]
+          }
+        ]
       },
       {
         "id": "2025-04-homeAddFriendsTile",
