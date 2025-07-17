@@ -1,5 +1,5 @@
 > [!IMPORTANT]\
-> RoSeal 2.1 will use a backend instead of a static CDN for data.
+> Some feature update will use a backend instead of a static CDN for data.
 
 # RoSeal data
 
