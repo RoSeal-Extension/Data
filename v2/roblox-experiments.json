@@ -13,7 +13,7 @@
           "operations": [{
             "type": "ixp",
             "ixpType": "override",
-            "override": {
+            "overrides": {
               "1": {
                 "Payments.BuyRobux.PersonalizedBonus": {
                   "IosBuyRobuxRedesign": "Redesign"
@@ -28,7 +28,7 @@
           "operations": [{
             "type": "ixp",
             "ixpType": "override",
-            "override": {
+            "overrides": {
               "1": {
                 "Payments.BuyRobux.PersonalizedBonus": {
                   "IosBuyRobuxRedesign": "Control"
@@ -48,7 +48,7 @@
           "operations": [{
             "type": "ixp",
             "ixpType": "override",
-            "override": {
+            "overrides": {
               "1": {
                 "Website.GamesPage": {
                   "isMusicChartsCarouselEnabled": true
@@ -63,7 +63,7 @@
           "operations": [{
             "type": "ixp",
             "ixpType": "override",
-            "override": {
+            "overrides": {
               "1": {
                 "Website.GamesPage": {
                   "isMusicChartsCarouselEnabled": false
@@ -83,7 +83,10 @@
           "operations": [{
             "type": "guac",
             "guacType": "override",
-            "override": {
+            "overrides": {
+              "configure-group-ui": {
+                "isGroupVerificationRequiredToJoin": true
+              },
               "group-details-ui": {
                 "isGroupVerificationRequiredToJoin": true
               }
@@ -96,7 +99,10 @@
           "operations": [{
             "type": "guac",
             "guacType": "override",
-            "override": {
+            "overrides": {
+              "configure-group-ui": {
+                "isGroupVerificationRequiredToJoin": false
+              },
               "group-details-ui": {
                 "isGroupVerificationRequiredToJoin": false
               }
