@@ -3,6 +3,44 @@
     "id": "www",
     "name": "Main Website",
     "experiments": [
+        {
+        "id": "2025-06-experienceDetailsNotice",
+        "name": "Experience details notice",
+        "buckets": [
+          {
+            "id": "enableInExperiencePurchase",
+            "label": "Enabled for In Experience Purchases",
+            "description": "Enable the notice for in experience purchases",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "app-policy": {
+                    "experienceDetailsNoticeType": "InExperiencePurchase"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable experience details notice",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "app-policy": {
+                    "experienceDetailsNoticeType": null
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
       {
         "id": "2025-07-robuxPageRedesign",
         "name": "Robux page redesign (iOS)",
