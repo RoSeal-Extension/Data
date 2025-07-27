@@ -17,15 +17,5 @@
         "label": "More Info"
     }],
     "sourceUniverseId": 4664112354,
-    "sharedUniverses": [{
-        "id": 5650396773
-    }, {
-        "id": 1176784616
-    }, {
-        "id": 5026970880
-    }, {
-        "id": 1001911915
-    }, {
-        "id": 4044606250
-    }]
+    "sharedUniverses": []
 }]
