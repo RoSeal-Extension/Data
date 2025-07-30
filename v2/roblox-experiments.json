@@ -3,7 +3,51 @@
     "id": "www",
     "name": "Main Website",
     "experiments": [
-        {
+     {
+        "id": "2025-07-removeAllSubcategory",
+        "name": "Remove All subcategory on Marketplace",
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enables removing All subcategory",
+            "operations": [
+              {
+                "type": "json",
+                "jsonType": "set",
+                "match": {
+                  "robloxSubdomain": "catalog",
+                  "regex": "^/v1/catalog/metadata$",
+                  "field": [
+                    "isRemoveAllSubcategoryEnabled"
+                  ]
+                },
+                "value": true
+              }
+            ]
+          },
+          {
+            "id": "enable",
+            "label": "Disabled",
+            "description": "Disables removing All subcategory",
+            "operations": [
+ {
+                "type": "json",
+                "jsonType": "set",
+                "match": {
+                  "robloxSubdomain": "catalog",
+                  "regex": "^/v1/catalog/metadata$",
+                  "field": [
+                    "isRemoveAllSubcategoryEnabled"
+                  ]
+                },
+                "value": false
+              }
+            ]
+          }
+        ]
+      },
+      {
         "id": "2025-06-experienceDetailsNotice",
         "name": "Experience details notice",
         "buckets": [
