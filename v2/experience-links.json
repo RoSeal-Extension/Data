@@ -1558,7 +1558,7 @@
     "links": [
       {
         "type": "communityWiki",
-        "url": "item-asylum-wiki.fandom.com",
+        "url": "jbcstudios.miraheze.org",
         "locale": "en",
         "fromFandomInterwiki": true
       }
@@ -3372,6 +3372,20 @@
         "locale": "en",
         "fromFandomInterwiki": false,
         "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      1180269832
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "roblox-arcane-odyssey.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
       }
     ]
   }
