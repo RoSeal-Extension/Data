@@ -3388,5 +3388,59 @@
         "isOfficialWiki": false
       }
     ]
+  },
+  {
+    "universeIds": [
+      1531130248
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "towerheroes.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      459673189
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "oretycoon2.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      7882785167
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "enfosi.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [7008097940],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "inkgames.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
   }
 ]
