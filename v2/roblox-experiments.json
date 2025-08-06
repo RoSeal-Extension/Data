@@ -3,7 +3,49 @@
     "id": "www",
     "name": "Main Website",
     "experiments": [
-     {
+      {
+        "id": "2025-08-newNotApprovedPage",
+        "name": "Redesigned not approved page",
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable redesigned not approved page",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "UserSafety.NotApprovedPage.UserID": {
+                      "enableNewNAP": true
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable redesigned not approved page",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "UserSafety.NotApprovedPage.UserID": {
+                      "enableNewNAP": false
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
         "id": "2025-07-removeAllSubcategory",
         "name": "Remove All subcategory on Marketplace",
         "buckets": [
@@ -31,7 +73,7 @@
             "label": "Disabled",
             "description": "Disables removing All subcategory",
             "operations": [
- {
+              {
                 "type": "json",
                 "jsonType": "set",
                 "match": {
@@ -88,109 +130,130 @@
       {
         "id": "2025-07-robuxPageRedesign",
         "name": "Robux page redesign (iOS)",
-        "buckets": [{
-          "id": "enable",
-          "label": "Enabled",
-          "description": "Enable robux page redesign",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "Payments.BuyRobux.PersonalizedBonus": {
-                  "IosBuyRobuxRedesign": "Redesign"
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable robux page redesign",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Payments.BuyRobux.PersonalizedBonus": {
+                      "IosBuyRobuxRedesign": "Redesign"
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }, {
-          "id": "disable",
-          "label": "Disabled",
-          "description": "Disable robux page redesign",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "Payments.BuyRobux.PersonalizedBonus": {
-                  "IosBuyRobuxRedesign": "Control"
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable robux page redesign",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Payments.BuyRobux.PersonalizedBonus": {
+                      "IosBuyRobuxRedesign": "Control"
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }]
+            ]
+          }
+        ]
       },
       {
         "id": "2025-07-musicCharts",
         "name": "Music sorts on charts page",
-        "buckets": [{
-          "id": "enable",
-          "label": "Enabled",
-          "description": "Enable Music sorts on charts page",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "Website.GamesPage": {
-                  "isMusicChartsCarouselEnabled": true
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable Music sorts on charts page",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Website.GamesPage": {
+                      "isMusicChartsCarouselEnabled": true
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }, {
-          "id": "disable",
-          "label": "Disabled",
-          "description": "Disable Music sorts on charts page",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "Website.GamesPage": {
-                  "isMusicChartsCarouselEnabled": false
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable Music sorts on charts page",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Website.GamesPage": {
+                      "isMusicChartsCarouselEnabled": false
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }]
+            ]
+          }
+        ]
       },
       {
         "id": "2025-07-communityVerificationLevels",
         "name": "Community join verificaton levels",
-        "buckets": [{
-          "id": "enable",
-          "label": "Enabled",
-          "description": "Enable verification levels",
-          "operations": [{
-            "type": "guac",
-            "guacType": "override",
-            "overrides": {
-              "configure-group-ui": {
-                "isGroupVerificationRequiredToJoin": true
-              },
-              "group-details-ui": {
-                "isGroupVerificationRequiredToJoin": true
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable verification levels",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "configure-group-ui": {
+                    "isGroupVerificationRequiredToJoin": true
+                  },
+                  "group-details-ui": {
+                    "isGroupVerificationRequiredToJoin": true
+                  }
+                }
               }
-            }
-          }]
-        }, {
-          "id": "disable",
-          "label": "Disabled",
-          "description": "Disable verification levels",
-          "operations": [{
-            "type": "guac",
-            "guacType": "override",
-            "overrides": {
-              "configure-group-ui": {
-                "isGroupVerificationRequiredToJoin": false
-              },
-              "group-details-ui": {
-                "isGroupVerificationRequiredToJoin": false
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable verification levels",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "configure-group-ui": {
+                    "isGroupVerificationRequiredToJoin": false
+                  },
+                  "group-details-ui": {
+                    "isGroupVerificationRequiredToJoin": false
+                  }
+                }
               }
-            }
-          }]
-        }]
+            ]
+          }
+        ]
       },
       {
         "id": "2025-07-avatarScaleInTab",
