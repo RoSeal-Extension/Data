@@ -4,6 +4,82 @@
     "name": "Main Website",
     "experiments": [
       {
+        "id": "2025-08-disableUserControlledScreentime",
+        "name": "Disable user-controlled screentime",
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Disable user-controlled screentime",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "account-settings-ui": {
+                    "rollbackUserControlledScreentime": true
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Do not disable user-controlled screentime",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "account-settings-ui": {
+                    "rollbackUserControlledScreentime": false
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+       {
+        "id": "2025-08-moderationDecomposedVPC",
+        "name": "Enable decomposed VPC in old moderation page",
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable decomposed VPC",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "decomposed-vpc-status": {
+                    "decomposedVPCEnabled": true
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disabled decomposed VPC",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "decomposed-vpc-status": {
+                    "decomposedVPCEnabled": false
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
         "id": "2025-08-newNotApprovedPage",
         "name": "Redesigned not approved page",
         "buckets": [
