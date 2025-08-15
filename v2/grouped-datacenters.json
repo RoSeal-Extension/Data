@@ -355,5 +355,17 @@
                 "-82.9988"
             ]
         }
+    },
+    {
+        "dataCenterIds": [],
+        "location": {
+            "city": "Barueri",
+            "region": "São Paulo",
+            "country": "BR",
+            "latLong": [
+                "-23.5113",
+                "-46.8761"
+            ]
+        }
     }
 ]
