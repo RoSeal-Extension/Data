@@ -1,0 +1,12 @@
+{
+    "version": 1,
+    "addons": {
+        "{beta@roseal.live}": {
+            "updates": [{
+                "version": "2.1.0.11",
+                "update_link": "https://data.roseal.live/v2/beta/firefox/files/RoSeal-firefox-2.1.0-beta.6.zip",
+                "update_hash": "sha256:06345d30e3fac14bc2b750a12ba97593ee83d42449e0d13c46e072aca8f705ea"
+            }]
+        }
+    }
+}
