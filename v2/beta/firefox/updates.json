@@ -2,15 +2,23 @@
     "version": 1,
     "addons": {
         "@roseal-beta.roseal": {
-            "updates": [{
-                "version": "2.1.0.13",
-                "update_link": "https://data.roseal.live/v2/beta/firefox/files/RoSeal-firefox-2.1.0-beta.7.zip",
-                "update_hash": "sha256:761992f8dafa2341e962ec707961f88fd325a307bea516e97f8318b1a2857b1d"
-            }, {
-                "version": "2.1.0.11",
-                "update_link": "https://data.roseal.live/v2/beta/firefox/files/RoSeal-firefox-2.1.0-beta.6.zip",
-                "update_hash": "sha256:5e2803deb120314e770488a11883c38aa5e3a176faa82de80ef5c08222e7fd40"
-            }]
+            "updates": [
+                {
+                    "version": "2.1.0.14",
+                    "update_link": "https://data.roseal.live/v2/beta/firefox/files/RoSeal-firefox-2.1.0-beta.8.zip",
+                    "update_hash": "sha256:a3fa9a1dd5a2f36fe9078663ee3e0a7bd9cda14f07f59a281097acf3ca46adf0"
+                },
+                {
+                    "version": "2.1.0.13",
+                    "update_link": "https://data.roseal.live/v2/beta/firefox/files/RoSeal-firefox-2.1.0-beta.7.zip",
+                    "update_hash": "sha256:761992f8dafa2341e962ec707961f88fd325a307bea516e97f8318b1a2857b1d"
+                },
+                {
+                    "version": "2.1.0.11",
+                    "update_link": "https://data.roseal.live/v2/beta/firefox/files/RoSeal-firefox-2.1.0-beta.6.zip",
+                    "update_hash": "sha256:5e2803deb120314e770488a11883c38aa5e3a176faa82de80ef5c08222e7fd40"
+                }
+            ]
         }
     }
 }
