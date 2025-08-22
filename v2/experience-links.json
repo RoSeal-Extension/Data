@@ -3432,7 +3432,9 @@
     ]
   },
   {
-    "universeIds": [7008097940],
+    "universeIds": [
+      7008097940
+    ],
     "links": [
       {
         "type": "communityWiki",
@@ -3440,6 +3442,76 @@
         "locale": "en",
         "fromFandomInterwiki": false,
         "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      7326934954
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "99-nights-in-the-forest.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      733957164
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "wiki.wolfdo.gg",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      1424449565
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "supergolf-roblox.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      1937412040
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "critical-tower-defense.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      2294168059
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "mimic.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
       }
     ]
   }
