@@ -4,6 +4,11 @@
         "@roseal-beta.roseal": {
             "updates": [
                 {
+                    "version": "2.1.0.16",
+                    "update_link": "https://data.roseal.live/v2/beta/firefox/files/RoSeal-firefox-2.1.0-beta.9.zip",
+                    "update_hash": "sha256:2b739627ca49f5cb90364e2d1ca47a08935142a9681bc8919754b3649da4c5d8"
+                },
+                {
                     "version": "2.1.0.15",
                     "update_link": "https://data.roseal.live/v2/beta/firefox/files/RoSeal-firefox-2.1.0-beta.8.zip",
                     "update_hash": "sha256:b70e558fdc766a72e7bada02ee1626706a03226e96f65d444474bd3ab3a89acd"
