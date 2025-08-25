@@ -4,24 +4,9 @@
         "@roseal-beta.roseal": {
             "updates": [
                 {
-                    "version": "2.1.0.16",
+                    "version": "2.1.0.17",
                     "update_link": "https://data.roseal.live/v2/beta/firefox/files/RoSeal-firefox-2.1.0-beta.9.zip",
-                    "update_hash": "sha256:2b739627ca49f5cb90364e2d1ca47a08935142a9681bc8919754b3649da4c5d8"
-                },
-                {
-                    "version": "2.1.0.15",
-                    "update_link": "https://data.roseal.live/v2/beta/firefox/files/RoSeal-firefox-2.1.0-beta.8.zip",
-                    "update_hash": "sha256:b70e558fdc766a72e7bada02ee1626706a03226e96f65d444474bd3ab3a89acd"
-                },
-                {
-                    "version": "2.1.0.13",
-                    "update_link": "https://data.roseal.live/v2/beta/firefox/files/RoSeal-firefox-2.1.0-beta.7.zip",
-                    "update_hash": "sha256:761992f8dafa2341e962ec707961f88fd325a307bea516e97f8318b1a2857b1d"
-                },
-                {
-                    "version": "2.1.0.11",
-                    "update_link": "https://data.roseal.live/v2/beta/firefox/files/RoSeal-firefox-2.1.0-beta.6.zip",
-                    "update_hash": "sha256:5e2803deb120314e770488a11883c38aa5e3a176faa82de80ef5c08222e7fd40"
+                    "update_hash": "sha256:35e736a00d000ca25e3156a7964dbb2bca601b836ff660a86f9c0fee79ac43be"
                 }
             ]
         }
