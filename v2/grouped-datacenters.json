@@ -359,6 +359,40 @@
     },
     {
         "dataCenterIds": [
+            25774,
+            25785,
+            25787,
+            25788,
+            25789,
+            25790
+        ],
+        "location": {
+            "city": "San Jose",
+            "region": "California",
+            "country": "US",
+            "latLong": [
+                "37.3394",
+                "-121.8950"
+            ]
+        }
+    },
+    {
+        "dataCenterIds": [
+            25774,
+            25796
+        ],
+        "location": {
+            "city": "São Paulo",
+            "region": "São Paulo",
+            "country": "BR",
+            "latLong": [
+                "-23.5505",
+                "-46.6333"
+            ]
+        }
+    },
+    {
+        "dataCenterIds": [
             25775,
             25776,
             25777,
@@ -373,24 +407,6 @@
             "latLong": [
                 "53.3331",
                 "-6.2489"
-            ]
-        }
-    },
-    {
-        "dataCenterIds": [
-            25785,
-            25787,
-            25788,
-            25789,
-            25790
-        ],
-        "location": {
-            "city": "San Jose",
-            "region": "California",
-            "country": "US",
-            "latLong": [
-                "37.3394",
-                "-121.8950"
             ]
         }
     }
