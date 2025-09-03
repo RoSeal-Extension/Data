@@ -3,6 +3,90 @@
     "id": "www",
     "name": "Main Website",
     "experiments": [
+       {
+        "id": "2025-09-profile",
+        "name": "Redesigned user profile header display name",
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable display name redesign",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Social.Profile": {
+                      "isDisplayNameRedesignEnabled": true
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable display name redesign",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Social.Profile": {
+                      "isDisplayNameRedesignEnabled": false
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+       {
+        "id": "2025-09-2svSettingsRedesign",
+        "name": "Security page redesign",
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enables security page redesign",
+            "operations": [
+              {
+                "type": "json",
+                "jsonType": "override",
+                "match": {
+                  "robloxSubdomain": "twostepverification",
+                  "regex": "^/v1/metadata$"
+                },
+                "value": {
+                  "isSettingsTabRedesignEnabled": true
+                }
+              }
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disables security page redesign",
+            "operations": [
+              {
+                "type": "json",
+                "jsonType": "override",
+                "match": {
+                  "robloxSubdomain": "twostepverification",
+                  "regex": "^/v1/metadata$"
+                },
+                "value": {
+                  "isSettingsTabRedesignEnabled": false
+                }
+              }
+            ]
+          }
+        ]
+      },
       {
         "id": "2025-08-disableUserControlledScreentime",
         "name": "Disable user-controlled screentime",
