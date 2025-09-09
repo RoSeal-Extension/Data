@@ -2,5 +2,7 @@
     "disabledFeatures": ["avatarItemQuickFreePurchase", "bypassUserInventoryBadges"],
     "disabledFeaturesV2": [{
         "id": "experienceLiveStatsChart"
+    }, {
+        "id": "customEmojis"
     }]
 }
