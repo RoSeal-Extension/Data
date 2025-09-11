@@ -297,7 +297,8 @@
             431,
             460,
             487,
-            529
+            529,
+            25808
         ],
         "location": {
             "city": "Seattle",
@@ -363,7 +364,8 @@
     {
         "dataCenterIds": [
             25774,
-            25796
+            25796,
+            25810
         ],
         "location": {
             "city": "São Paulo",
