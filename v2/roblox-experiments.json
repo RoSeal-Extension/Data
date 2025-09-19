@@ -3,7 +3,42 @@
     "id": "www",
     "name": "Main Website",
     "experiments": [
-       {
+      {
+        "id": "2025-09-redesignedProfileCollections",
+        "name": "Redesigned Profile Collections tab",
+        "buckets": [{
+          "id": "enable",
+          "label": "Enabled",
+          "description": "Enable Profile Collections tab redesign",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "overrides": {
+              "1": {
+                "Social.ProfileCurrentlyWearingClickThrough": {
+                  "isNewCarouselsEnabled": true
+                }
+              }
+            }
+          }]
+        }, {
+          "id": "disable",
+          "label": "Disabled",
+          "description": "Disable Profile Collections tab redesign",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "overrides": {
+              "1": {
+                "Social.ProfileCurrentlyWearingClickThrough": {
+                  "isNewCarouselsEnabled": false
+                }
+              }
+            }
+          }]
+        }]
+      },
+      {
         "id": "2025-09-profile",
         "name": "Redesigned user profile header display name",
         "buckets": [
