@@ -4,6 +4,41 @@
     "name": "Main Website",
     "experiments": [
       {
+        "id": "2025-09-useMarketplaceSearchV2",
+        "name": "Marketplace search V2 endpoint",
+        "buckets": [{
+          "id": "enable",
+          "label": "Enabled",
+          "description": "Use v2 search details endpoint",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "overrides": {
+              "1": {
+                "AvatarExperience.Web.Catalog": {
+                  "searchV2Enabled": true
+                }
+              }
+            }
+          }]
+        }, {
+          "id": "disable",
+          "label": "Disabled",
+          "description": "Do not use v2 search details endpoint",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "overrides": {
+              "1": {
+                "AvatarExperience.Web.Catalog": {
+                  "searchV2Enabled": false
+                }
+              }
+            }
+          }]
+        }]
+      },
+      {
         "id": "2025-09-miscAppeals",
         "name": "Misc appeals form",
         "buckets": [{
