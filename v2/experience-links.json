@@ -1569,7 +1569,8 @@
         "type": "communityWiki",
         "url": "jbcstudios.miraheze.org",
         "locale": "en",
-        "fromFandomInterwiki": true
+        "fromFandomInterwiki": true,
+        "isOfficialWiki": true
       }
     ]
   },
