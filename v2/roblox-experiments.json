@@ -4,6 +4,41 @@
     "name": "Main Website",
     "experiments": [
       {
+        "id": "2025-10-userProfileHeaderRedesign",
+        "name": "User profile header redesign",
+        "buckets": [{
+          "id": "enable",
+          "label": "Enabled",
+          "description": "Enable redesign",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "overrides": {
+              "1": {
+                "Social.Profile": {
+                  "isWebProfileHeaderRedesignEnabled": true
+                }
+              }
+            }
+          }]
+        }, {
+          "id": "disable",
+          "label": "Disabled",
+          "description": "Disable redesign",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "overrides": {
+              "1": {
+                "Social.Profile": {
+                  "isWebProfileHeaderRedesignEnabled": false
+                }
+              }
+            }
+          }]
+        }]
+      },
+      {
         "id": "2025-09-useMarketplaceSearchV2",
         "name": "Marketplace search V2 endpoint",
         "buckets": [{
