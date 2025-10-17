@@ -12,5 +12,8 @@
         "id": "avatarEditorSearch"
     }, {
         "id": "viewUserProfileLocale"
+    }, {
+        "id": "improvedServerJoinModal.useDeepLinkProtocol",
+        "versions": ["2.1.20"]
     }]
 }
