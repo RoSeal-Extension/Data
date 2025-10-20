@@ -3935,5 +3935,104 @@
         "isOfficialWiki": true
       }
     ]
+  },
+  {
+    "universeIds": [
+      7725319341
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "hellgenes.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      8316902627
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "plantsvsbrainrots.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      1858442722,
+      6745933496
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "wiki.robloxrandomizer.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      2473499480
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "acoregame.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      2799343571
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "thecelestialcaverns.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      8109707474
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "find-the-bombies.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      4612947145
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "triangle.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
   }
 ]
