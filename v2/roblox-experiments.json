@@ -3,6 +3,111 @@
     "id": "www",
     "name": "Main Website",
     "experiments": [
+            {
+        "id": "2025-10-systemThemeSettings",
+        "name": "System theme in account settings",
+        "buckets": [{
+          "id": "enable",
+          "label": "Enabled",
+          "description": "Enable system theme",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "overrides": {
+              "1": {
+                "SystemThemeAvailableDesktopWeb": {
+                  "SystemThemeWebEnabled": true
+                }
+              }
+            }
+          }]
+        }, {
+          "id": "disable",
+          "label": "Disabled",
+          "description": "Disable system theme",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "overrides": {
+              "1": {
+                "SystemThemeAvailableDesktopWeb": {
+                  "SystemThemeWebEnabled": false
+                }
+              }
+            }
+          }]
+        }]
+      },
+      {
+        "id": "2025-10-userProfileStore",
+        "name": "User profile store",
+        "buckets": [{
+          "id": "enable",
+          "label": "Enabled",
+          "description": "Enable store",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "overrides": {
+              "1": {
+                "Social.Profile": {
+                  "isWebStoreEnabled": true
+                }
+              }
+            }
+          }]
+        }, {
+          "id": "disable",
+          "label": "Disabled",
+          "description": "Disable store",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "overrides": {
+              "1": {
+                "Social.Profile": {
+                  "isWebStoreEnabled": false
+                }
+              }
+            }
+          }]
+        }]
+      },
+      {
+        "id": "2025-10-userProfileCurrentlyWearingRedesign",
+        "name": "User currently wearing redesign",
+        "buckets": [{
+          "id": "enable",
+          "label": "Enabled",
+          "description": "Enable redesign",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "overrides": {
+              "1": {
+                "Social.Profile": {
+                  "isWebCurrentlyWearingRedesignEnabled": true
+                }
+              }
+            }
+          }]
+        }, {
+          "id": "disable",
+          "label": "Disabled",
+          "description": "Disable redesign",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "overrides": {
+              "1": {
+                "Social.Profile": {
+                  "isWebCurrentlyWearingRedesignEnabled": false
+                }
+              }
+            }
+          }]
+        }]
+      },
       {
         "id": "2025-10-userProfileHeaderRedesign",
         "name": "User profile header redesign",
