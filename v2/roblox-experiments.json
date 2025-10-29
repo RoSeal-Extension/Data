@@ -4,6 +4,41 @@
     "name": "Main Website",
     "experiments": [
             {
+        "id": "2025-10-userProfileCommunitiesRedesign",
+        "name": "User profile communities redesign",
+        "buckets": [{
+          "id": "enable",
+          "label": "Enabled",
+          "description": "Enable commmunities redesign",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "overrides": {
+              "1": {
+                "Social.Profile": {
+                  "isWebCommunitiesRedesignEnabled": true
+                }
+              }
+            }
+          }]
+        }, {
+          "id": "disable",
+          "label": "Disabled",
+          "description": "Disable communities redesign",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "overrides": {
+              "1": {
+                "Social.Profile": {
+                  "isWebCommunitiesRedesignEnabled": false
+                }
+              }
+            }
+          }]
+        }]
+      },
+      {
         "id": "2025-10-systemThemeSettings",
         "name": "System theme in account settings",
         "buckets": [{
