@@ -1256,20 +1256,6 @@
   },
   {
     "universeIds": [
-      4126908979
-    ],
-    "links": [
-      {
-        "type": "communityWiki",
-        "url": "parkour-reborn.fandom.com",
-        "locale": "en",
-        "fromFandomInterwiki": true,
-        "isOfficialWiki": true
-      }
-    ]
-  },
-  {
-    "universeIds": [
       3541611379
     ],
     "links": [
@@ -4034,5 +4020,15 @@
         "isOfficialWiki": true
       }
     ]
+  },
+  {
+    "universeIds": [6182655829],
+    "links": [{
+      "type": "communityWiki",
+      "url": "superstarracers.wiki",
+      "locale": "en",
+      "fromFandomInterwiki": false,
+      "isOfficialWiki": false
+    }]
   }
 ]
