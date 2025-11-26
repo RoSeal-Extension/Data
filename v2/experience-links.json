@@ -54,19 +54,6 @@
   },
   {
     "universeIds": [
-      111958650
-    ],
-    "links": [
-      {
-        "type": "communityWiki",
-        "url": "robloxarsenal.fandom.com",
-        "locale": "en",
-        "fromFandomInterwiki": true
-      }
-    ]
-  },
-  {
-    "universeIds": [
       601130232
     ],
     "links": [
@@ -3513,20 +3500,6 @@
   },
   {
     "universeIds": [
-      7094518649
-    ],
-    "links": [
-      {
-        "type": "communityWiki",
-        "url": "rt3.miraheze.org",
-        "locale": "en",
-        "fromFandomInterwiki": false,
-        "isOfficialWiki": false
-      }
-    ]
-  },
-  {
-    "universeIds": [
       3033894804
     ],
     "links": [
@@ -4022,13 +3995,230 @@
     ]
   },
   {
-    "universeIds": [6182655829],
-    "links": [{
-      "type": "communityWiki",
-      "url": "superstarracers.wiki",
-      "locale": "en",
-      "fromFandomInterwiki": false,
-      "isOfficialWiki": false
-    }]
+    "universeIds": [
+      6182655829
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "superstarracers.wiki",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      4544652203
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "derealization.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      7808782088
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "vendetta.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      5223226518
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "computerunion.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      7161617534
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "untitledbakery.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      3525426940
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "findthealalal.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      5109039606
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "spacepioneers.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      2563713593,
+      2626071020,
+      3515293996,
+      2617649759
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "washiez.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      1017215625
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "midnighthorrors.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      6597877862
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "www.secretuniverse.wiki",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      5056259915
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "desertbus.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      8009328211
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "raiseanimals.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      8196011676
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "hindsightrblx.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      7671049560
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "theforge.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      111958650
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "arsenal.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      7094518649
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "rt3.ugwiki.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
   }
 ]
