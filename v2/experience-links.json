@@ -4220,5 +4220,19 @@
         "isOfficialWiki": false
       }
     ]
+  },
+  {
+    "universeIds": [
+      367134119
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "innovation-inc-thermal-power-plant.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": true,
+        "isOfficialWiki": true
+      }
+    ]
   }
 ]
