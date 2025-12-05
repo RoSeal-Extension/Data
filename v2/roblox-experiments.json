@@ -3,7 +3,45 @@
     "id": "www",
     "name": "Main Website",
     "experiments": [
-            {
+  {
+        "id": "2025-12-communityCoverPhoto",
+        "name": "Community cover photos upload",
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable community cover photo uploading",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "configure-group-ui": {
+                    "displayCoverPhotoUpload": true
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable community cover photo uploading",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "configure-group-ui": {
+                    "displayCoverPhotoUpload": false
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
         "id": "2025-10-userProfileCommunitiesRedesign",
         "name": "User profile communities redesign",
         "buckets": [{
