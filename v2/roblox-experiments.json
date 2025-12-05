@@ -3,57 +3,67 @@
     "id": "www",
     "name": "Main Website",
     "experiments": [
-    {
-      "id": "2025-12-profileCurrentlyWearingRedesignV2Variant",
-      "name": "Profile currently wearing redesign variant",
-      "buckets":  [{
-          "id": "variant2",
-          "label": "Variant 2",
-          "description": "Enable variant 2",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "Social.Profile": {
-                  "webCurrentlyWearingRedesignV2Variant": 2
+      {
+        "id": "2025-12-profileCurrentlyWearingRedesignV2Variant",
+        "name": "Profile currently wearing redesign variant",
+        "buckets": [
+          {
+            "id": "variant2",
+            "label": "Variant 2",
+            "description": "Enable variant 2",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Social.Profile": {
+                      "webCurrentlyWearingRedesignV2Variant": 2
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }, {
-          "id": "variant1",
-          "label": "Variant 1",
-          "description": "Enable variant 1",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "Social.Profile": {
-                  "webCurrentlyWearingRedesignV2Variant": 1
+            ]
+          },
+          {
+            "id": "variant1",
+            "label": "Variant 1",
+            "description": "Enable variant 1",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Social.Profile": {
+                      "webCurrentlyWearingRedesignV2Variant": 1
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }, {
-          "id": "variant0",
-          "label": "Variant 0",
-          "description": "Enable variant 0",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "Social.Profile": {
-                  "webCurrentlyWearingRedesignV2Variant": 0
+            ]
+          },
+          {
+            "id": "variant0",
+            "label": "Variant 0",
+            "description": "Enable variant 0",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Social.Profile": {
+                      "webCurrentlyWearingRedesignV2Variant": 0
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }]
-    },
-    {
+            ]
+          }
+        ]
+      },
+      {
         "id": "2025-12-communityCoverPhoto",
         "name": "Community cover photos upload",
         "buckets": [
@@ -94,282 +104,338 @@
       {
         "id": "2025-10-userProfileCommunitiesRedesign",
         "name": "User profile communities redesign",
-        "buckets": [{
-          "id": "enable",
-          "label": "Enabled",
-          "description": "Enable commmunities redesign",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "Social.Profile": {
-                  "isWebCommunitiesRedesignEnabled": true
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable commmunities redesign",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Social.Profile": {
+                      "isWebCommunitiesRedesignEnabled": true
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }, {
-          "id": "disable",
-          "label": "Disabled",
-          "description": "Disable communities redesign",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "Social.Profile": {
-                  "isWebCommunitiesRedesignEnabled": false
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable communities redesign",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Social.Profile": {
+                      "isWebCommunitiesRedesignEnabled": false
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }]
+            ]
+          }
+        ]
       },
       {
         "id": "2025-10-systemThemeSettings",
         "name": "System theme in account settings",
-        "buckets": [{
-          "id": "enable",
-          "label": "Enabled",
-          "description": "Enable system theme",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "SystemThemeAvailableDesktopWeb": {
-                  "SystemThemeWebEnabled": true
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable system theme",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "SystemThemeAvailableDesktopWeb": {
+                      "SystemThemeWebEnabled": true
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }, {
-          "id": "disable",
-          "label": "Disabled",
-          "description": "Disable system theme",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "SystemThemeAvailableDesktopWeb": {
-                  "SystemThemeWebEnabled": false
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable system theme",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "SystemThemeAvailableDesktopWeb": {
+                      "SystemThemeWebEnabled": false
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }]
+            ]
+          }
+        ]
       },
       {
         "id": "2025-10-userProfileStore",
         "name": "User profile store",
-        "buckets": [{
-          "id": "enable",
-          "label": "Enabled",
-          "description": "Enable store",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "Social.Profile": {
-                  "isWebStoreEnabled": true
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable store",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Social.Profile": {
+                      "isWebStoreEnabled": true
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }, {
-          "id": "disable",
-          "label": "Disabled",
-          "description": "Disable store",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "Social.Profile": {
-                  "isWebStoreEnabled": false
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable store",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Social.Profile": {
+                      "isWebStoreEnabled": false
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }]
+            ]
+          }
+        ]
       },
       {
         "id": "2025-10-userProfileCurrentlyWearingRedesign",
         "name": "User currently wearing redesign",
-        "buckets": [{
-          "id": "enable",
-          "label": "Enabled",
-          "description": "Enable redesign",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "Social.Profile": {
-                  "isWebCurrentlyWearingRedesignEnabled": true
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable redesign",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Social.Profile": {
+                      "isWebCurrentlyWearingRedesignEnabled": true
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }, {
-          "id": "disable",
-          "label": "Disabled",
-          "description": "Disable redesign",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "Social.Profile": {
-                  "isWebCurrentlyWearingRedesignEnabled": false
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable redesign",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Social.Profile": {
+                      "isWebCurrentlyWearingRedesignEnabled": false
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }]
+            ]
+          }
+        ]
       },
       {
         "id": "2025-10-userProfileHeaderRedesign",
         "name": "User profile header redesign",
-        "buckets": [{
-          "id": "enable",
-          "label": "Enabled",
-          "description": "Enable redesign",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "Social.Profile": {
-                  "isWebProfileHeaderRedesignEnabled": true
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable redesign",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Social.Profile": {
+                      "isWebProfileHeaderRedesignEnabled": true
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }, {
-          "id": "disable",
-          "label": "Disabled",
-          "description": "Disable redesign",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "Social.Profile": {
-                  "isWebProfileHeaderRedesignEnabled": false
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable redesign",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Social.Profile": {
+                      "isWebProfileHeaderRedesignEnabled": false
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }]
+            ]
+          }
+        ]
       },
       {
         "id": "2025-09-useMarketplaceSearchV2",
         "name": "Marketplace search V2 endpoint",
-        "buckets": [{
-          "id": "enable",
-          "label": "Enabled",
-          "description": "Use v2 search details endpoint",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "AvatarExperience.Web.Catalog": {
-                  "searchV2Enabled": true
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Use v2 search details endpoint",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "AvatarExperience.Web.Catalog": {
+                      "searchV2Enabled": true
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }, {
-          "id": "disable",
-          "label": "Disabled",
-          "description": "Do not use v2 search details endpoint",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "AvatarExperience.Web.Catalog": {
-                  "searchV2Enabled": false
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Do not use v2 search details endpoint",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "AvatarExperience.Web.Catalog": {
+                      "searchV2Enabled": false
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }]
+            ]
+          }
+        ]
       },
       {
         "id": "2025-09-miscAppeals",
         "name": "Misc appeals form",
-        "buckets": [{
-          "id": "enable",
-          "label": "Enabled",
-          "description": "Enable misc appeals form",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "UserSafety.AppealsPortal": {
-                  "enableMiscAppealsForm": true
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable misc appeals form",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "UserSafety.AppealsPortal": {
+                      "enableMiscAppealsForm": true
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }, {
-          "id": "disable",
-          "label": "Disabled",
-          "description": "Disable misc appeals form",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "UserSafety.AppealsPortal": {
-                  "enableMiscAppealsForm": false
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable misc appeals form",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "UserSafety.AppealsPortal": {
+                      "enableMiscAppealsForm": false
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }]
+            ]
+          }
+        ]
       },
       {
         "id": "2025-09-redesignedProfileCollections",
         "name": "Redesigned Profile Collections tab",
-        "buckets": [{
-          "id": "enable",
-          "label": "Enabled",
-          "description": "Enable Profile Collections tab redesign",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "Social.ProfileCurrentlyWearingClickThrough": {
-                  "isNewCarouselsEnabled": true
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable Profile Collections tab redesign",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Social.ProfileCurrentlyWearingClickThrough": {
+                      "isNewCarouselsEnabled": true
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }, {
-          "id": "disable",
-          "label": "Disabled",
-          "description": "Disable Profile Collections tab redesign",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "Social.ProfileCurrentlyWearingClickThrough": {
-                  "isNewCarouselsEnabled": false
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable Profile Collections tab redesign",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Social.ProfileCurrentlyWearingClickThrough": {
+                      "isNewCarouselsEnabled": false
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }]
+            ]
+          }
+        ]
       },
       {
         "id": "2025-09-profile",
@@ -413,7 +479,7 @@
           }
         ]
       },
-       {
+      {
         "id": "2025-09-2svSettingsRedesign",
         "name": "Security page redesign",
         "buckets": [
@@ -493,7 +559,7 @@
           }
         ]
       },
-       {
+      {
         "id": "2025-08-moderationDecomposedVPC",
         "name": "Enable decomposed VPC in old moderation page",
         "buckets": [
