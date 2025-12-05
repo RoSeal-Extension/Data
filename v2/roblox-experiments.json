@@ -3,7 +3,57 @@
     "id": "www",
     "name": "Main Website",
     "experiments": [
-  {
+    {
+      "id": "2025-12-profileCurrentlyWearingRedesignV2Variant",
+      "name": "Profile currently wearing redesign variant",
+      "buckets":  [{
+          "id": "variant2",
+          "label": "Variant 2",
+          "description": "Enable variant 2",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "overrides": {
+              "1": {
+                "Social.Profile": {
+                  "webCurrentlyWearingRedesignV2Variant": 2
+                }
+              }
+            }
+          }]
+        }, {
+          "id": "variant1",
+          "label": "Variant 1",
+          "description": "Enable variant 1",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "overrides": {
+              "1": {
+                "Social.Profile": {
+                  "webCurrentlyWearingRedesignV2Variant": 1
+                }
+              }
+            }
+          }]
+        }, {
+          "id": "variant0",
+          "label": "Variant 0",
+          "description": "Enable variant 0",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "overrides": {
+              "1": {
+                "Social.Profile": {
+                  "webCurrentlyWearingRedesignV2Variant": 0
+                }
+              }
+            }
+          }]
+        }]
+    },
+    {
         "id": "2025-12-communityCoverPhoto",
         "name": "Community cover photos upload",
         "buckets": [
