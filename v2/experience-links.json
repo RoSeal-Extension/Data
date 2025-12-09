@@ -4209,7 +4209,7 @@
   },
   {
     "universeIds": [
-      7094518649
+      7094518649,
     ],
     "links": [
       {
@@ -4218,6 +4218,48 @@
         "locale": "en",
         "fromFandomInterwiki": false,
         "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      1998835206
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "itemasylum.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      7172942141
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "scarlet.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      367134119
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "innovation-inc-thermal-power-plant.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
       }
     ]
   }
