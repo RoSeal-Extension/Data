@@ -4262,5 +4262,19 @@
         "isOfficialWiki": true
       }
     ]
+  },
+  {
+    "universeIds": [
+      85651869
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "sd2.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
   }
 ]
