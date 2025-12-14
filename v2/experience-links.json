@@ -4276,5 +4276,19 @@
         "isOfficialWiki": false
       }
     ]
+  },
+  {
+    "universeIds": [
+      69356799
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "roblox-field-of-battle-official-community.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
   }
 ]
