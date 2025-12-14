@@ -4290,5 +4290,19 @@
         "isOfficialWiki": true
       }
     ]
+  },
+  {
+    "universeIds": [
+      118305909
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "pfs.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
   }
 ]
