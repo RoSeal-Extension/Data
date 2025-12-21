@@ -4,6 +4,41 @@
     "name": "Main Website",
     "experiments": [
       {
+        "id": "2025-10-enableNewAppealsDetailsPage",
+        "name": "New appeals details page",
+        "buckets": [{
+          "id": "enabled",
+          "label": "Enabled",
+          "description": "Enable new details page",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "overrides": {
+              "1": {
+                "UserSafety.AppealsPortal": {
+                  "enableNewDetailsPage": true
+                }
+              }
+            }
+          }]
+        }, {
+          "id": "disabled",
+          "label": "Disabled",
+          "description": "Disable new details page",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "overrides": {
+              "1": {
+                "UserSafety.AppealsPortal": {
+                  "enableNewDetailsPage": false
+                }
+              }
+            }
+          }]
+        }]
+      },
+      {
         "id": "2025-12-profileCurrentlyWearingRedesignV2Variant",
         "name": "Profile currently wearing redesign variant",
         "buckets": [
