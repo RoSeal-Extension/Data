@@ -4262,5 +4262,47 @@
         "isOfficialWiki": true
       }
     ]
+  },
+  {
+    "universeIds": [
+      85651869
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "sd2.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      69356799
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "roblox-field-of-battle-official-community.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      118305909
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "pfs.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
   }
 ]
