@@ -3,6 +3,41 @@
     "id": "www",
     "name": "Main Website",
     "experiments": [
+       {
+        "id": "2025-12-newExperiencePreviews",
+        "name": "New experience video previews",
+        "buckets": [{
+          "id": "enabled",
+          "label": "Enabled",
+          "description": "Enable new experience previews",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "overrides": {
+              "1": {
+                "Website.GameDetails": {
+                  "IsGamePreviewVideoEnabled": true
+                }
+              }
+            }
+          }]
+        }, {
+          "id": "disabled",
+          "label": "Disabled",
+          "description": "Disable new experience previews",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "overrides": {
+              "1": {
+                "Website.GameDetails": {
+                  "IsGamePreviewVideoEnabled": false
+                }
+              }
+            }
+          }]
+        }]
+      },
       {
         "id": "2025-10-enableNewAppealsDetailsPage",
         "name": "New appeals details page",
