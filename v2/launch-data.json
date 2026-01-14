@@ -17,5 +17,7 @@
     }, {
         "id": "improvedServerJoinModal.useDeepLinkProtocol",
         "versions": ["2.1.20"]
+    }, {
+        "id": "hexBodyColors"
     }]
 }
