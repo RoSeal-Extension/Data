@@ -4,6 +4,41 @@
     "name": "Main Website",
     "experiments": [
        {
+        "id": "2026-01-napMiddlePages",
+        "name": "Not approved page middle pages/educational pages",
+        "buckets": [{
+          "id": "enabled",
+          "label": "Enabled",
+          "description": "Enable educational pages",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "overrides": {
+              "1": {
+                "UserSafety.NotApprovedPage.UserID": {
+                  "enableNapMiddlePages": true
+                }
+              }
+            }
+          }]
+        }, {
+          "id": "disabled",
+          "label": "Disabled",
+          "description": "Disable educational pages",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "overrides": {
+              "1": {
+                "UserSafety.NotApprovedPage.UserID": {
+                  "enableNapMiddlePages": false
+                }
+              }
+            }
+          }]
+        }]
+      },
+       {
         "id": "2025-12-newExperiencePreviews",
         "name": "New experience video previews",
         "buckets": [{
