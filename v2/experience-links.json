@@ -4488,5 +4488,370 @@
         "isOfficialWiki": false
       }
     ]
+  },
+  {
+    "universeIds": [
+      5502624394
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "tdutr.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      8787314945
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "msmprojectawakening.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      111535124,
+      2092410051
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "retail-tycoon.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      4924037376
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "roblox-whizzbang.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      4669031825
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "the-blue-and-the-gray.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      6497846997
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "cowboy-game.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      1206146391
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "rblxhandyman.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      3532628446
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "backrooms-redacted-survival.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      5791970028
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "catweb.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      5617640646
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "pizza-game-roblox.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      5026122481
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "death-in-the-box.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      6508759464
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "grace.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      6150196821
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "roblox-winter.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      6075694711
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "brace.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      8535088052
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "refuse-2-die.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      9098443082
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "diveroblox.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      44636121
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "finalstandtwo.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      4785126950
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "scorched-earth-wiki-roblox.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      2251660758
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "roblox-pirate-clash.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      3730079862
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "examination.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      6699967032
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "thefieldsroblox.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      3140407822
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "brothers-vow-roblox.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      6796322433
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "mine-rblx.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      3777432490
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "brainmoldcafe.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      6991496486
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "rebuild.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      5193569427
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "projectremix.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
   }
 ]
