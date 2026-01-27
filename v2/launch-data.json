@@ -1,7 +1,8 @@
 {
     "disabledFeatures": ["avatarItemQuickFreePurchase", "bypassUserInventoryBadges"],
     "disabledFeaturesV2": [{
-        "id": "moveExperienceEvents"
+        "id": "moveExperienceEvents",
+        "variants": [0, 1]
     }, {
         "id": "experienceLiveStatsChart"
     }, {
