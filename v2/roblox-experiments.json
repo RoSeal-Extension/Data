@@ -3,6 +3,48 @@
     "id": "www",
     "name": "Main Website",
     "experiments": [
+      {
+        "id": "2026-01-newScrollArrowsCarousel",
+        "name": "New scroll arrows and header on carousels in charts page",
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable changes on charts page",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Website.GamesPage": {
+                      "IsNewScrollArrowsAndHeaderEnabled": true
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable changes on charts page",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Website.GamesPage": {
+                      "IsNewScrollArrowsAndHeaderEnabled": false
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
        {
         "id": "2026-01-napMiddlePages",
         "name": "Not approved page middle pages/educational pages",
