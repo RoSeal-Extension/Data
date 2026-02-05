@@ -4853,5 +4853,47 @@
         "isOfficialWiki": false
       }
     ]
+  },
+   {
+    "universeIds": [
+      3405618667
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "sonic-speed-simulator.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      3085257211
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "wikirainbowfriends.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      3081555258
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "shovelwares-brain-game.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
   }
 ]
