@@ -4,6 +4,424 @@
     "name": "Main Website",
     "experiments": [
       {
+        "id": "2026-02-communityConfigureEnforceSocialLinksAgeVerification",
+        "name": "Enforce age verification for social links in configure community page",
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enforce age verification for social links",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "configure-group-ui": {
+                    "enforceAgeVerificationForSocialLinks": true
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable enforcing age verification for social links",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "configure-group-ui": {
+                    "enforceAgeVerificationForSocialLinks": false
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2026-02-hideConfigureCommunitySocialLinksSection",
+        "name": "Hide social links section in configure community page",
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Hide social links section",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "configure-group-ui": {
+                    "hideSocialLinksSection": true
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable hiding social links section",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "configure-group-ui": {
+                    "hideSocialLinksSection": false
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2026-01-displayForumCategoryOrderConfiguration",
+        "name": "Show forum category order configuration in configure community page",
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Show forum category order configuration",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "configure-group-ui": {
+                    "displayForumCategoryOrderConfiguration": true
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable showing forum category order configuration",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "configure-group-ui": {
+                    "displayForumCategoryOrderConfiguration": false
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2026-01-displayForumCategoryPermissionsConfiguration",
+        "name": "Show forum category permissions configuration in configure community page",
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Show forum category permissions configuration",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "configure-group-ui": {
+                    "displayForumCategoryPermissionsConfiguration": true
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable showing forum category permissions configuration",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "configure-group-ui": {
+                    "displayForumCategoryPermissionsConfiguration": false
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2026-01-displayCommunityFundsAndRobuxIcon",
+        "name": "Show community funds and Robux icon in configure community page",
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Show community funds and Robux icon",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "configure-group-ui": {
+                    "displayCommunityFundsAndRobuxIcon": true
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable showing community funds and Robux icon",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "configure-group-ui": {
+                    "displayCommunityFundsAndRobuxIcon": false
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2026-01-displayJoinRequirementsSetting",
+        "name": "Show join requirements setting in configure community page",
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Show join requirements setting",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "configure-group-ui": {
+                    "displayJoinRequirementsSetting": true
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable showing join requirements setting",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "configure-group-ui": {
+                    "displayJoinRequirementsSetting": false
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2026-01-displayMemberListVisibilityConfiguration",
+        "name": "Show member list visibility configuration in configure community page",
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Show member list visibility configuration",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "configure-group-ui": {
+                    "displayMemberListVisibilityConfiguration": true
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable showing member list visibility configuration",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "configure-group-ui": {
+                    "displayMemberListVisibilityConfiguration": false
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2026-01-communityAccountTenureVerification",
+        "name": "Show community account tenure verification in configure community page",
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Show account tenure verification",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "configure-group-ui": {
+                    "displayAccountTenureVerification": true
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable showing account tenure verification",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "configure-group-ui": {
+                    "displayAccountTenureVerification": false
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2026-01-communityPrivacySettings",
+        "name": "Show community privacy settings",
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Shows privacy settings",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "configure-group-ui": {
+                    "displayGroupPrivacySettings": true
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable showing privacy settings",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "configure-group-ui": {
+                    "displayGroupPrivacySettings": false
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2026-01-communityDisplayNamesForAuditLogs",
+        "name": "Show display names in community audit logs",
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Shows display name",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "configure-group-ui": {
+                    "useGroupAuditLogDisplayNamesForUser": true
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Shows username",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "configure-group-ui": {
+                    "useGroupAuditLogDisplayNamesForUser": false
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2026-01-communityRichText",
+        "name": "Community forums rich text",
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enables community forums rich text",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "group-details-ui": {
+                    "enableRichText": true
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disables community forums rich text",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "group-details-ui": {
+                    "enableRichText": false
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
         "id": "2026-01-newScrollArrowsCarousel",
         "name": "New scroll arrows and header on carousels in charts page",
         "buckets": [
@@ -45,110 +463,207 @@
           }
         ]
       },
-       {
+      {
         "id": "2026-01-napMiddlePages",
         "name": "Not approved page middle pages/educational pages",
-        "buckets": [{
-          "id": "enabled",
-          "label": "Enabled",
-          "description": "Enable educational pages",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "UserSafety.NotApprovedPage.UserID": {
-                  "enableNapMiddlePages": true
+        "buckets": [
+          {
+            "id": "enabled",
+            "label": "Enabled",
+            "description": "Enable educational pages",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "UserSafety.NotApprovedPage.UserID": {
+                      "enableNapMiddlePages": true
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }, {
-          "id": "disabled",
-          "label": "Disabled",
-          "description": "Disable educational pages",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "UserSafety.NotApprovedPage.UserID": {
-                  "enableNapMiddlePages": false
+            ]
+          },
+          {
+            "id": "disabled",
+            "label": "Disabled",
+            "description": "Disable educational pages",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "UserSafety.NotApprovedPage.UserID": {
+                      "enableNapMiddlePages": false
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }]
+            ]
+          }
+        ]
       },
-       {
+      {
+        "id": "2025-12-communityAnnouncementPublishing",
+        "name": "Community announcement publishing",
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enables publishing",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "group-details-ui": {
+                    "displayGroupAnnouncementPublishing": true
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disables publishing",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "group-details-ui": {
+                    "displayGroupAnnouncementPublishing": false
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2025-12-communityForumsSlowmodeConfiguration",
+        "name": "Community forums slow mode configuration",
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enables community forums slow mode configuration",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "configure-group-ui": {
+                    "displaySlowmodeConfiguration": true
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disables community forums slow mode configuration",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "configure-group-ui": {
+                    "displaySlowmodeConfiguration": false
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
         "id": "2025-12-newExperiencePreviews",
         "name": "New experience video previews",
-        "buckets": [{
-          "id": "enabled",
-          "label": "Enabled",
-          "description": "Enable new experience previews",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "Website.GameDetails": {
-                  "IsGamePreviewVideoEnabled": true
+        "buckets": [
+          {
+            "id": "enabled",
+            "label": "Enabled",
+            "description": "Enable new experience previews",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Website.GameDetails": {
+                      "IsGamePreviewVideoEnabled": true
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }, {
-          "id": "disabled",
-          "label": "Disabled",
-          "description": "Disable new experience previews",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "Website.GameDetails": {
-                  "IsGamePreviewVideoEnabled": false
+            ]
+          },
+          {
+            "id": "disabled",
+            "label": "Disabled",
+            "description": "Disable new experience previews",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Website.GameDetails": {
+                      "IsGamePreviewVideoEnabled": false
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }]
+            ]
+          }
+        ]
       },
       {
         "id": "2025-10-enableNewAppealsDetailsPage",
         "name": "New appeals details page",
-        "buckets": [{
-          "id": "enabled",
-          "label": "Enabled",
-          "description": "Enable new details page",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "UserSafety.AppealsPortal": {
-                  "enableNewDetailsPage": true
+        "buckets": [
+          {
+            "id": "enabled",
+            "label": "Enabled",
+            "description": "Enable new details page",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "UserSafety.AppealsPortal": {
+                      "enableNewDetailsPage": true
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }, {
-          "id": "disabled",
-          "label": "Disabled",
-          "description": "Disable new details page",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "UserSafety.AppealsPortal": {
-                  "enableNewDetailsPage": false
+            ]
+          },
+          {
+            "id": "disabled",
+            "label": "Disabled",
+            "description": "Disable new details page",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "UserSafety.AppealsPortal": {
+                      "enableNewDetailsPage": false
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }]
+            ]
+          }
+        ]
       },
       {
         "id": "2025-12-profileCurrentlyWearingRedesignV2Variant",
