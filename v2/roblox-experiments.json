@@ -80,6 +80,44 @@
         ]
       },
       {
+        "id": "2026-01-accountExperienceRevamp",
+        "name": "Account login/signup experience revamp",
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable account experience revamp",
+            "operations": [
+              {
+                "type": "dom",
+                "domType": "modify",
+                "selector": "meta[name=\"account-experience-revamp-data\"], meta[name=\"twitter:card\"]",
+                "attributes": {
+                  "name": "account-experience-revamp-data",
+                  "data-is-account-experience-revamp-enabled": "true"
+                }
+              }
+            ]
+          },
+          {
+            "id": "Disable",
+            "label": "Disabled",
+            "description": "Disable account experience revamp",
+            "operations": [
+              {
+                "type": "dom",
+                "domType": "modify",
+                "selector": "meta[name=\"account-experience-revamp-data\"]",
+                "attributes": {
+                  "name": "account-experience-revamp-data",
+                  "data-is-account-experience-revamp-enabled": "false"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
         "id": "2026-01-displayForumCategoryOrderConfiguration",
         "name": "Show forum category order configuration in configure community page",
         "buckets": [
@@ -3575,7 +3613,7 @@
               {
                 "type": "dom",
                 "domType": "modify",
-                "selector": "meta[name=\"twitter:card\"]",
+                "selector": "meta[name=\"twitter:card-disabled\"]",
                 "attributes": {
                   "name": "webblox-enabled"
                 }
