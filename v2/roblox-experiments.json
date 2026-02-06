@@ -4,6 +4,48 @@
     "name": "Main Website",
     "experiments": [
       {
+        "id": "2026-02-userProfileEditing",
+        "name": "User profile editing page",
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable user profile editing page",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Social.Profile": {
+                      "isWebUserProfileEditPageEnabled": true
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable user profile editing page",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Social.Profile": {
+                      "isWebUserProfileEditPageEnabled": false
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
         "id": "2026-02-communityConfigureEnforceSocialLinksAgeVerification",
         "name": "Enforce age verification for social links in configure community page",
         "buckets": [
