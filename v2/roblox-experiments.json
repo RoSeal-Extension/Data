@@ -133,7 +133,7 @@
               {
                 "type": "dom",
                 "domType": "modify",
-                "selector": "meta[name=\"account-experience-revamp-data\"], meta[name=\"twitter:card\"]",
+                "selector": "meta[name=\"account-experience-revamp-data\"], meta[name=\"author\"]",
                 "attributes": {
                   "name": "account-experience-revamp-data",
                   "data-is-account-experience-revamp-enabled": "true"
