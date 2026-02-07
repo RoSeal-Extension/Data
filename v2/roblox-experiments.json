@@ -3,6 +3,48 @@
     "id": "www",
     "name": "Main Website",
     "experiments": [
+       {
+        "id": "2026-02-searchLandingPagePills",
+        "name": "Search landing page pills",
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable search landing page pills",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Website.SearchLandingPage": {
+                      "IsSearchQueryPillsEnabled": true
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable search landing page pills",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Website.SearchLandingPage": {
+                      "IsSearchQueryPillsEnabled": false
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
       {
         "id": "2026-02-userProfileEditing",
         "name": "User profile editing page",
