@@ -4854,7 +4854,7 @@
       }
     ]
   },
-   {
+  {
     "universeIds": [
       3405618667
     ],
@@ -4893,6 +4893,174 @@
         "locale": "en",
         "fromFandomInterwiki": false,
         "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      5003384127
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "whitewalk.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      3478678937
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "grass-cutting-incremental.github.io",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      2128536220
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "car-racing-unlimited.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      4250548174
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "spacewars.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      2705536355
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "findthechomiks-rbx.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      6590563982
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "projectuntote.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      9122564278
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "kyoeki.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      4668461757
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "breadwinner-world-eccedees.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      3956073837
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "korrupt-zombies.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      4233554182
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "official-untitled-sandbox-game.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      1718755273
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "roblox-town.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      1003981402
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "reminiscence-zombies.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
       }
     ]
   }
