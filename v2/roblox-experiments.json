@@ -3,7 +3,89 @@
     "id": "www",
     "name": "Main Website",
     "experiments": [
-       {
+      {
+        "id": "2026-02-settingsFoundationModals",
+        "name": "Use Foundation modals in settings",
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable using foundation modals",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "account-settings-ui": {
+                    "enableFoundationModals": true
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Do not use foundation modals in settings",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "account-settings-ui": {
+                    "enableFoundationModals": false
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2026-02-disableSocialLinkCreation",
+        "name": "Disable social link creation",
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable disabling social link creation",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "configure-group-ui": {
+                    "disableSocialLinkCreation": true
+                  },
+                  "account-settings-ui": {
+                    "disableSocialLinkCreation": true
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Allow social link creation",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "configure-group-ui": {
+                    "disableSocialLinkCreation": false
+                  },
+                  "account-settings-ui": {
+                    "disableSocialLinkCreation": false
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
         "id": "2026-02-searchLandingPagePills",
         "name": "Search landing page pills",
         "buckets": [
@@ -89,7 +171,7 @@
       },
       {
         "id": "2026-02-communityConfigureEnforceSocialLinksAgeVerification",
-        "name": "Enforce age verification for social links in configure community page",
+        "name": "Enforce age verification for social links",
         "buckets": [
           {
             "id": "enable",
@@ -101,6 +183,9 @@
                 "guacType": "override",
                 "overrides": {
                   "configure-group-ui": {
+                    "enforceAgeVerificationForSocialLinks": true
+                  },
+                  "account-settings-ui": {
                     "enforceAgeVerificationForSocialLinks": true
                   }
                 }
@@ -118,6 +203,9 @@
                 "overrides": {
                   "configure-group-ui": {
                     "enforceAgeVerificationForSocialLinks": false
+                  },
+                  "account-settings-ui": {
+                    "enforceAgeVerificationForSocialLinks": false
                   }
                 }
               }
@@ -127,7 +215,7 @@
       },
       {
         "id": "2026-02-hideConfigureCommunitySocialLinksSection",
-        "name": "Hide social links section in configure community page",
+        "name": "Hide social links section in settings",
         "buckets": [
           {
             "id": "enable",
@@ -139,6 +227,9 @@
                 "guacType": "override",
                 "overrides": {
                   "configure-group-ui": {
+                    "hideSocialLinksSection": true
+                  },
+                  "account-settings-ui": {
                     "hideSocialLinksSection": true
                   }
                 }
@@ -155,6 +246,9 @@
                 "guacType": "override",
                 "overrides": {
                   "configure-group-ui": {
+                    "hideSocialLinksSection": false
+                  },
+                  "account-settings-ui": {
                     "hideSocialLinksSection": false
                   }
                 }
