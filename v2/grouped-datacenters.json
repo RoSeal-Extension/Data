@@ -114,12 +114,12 @@
             "128.116.56.33"
         ],
         "location": {
-            "city": "Ashburn",
+            "city": "Leesburg",
             "region": "Virginia",
             "country": "US",
             "latLong": [
-                "39.0437",
-                "-77.4875"
+                "39.1157",
+                "-77.5636"
             ]
         }
     },
@@ -385,12 +385,12 @@
             "128.116.21.33"
         ],
         "location": {
-            "city": "Amsterdam",
-            "region": "North Holland",
+            "city": "Lelystad",
+            "region": "Flevoland",
             "country": "NL",
             "latLong": [
-                "52.3740",
-                "4.8897"
+                "52.5083",
+                "5.4750"
             ]
         }
     },
@@ -480,7 +480,8 @@
             25518,
             25519,
             25520,
-            25521
+            25521,
+            26077
         ],
         "location": {
             "city": "Columbus",
@@ -560,7 +561,8 @@
             25861,
             25960,
             26074,
-            26075
+            26075,
+            26083
         ],
         "robloxIps": [
             "128.116.31.33"
