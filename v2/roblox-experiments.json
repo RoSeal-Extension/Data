@@ -4,6 +4,39 @@
     "name": "Main Website",
     "experiments": [
       {
+        "id": "2026-02-profile-abuse-report-modal",
+        "name": "Use new report abuse modal on user profile",
+        "buckets": [{
+          "id": "enabled",
+          "label": "Use new modal",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "overrides": {
+              "1": {
+                "Safety.AbuseReportDialog": {
+                  "enableARDialog": true
+                }
+              }
+            }
+          }]
+        }, {
+          "id": "disabled",
+          "label": "Do not use new modal",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "overrides": {
+              "1": {
+                "Safety.AbuseReportDialog": {
+                  "enableARDialog": false
+                }
+              }
+            }
+          }]
+        }]
+      },
+      {
         "id": "2026-02-settingsFoundationModals",
         "name": "Use Foundation modals in settings",
         "buckets": [
