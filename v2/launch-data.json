@@ -20,5 +20,7 @@
         "versions": ["2.1.20"]
     }, {
         "id": "hexBodyColors"
+    }, {
+        "id": "moveAgeBracket"
     }]
 }
