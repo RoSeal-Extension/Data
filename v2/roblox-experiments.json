@@ -4,6 +4,41 @@
     "name": "Main Website",
     "experiments": [
       {
+        "id": "2026-02-new-left-navigation",
+        "name": "New left navigation",
+        "buckets": [{
+          "id": "enabled",
+          "label": "Enabled",
+          "description": "Use new left navigation",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "overrides": {
+              "1": {
+                "Website.Navigation": {
+                  "IsNewLeftNavEnabled": true
+                }
+              }
+            }
+          }]
+        }, {
+          "id": "disabled",
+          "label": "Enabled",
+          "description": "Use old left navigation",
+          "operations": [{
+            "type": "ixp",
+            "ixpType": "override",
+            "overrides": {
+              "1": {
+                "Website.Navigation": {
+                  "IsNewLeftNavEnabled": false
+                }
+              }
+            }
+          }]
+        }]
+      },
+      {
         "id": "2026-02-profile-abuse-report-modal",
         "name": "Use new report abuse modal on user profile",
         "buckets": [{
