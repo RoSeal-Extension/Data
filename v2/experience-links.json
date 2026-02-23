@@ -1535,20 +1535,6 @@
   },
   {
     "universeIds": [
-      1998835206
-    ],
-    "links": [
-      {
-        "type": "communityWiki",
-        "url": "jbcstudios.miraheze.org",
-        "locale": "en",
-        "fromFandomInterwiki": true,
-        "isOfficialWiki": true
-      }
-    ]
-  },
-  {
-    "universeIds": [
       4367208330
     ],
     "links": [
