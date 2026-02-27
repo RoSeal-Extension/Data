@@ -23,7 +23,7 @@
           }]
         }, {
           "id": "disabled",
-          "label": "Enabled",
+          "label": "Disabled",
           "description": "Use old left navigation",
           "operations": [{
             "type": "ixp",
@@ -337,7 +337,7 @@
               {
                 "type": "dom",
                 "domType": "modify",
-                "selector": "meta[name=\"account-experience-revamp-data\"], meta[name=\"author\"]",
+                "selector": ":has([data-internal-page-name=\"Login\"]) meta[name=\"account-experience-revamp-data\"], :has([data-internal-page-name=\"Login\"]) meta[name=\"author\"]",
                 "attributes": {
                   "name": "account-experience-revamp-data",
                   "data-is-account-experience-revamp-enabled": "true"
@@ -353,7 +353,7 @@
               {
                 "type": "dom",
                 "domType": "modify",
-                "selector": "meta[name=\"account-experience-revamp-data\"]",
+                "selector": ":has([data-internal-page-name=\"Login\"]) meta[name=\"account-experience-revamp-data\"]",
                 "attributes": {
                   "name": "account-experience-revamp-data",
                   "data-is-account-experience-revamp-enabled": "false"
