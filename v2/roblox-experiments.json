@@ -4,6 +4,48 @@
     "name": "Main Website",
     "experiments": [
       {
+        "id": "2026-03-searchLandingPageNewService",
+        "name": "New service for search landing page (no visual changes)",
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable using new service",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Website.SearchLandingPage": {
+                      "IsMigrateToNewSlpEndpointEnabled": true
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable using new service",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Website.SearchLandingPage": {
+                      "IsMigrateToNewSlpEndpointEnabled": false
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
         "id": "2026-02-new-left-navigation",
         "name": "New left navigation",
         "buckets": [{
