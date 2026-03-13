@@ -4,6 +4,48 @@
     "name": "Main Website",
     "experiments": [
       {
+        "id": "2026-02-userProfileFavoritesRedesign",
+        "name": "User profile favorites carousel redesign",
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable redesigned favorites",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Social.Profile": {
+                      "isWebUserProfileFavoritesRedesignEnabled": true
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable redesigned favorites",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Social.Profile": {
+                      "isWebUserProfileFavoritesRedesignEnabled": false
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
         "id": "2026-03-searchLandingPageNewService",
         "name": "New service for search landing page (no visual changes)",
         "buckets": [
