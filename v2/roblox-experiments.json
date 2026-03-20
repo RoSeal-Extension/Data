@@ -4,6 +4,82 @@
     "name": "Main Website",
     "experiments": [
       {
+        "id": "2026-03-blackbird",
+        "name": "Blackbird",
+        "buckets": [
+          {
+            "id": "enabled",
+            "label": "Enabled",
+            "description": "Enable blackbird",
+            "operations": [
+              {
+                "type": "dom",
+                "domType": "modify",
+                "selector": "meta[name=\"subscription-data\"] meta[name=\"author\"]",
+                "attributes": {
+                  "name": "subscription-data",
+                  "data-is-enabled": "true"
+                }
+              }
+            ]
+          },
+          {
+            "id": "Disable",
+            "label": "Disabled",
+            "description": "Disable blackbird",
+            "operations": [
+              {
+                "type": "dom",
+                "domType": "modify",
+                "selector": "meta[name=\"subscription-data\"]",
+                "attributes": {
+                  "name": "subscription-data",
+                  "data-is-enabled": "false"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2026-03-connectionsToFriends",
+        "name": "Rename Connections to Friends",
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Rename to Friends",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "web-rename-friends": {
+                    "renameConnectionsToFriends": true
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Do not rename to Friends",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "web-rename-friends": {
+                    "renameConnectionsToFriends": false
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
         "id": "2026-02-userProfileFavoritesRedesign",
         "name": "User profile favorites carousel redesign",
         "buckets": [
@@ -90,70 +166,84 @@
       {
         "id": "2026-02-new-left-navigation",
         "name": "New left navigation",
-        "buckets": [{
-          "id": "enabled",
-          "label": "Enabled",
-          "description": "Use new left navigation",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "Website.Navigation": {
-                  "IsNewLeftNavEnabled": true
+        "buckets": [
+          {
+            "id": "enabled",
+            "label": "Enabled",
+            "description": "Use new left navigation",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Website.Navigation": {
+                      "IsNewLeftNavEnabled": true
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }, {
-          "id": "disabled",
-          "label": "Disabled",
-          "description": "Use old left navigation",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "Website.Navigation": {
-                  "IsNewLeftNavEnabled": false
+            ]
+          },
+          {
+            "id": "disabled",
+            "label": "Disabled",
+            "description": "Use old left navigation",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Website.Navigation": {
+                      "IsNewLeftNavEnabled": false
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }]
+            ]
+          }
+        ]
       },
       {
         "id": "2026-02-profile-abuse-report-modal",
         "name": "Use new report abuse modal on user profile",
-        "buckets": [{
-          "id": "enabled",
-          "label": "Use new modal",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "Safety.AbuseReportDialog": {
-                  "enableARDialog": true
+        "buckets": [
+          {
+            "id": "enabled",
+            "label": "Use new modal",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Safety.AbuseReportDialog": {
+                      "enableARDialog": true
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }, {
-          "id": "disabled",
-          "label": "Do not use new modal",
-          "operations": [{
-            "type": "ixp",
-            "ixpType": "override",
-            "overrides": {
-              "1": {
-                "Safety.AbuseReportDialog": {
-                  "enableARDialog": false
+            ]
+          },
+          {
+            "id": "disabled",
+            "label": "Do not use new modal",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Safety.AbuseReportDialog": {
+                      "enableARDialog": false
+                    }
+                  }
                 }
               }
-            }
-          }]
-        }]
+            ]
+          }
+        ]
       },
       {
         "id": "2026-02-settingsFoundationModals",
