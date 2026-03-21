@@ -680,7 +680,8 @@
         "type": "communityWiki",
         "url": "bthg.fandom.com",
         "locale": "en",
-        "fromFandomInterwiki": true
+        "fromFandomInterwiki": true,
+        "isOfficialWiki": true
       }
     ]
   },
@@ -1529,7 +1530,8 @@
         "type": "communityWiki",
         "url": "regretevator.fandom.com",
         "locale": "en",
-        "fromFandomInterwiki": true
+        "fromFandomInterwiki": true,
+        "isOfficialWiki": true
       }
     ]
   },
