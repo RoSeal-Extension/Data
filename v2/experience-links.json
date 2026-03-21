@@ -5049,5 +5049,131 @@
         "isOfficialWiki": true
       }
     ]
+  },
+  {
+    "universeIds": [
+      8144728961
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "abysswiki.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      6035872082
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "robloxrivals.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      6362411436
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "pronighters.gitbook.io",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      4052564609
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "malachiteminers2official.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      3174605755
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "findthecubes.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      8393350511
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "armlessdetective.wiki",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      4377327724
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "era-warfare.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      5578556129
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "wiki.vanguards.gg",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      115797356
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "counter-blox.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
   }
 ]
