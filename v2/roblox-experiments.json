@@ -139,7 +139,7 @@
                 "guacType": "override",
                 "overrides": {
                   "web-rename-friends": {
-                    "renameConnectionsToFriends": true
+                    "connectionsToFriendsRenameEnabled": true
                   }
                 }
               }
@@ -155,7 +155,7 @@
                 "guacType": "override",
                 "overrides": {
                   "web-rename-friends": {
-                    "renameConnectionsToFriends": false
+                    "connectionsToFriendsRenameEnabled": false
                   }
                 }
               }
