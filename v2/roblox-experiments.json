@@ -3,6 +3,44 @@
     "id": "www",
     "name": "Main Website",
     "experiments": [
+       {
+        "id": "2026-03-party-settings-v2",
+        "name": "V2 party settings",
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable V2 settings",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "account-settings-ui": {
+                    "shouldDisplayPartySettingsV2": true
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable v2 party settings",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "account-settings-ui": {
+                    "shouldDisplayPartySettingsV2": false
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
       {
         "id": "2026-03-remove-experience-created-date",
         "name": "Removed created date on experience details",
