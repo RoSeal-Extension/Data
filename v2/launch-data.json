@@ -26,5 +26,8 @@
         "id": "improvedUserCurrentlyWearing"
     }, {
         "id": "improvedAvatarBodySection"
+    }, {
+        "id": "improvedServerJoinModal.tryGetMatchmadeServer",
+        "versions": ["2.1.48", "2.1.49"]
     }]
 }
