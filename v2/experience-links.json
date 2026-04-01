@@ -1291,7 +1291,8 @@
         "type": "communityWiki",
         "url": "tagging.wiki",
         "locale": "en",
-        "fromFandomInterwiki": false
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
       }
     ]
   },
