@@ -63,7 +63,7 @@
           {
             "id": "disable",
             "label": "Disabled",
-            "description": "Disable blackbird",
+            "description": "Do not remove created date",
             "operations": [
    {
                 "type": "dom",
