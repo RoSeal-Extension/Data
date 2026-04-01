@@ -41,42 +41,6 @@
           }
         ]
       },
-      {
-        "id": "2026-03-remove-experience-created-date",
-        "name": "Removed created date on experience details",
-        "buckets": [
-          {
-            "id": "enabled",
-            "label": "Enabled",
-            "description": "Remove created date",
-            "operations": [
-              {
-                "type": "dom",
-                "domType": "modify",
-                "selector": "#game-detail-meta-data",
-                "attributes": {
-                  "data-remove-created-date": "True"
-                }
-              }
-            ]
-          },
-          {
-            "id": "disable",
-            "label": "Disabled",
-            "description": "Do not remove created date",
-            "operations": [
-   {
-                "type": "dom",
-                "domType": "modify",
-                "selector": "#game-detail-meta-data",
-                "attributes": {
-                  "data-remove-created-date": "False"
-                }
-              }
-            ]
-          }
-        ]
-      },
        {
         "id": "2026-03-higher-resolution-wide-tiles",
         "name": "Higher resolution wide experience tiles",
