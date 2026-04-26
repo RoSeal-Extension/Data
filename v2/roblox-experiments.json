@@ -3,6 +3,44 @@
     "id": "www",
     "name": "Main Website",
     "experiments": [
+      {
+        "id": "2026-04-trustedFriendsManagement",
+        "name": "Trusted friends management",
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable management",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "web-trusted-friends": {
+                    "enableTrustedFriendsManagementOnWeb": true
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable management",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "web-trusted-friends": {
+                    "enableTrustedFriendsManagementOnWeb": false
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
        {
         "id": "2026-03-party-settings-v2",
         "name": "V2 party settings",
