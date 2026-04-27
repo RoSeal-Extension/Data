@@ -4,6 +4,158 @@
     "name": "Main Website",
     "experiments": [
       {
+        "id": "2026-04-notificationSettingsRedesign",
+        "name": "Notification settings redesign",
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable notification settings redesign",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "account-settings-ui": {
+                    "notificationSettingsRedesignEnabled": true
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable notification settings redesign",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "account-settings-ui": {
+                    "notificationSettingsRedesignEnabled": false
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2026-04-selfServeAccountDeletion",
+        "name": "Self-service account deletion",
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable displaying self-service account deletion",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "account-settings-ui": {
+                    "undoAgeVerificationAvailable": true
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable displaying self serve account deletion",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "account-settings-ui": {
+                    "selfServeAccountDeletionEnabled": false
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2026-04-selfServeAccountDataAccess",
+        "name": "Self-service account data access",
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable displaying self-service account data access",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "account-settings-ui": {
+                    "selfServeDataAccessEnabled": true
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable displaying self serve account data access",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "account-settings-ui": {
+                    "selfServeDataAccessEnabled": false
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2026-04-vpcLaunchStatus",
+        "name": "Verified parental consent launch",
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable launch",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "vpc-launch-status": {
+                    "isTeenLaunchEnabled": true
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable launch",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "vpc-launch-status": {
+                    "isTeenLaunchEnabled": false
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
         "id": "2026-04-trustedFriendsManagement",
         "name": "Trusted friends management",
         "buckets": [
@@ -41,7 +193,7 @@
           }
         ]
       },
-       {
+      {
         "id": "2026-03-party-settings-v2",
         "name": "V2 party settings",
         "buckets": [
@@ -79,7 +231,7 @@
           }
         ]
       },
-       {
+      {
         "id": "2026-03-higher-resolution-wide-tiles",
         "name": "Higher resolution wide experience tiles",
         "buckets": [
@@ -121,7 +273,7 @@
           }
         ]
       },
- {
+      {
         "id": "2026-03-nap-reactivation-warning",
         "name": "Not approved page reactivation warning",
         "buckets": [
@@ -316,6 +468,158 @@
                     "Website.SearchLandingPage": {
                       "IsMigrateToNewSlpEndpointEnabled": false
                     }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2026-02-accountInfoFacialAgeEstimation",
+        "name": "Account info facial age estimation",
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable facial age estimation",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "account-info-age-verification": {
+                    "faeEnabled": true
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable facial age estimation",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "account-info-age-verification": {
+                    "faeEnabled": false
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2026-02-accountInfoIdVerification",
+        "name": "Account info ID verification",
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable ID verification",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "account-info-age-verification": {
+                    "idvAvailable": true
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable ID verification",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "account-info-age-verification": {
+                    "idvAvailable": false
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2026-02-accountInfoIDVForVPC",
+        "name": "Account info ID verification for VPC",
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable ID verification for VPC",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "account-info-age-verification": {
+                    "vpcForFaeAvailable": true
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable ID verification for VPC",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "account-info-age-verification": {
+                    "vpcForFaeAvailable": false
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "2026-02-accountInfoUndoVerification",
+        "name": "Account info undo age verification",
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable allowing to undo age verification",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "account-info-age-verification": {
+                    "undoAgeVerificationAvailable": true
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable allowing to undo age verification",
+            "operations": [
+              {
+                "type": "guac",
+                "guacType": "override",
+                "overrides": {
+                  "account-info-age-verification": {
+                    "undoAgeVerificationAvailable": false
                   }
                 }
               }
