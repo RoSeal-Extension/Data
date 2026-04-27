@@ -55,7 +55,7 @@
                 "guacType": "override",
                 "overrides": {
                   "account-settings-ui": {
-                    "undoAgeVerificationAvailable": true
+                    "selfServeAccountDeletionEnabled": true
                   }
                 }
               }
