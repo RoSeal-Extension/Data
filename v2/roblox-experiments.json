@@ -3,6 +3,48 @@
     "id": "www",
     "name": "Main Website",
     "experiments": [
+ {
+        "id": "2026-05-userProfileCurrentyPlayingRedesign",
+        "name": "User profile currently playing redesign",
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable redesigned currently playing",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Social.Profile": {
+                      "isWebUserProfileFavoritesRedesignEnabled": true
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable redesigned currently playing",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Social.Profile": {
+                      "isWebUserProfileFavoritesRedesignEnabled": false
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
       {
         "id": "2026-04-notificationSettingsRedesign",
         "name": "Notification settings redesign",
