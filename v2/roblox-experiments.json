@@ -18,7 +18,7 @@
                 "overrides": {
                   "1": {
                     "Social.Profile": {
-                      "isWebUserProfileFavoritesRedesignEnabled": true
+                      "isIARCProfileRedesignEnabled": true
                     }
                   }
                 }
@@ -36,7 +36,7 @@
                 "overrides": {
                   "1": {
                     "Social.Profile": {
-                      "isWebUserProfileFavoritesRedesignEnabled": false
+                      "isIARCProfileRedesignEnabled": false
                     }
                   }
                 }
