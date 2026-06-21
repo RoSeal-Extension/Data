@@ -30,8 +30,6 @@
         "id": "improvedServerJoinModal.tryGetMatchmadeServer",
         "versions": ["2.1.48", "2.1.49"]
     }, {
-        "id": "showUserCommunitiesRoles"
-    }, {
         "id": "experienceStoreFiltering"
     }]
 }
