@@ -5320,5 +5320,320 @@
         "isOfficialWiki": true
       }
     ]
+  },
+  {
+    "universeIds": [
+      5974510967
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "darkesthours.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      4079077350
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "clt.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      2548183080
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "pilgrammed.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      6026405541
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "10playerflee.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      162580928
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "azuremineswiki.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      5136098189
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "sushigam.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      3498637623
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "zachs-service-station.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      870386335
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "naval-1945.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      2575793677
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "aniphobia.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      3081555258,
+      341788656,
+      4577702035,
+      3603184994,
+      10097850807,
+      678676595,
+      5988568657,
+      8738763254
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "shovelpedia.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      9970645639
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "run-a-restaurant.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      9257173088
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "mudpitunofficial.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      7458874788
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "wiki.playpixelquest.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      7813156957
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "abj.conecorp.cc",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      2618786652
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "daybreakrblx.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      9792947201
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "slime-rng.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      2575793677
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "aniphobia.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      4235914786
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "wiki.astralindustries.dev",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      10200395747
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "gag2.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      107172930
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "housing.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      5553949606
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "skysbombsurvival.miraheze.org",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      2492481398
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "noob-army-tycoon.fandom.com",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
+      }
+    ]
   }
 ]
