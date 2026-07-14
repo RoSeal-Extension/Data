@@ -375,9 +375,9 @@
     "links": [
       {
         "type": "communityWiki",
-        "url": "horrific-housing.fandom.com",
+        "url": "housing.miraheze.org",
         "locale": "en",
-        "fromFandomInterwiki": true
+        "fromFandomInterwiki": false
       }
     ]
   },
@@ -1284,12 +1284,13 @@
   },
   {
     "universeIds": [
-      4864117649
+      4864117649,
+      3202699936
     ],
     "links": [
       {
         "type": "communityWiki",
-        "url": "tagging.wiki",
+        "url": "utg.miraheze.org",
         "locale": "en",
         "fromFandomInterwiki": false,
         "isOfficialWiki": true
@@ -1384,9 +1385,10 @@
     "links": [
       {
         "type": "communityWiki",
-        "url": "hybridcafe.wiki",
+        "url": "cafe.miraheze.org",
         "locale": "en",
-        "fromFandomInterwiki": false
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
       }
     ]
   },
@@ -1757,7 +1759,7 @@
     "links": [
       {
         "type": "communityWiki",
-        "url": "digtionary.org",
+        "url": "dig.miraheze.org",
         "locale": "en",
         "fromFandomInterwiki": false,
         "isOfficialWiki": true
@@ -2009,7 +2011,7 @@
     "links": [
       {
         "type": "communityWiki",
-        "url": "projectremixroblox.miraheze.org",
+        "url": "projectremix.miraheze.org",
         "locale": "en",
         "fromFandomInterwiki": false,
         "isOfficialWiki": false
@@ -3985,20 +3987,6 @@
   },
   {
     "universeIds": [
-      6182655829
-    ],
-    "links": [
-      {
-        "type": "communityWiki",
-        "url": "superstarracers.wiki",
-        "locale": "en",
-        "fromFandomInterwiki": false,
-        "isOfficialWiki": false
-      }
-    ]
-  },
-  {
-    "universeIds": [
       4544652203
     ],
     "links": [
@@ -4217,7 +4205,7 @@
     "links": [
       {
         "type": "communityWiki",
-        "url": "itemasylum.miraheze.org",
+        "url": "itemasylum.wiki",
         "locale": "en",
         "fromFandomInterwiki": false,
         "isOfficialWiki": true
@@ -4382,12 +4370,14 @@
   },
   {
     "universeIds": [
-      5402993487
+      5402993487,
+      5803068987,
+      6454962779
     ],
     "links": [
       {
         "type": "communityWiki",
-        "url": "superblox64.wiki",
+        "url": "sb64.conecorp.cc",
         "locale": "en",
         "fromFandomInterwiki": false,
         "isOfficialWiki": true
@@ -5181,7 +5171,10 @@
   },
   {
     "universeIds": [
-      6182655829
+      6182655829,
+      10322558463,
+      10322632848,
+      10322731897
     ],
     "links": [
       {
@@ -5512,7 +5505,8 @@
   },
   {
     "universeIds": [
-      7813156957
+      7813156957,
+      9957829832
     ],
     "links": [
       {
@@ -5633,6 +5627,20 @@
         "locale": "en",
         "fromFandomInterwiki": false,
         "isOfficialWiki": true
+      }
+    ]
+  },
+  {
+    "universeIds": [
+      5988250208
+    ],
+    "links": [
+      {
+        "type": "communityWiki",
+        "url": "monkeyraft.fandom.com/",
+        "locale": "en",
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": false
       }
     ]
   }
