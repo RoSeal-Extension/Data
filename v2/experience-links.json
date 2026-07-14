@@ -5638,7 +5638,7 @@
     "links": [
       {
         "type": "communityWiki",
-        "url": "monkeyraft.fandom.com/",
+        "url": "monkeyraft.fandom.com",
         "locale": "en",
         "fromFandomInterwiki": false,
         "isOfficialWiki": false
