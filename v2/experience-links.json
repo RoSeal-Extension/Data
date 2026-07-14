@@ -377,7 +377,8 @@
         "type": "communityWiki",
         "url": "housing.miraheze.org",
         "locale": "en",
-        "fromFandomInterwiki": false
+        "fromFandomInterwiki": false,
+        "isOfficialWiki": true
       }
     ]
   },
