@@ -9,7 +9,7 @@
         "buckets": [
           {
             "id": "enable",
-            "label": "Varient 1",
+            "label": "Variant 1",
             "description": "Enable safety dashboard",
             "operations": [
               {
@@ -19,7 +19,7 @@
                   "1": {
                     "UserSafety.NotApprovedPage.UserID": {
                       "FFlagEnableSafetyDashboard": true,
-                      "FFlagNavigateToSafetyDashboardForAppeals2": false
+                      "FFlagNavigateToSafetyDashboardForAppeals2": true
                     }
                   }
                 }
@@ -27,9 +27,9 @@
             ]
           },
           {
-            "id": "enableWithAppeals",
-            "label": "Varient 2",
-            "description": "Enable safety dashboard with appeal links redirecting to the dashboard",
+            "id": "enableWithoutAppeals",
+            "label": "Variant 2",
+            "description": "Enable safety dashboard without appeal links redirecting to the dashboard",
             "operations": [
               {
                 "type": "ixp",
@@ -38,7 +38,7 @@
                   "1": {
                     "UserSafety.NotApprovedPage.UserID": {
                       "FFlagEnableSafetyDashboard": true,
-                      "FFlagNavigateToSafetyDashboardForAppeals2": true
+                      "FFlagNavigateToSafetyDashboardForAppeals2": false
                     }
                   }
                 }
