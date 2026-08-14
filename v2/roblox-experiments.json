@@ -3,7 +3,70 @@
     "id": "www",
     "name": "Main Website",
     "experiments": [
- {
+      {
+        "id": "2026-08-safetyDashboard",
+        "name": "Safety Dashboard",
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Variant 1",
+            "description": "Enable safety dashboard",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "UserSafety.NotApprovedPage.UserID": {
+                      "FFlagEnableSafetyDashboard": true,
+                      "FFlagNavigateToSafetyDashboardForAppeals2": true
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "enableWithoutAppeals",
+            "label": "Variant 2",
+            "description": "Enable safety dashboard without appeal links redirecting to the dashboard",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "UserSafety.NotApprovedPage.UserID": {
+                      "FFlagEnableSafetyDashboard": true,
+                      "FFlagNavigateToSafetyDashboardForAppeals2": false
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable safety dashboard",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "UserSafety.NotApprovedPage.UserID": {
+                      "FFlagEnableSafetyDashboard": false,
+                      "FFlagNavigateToSafetyDashboardForAppeals2": false
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
         "id": "2026-05-userProfileCurrentyPlayingRedesign",
         "name": "User profile currently playing redesign",
         "buckets": [
