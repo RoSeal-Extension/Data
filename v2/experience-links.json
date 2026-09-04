@@ -1169,9 +1169,8 @@
     "links": [
       {
         "type": "communityWiki",
-        "url": "doors-game.fandom.com",
+        "url": "doorsgame.wiki",
         "locale": "en",
-        "fromFandomInterwiki": true,
         "isOfficialWiki": true
       }
     ]
