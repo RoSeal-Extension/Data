@@ -4,6 +4,46 @@
     "name": "Main Website",
     "experiments": [
       {
+        "id": "2026-09-classicAppTheme",
+        "name": "Classic App Theme (on Website)",
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable classic app theme option",
+            "operations": [
+              {
+                "type": "dom",
+                "domType": "modify",
+                "selector": "meta[name=\"classic-theme-data\"]",
+                "attributes": {
+                  "name": "classic-theme-data",
+                  "data-enabled": "True",
+                  "data-enabled-plus": "True"
+                }
+              }
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable classic app theme option",
+            "operations": [
+              {
+                "type": "dom",
+                "domType": "modify",
+                "selector": "meta[name=\"classic-theme-data\"]",
+                "attributes": {
+                  "name": "classic-theme-data",
+                  "data-enabled": "False",
+                  "data-enabled-plus": "False"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
         "id": "2026-09-newNotificationStream",
         "name": "New React Notification Stream",
         "buckets": [
