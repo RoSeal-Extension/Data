@@ -44,6 +44,84 @@
         ]
       },
       {
+        "id": "2026-09-newNotificationStream",
+        "name": "New React Notification Stream",
+        "buckets": [
+          {
+            "id": "enable",
+            "label": "Enabled",
+            "description": "Enable new notification stream",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Notifications.StreamNotificationUXExposure": {
+                      "FFlagWebReactNotificationStreamEnabled": true
+                    }
+                  }
+                }
+              },
+              {
+                "type": "dom",
+                "domType": "modify",
+                "selector": "meta[name=\"notification-stream-migration-data\"]",
+                "attributes": {
+                  "name": "notification-stream-migration-data",
+                  "data-react-bell-enabled": "True",
+                  "data-react-friend-request-card-enabled": "True",
+                  "data-react-private-message-card-enabled": "True",
+                  "data-react-game-update-card-enabled": "True",
+                  "data-react-group-membership-card-enabled": "True",
+                  "data-react-test-notification-card-enabled": "True",
+                  "data-react-developer-metrics-card-enabled": "True",
+                  "data-react-stream-enabled": "True",
+                  "data-react-stream-embedded-enabled": "True",
+                  "data-react-stream-experiment-enabled": "True"
+                }
+              }
+            ]
+          },
+          {
+            "id": "disable",
+            "label": "Disabled",
+            "description": "Disable new notification stream",
+            "operations": [
+              {
+                "type": "ixp",
+                "ixpType": "override",
+                "overrides": {
+                  "1": {
+                    "Notifications.StreamNotificationUXExposure": {
+                      "FFlagWebReactNotificationStreamEnabled": false
+                    }
+                  }
+                }
+              },
+              {
+                "type": "dom",
+                "domType": "modify",
+                "selector": "meta[name=\"notification-stream-migration-data\"]",
+                "attributes": {
+                  "name": "notification-stream-migration-data",
+                  "data-react-bell-enabled": "False",
+                  "data-react-friend-request-card-enabled": "False",
+                  "data-react-private-message-card-enabled": "False",
+                  "data-react-game-update-card-enabled": "False",
+                  "data-react-group-membership-card-enabled": "False",
+                  "data-react-test-notification-card-enabled": "False",
+                  "data-react-developer-metrics-card-enabled": "False",
+                  "data-react-stream-enabled": "False",
+                  "data-react-stream-embedded-enabled": "False",
+                  "data-react-stream-experiment-enabled": "False"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
         "id": "2026-08-safetyDashboard",
         "name": "Safety Dashboard",
         "buckets": [
