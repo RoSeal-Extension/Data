@@ -970,9 +970,9 @@
     "links": [
       {
         "type": "communityWiki",
-        "url": "tds.fandom.com",
+        "url": "tds.wiki",
         "locale": "en",
-        "fromFandomInterwiki": true
+        "isOfficialWiki": true
       }
     ]
   },
